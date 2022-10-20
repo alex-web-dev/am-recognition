@@ -1,0 +1,29 @@
+.body-lock {
+  overflow: hidden;
+}
+
+.link {
+  color: $color-primary;
+
+  &--success {
+    color: $color-success;
+  }
+
+  &--danger {
+    color: $color-danger;
+  }
+}
+
+.input {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 15px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: border .3s;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}

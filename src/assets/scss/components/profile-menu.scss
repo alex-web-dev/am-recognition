@@ -1,0 +1,65 @@
+.profile-menu {
+  &__link {
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color .3s;
+
+    &:after {
+      margin-left: 5px;
+      @include before-icon('../img/icons/arrow-right.svg', 12px, 9px);
+    }
+
+    &:hover {
+      color: #3955bd;
+    }
+  }
+
+  &__item:not(:first-child) &__link {
+    padding-top: 16px;
+  }
+
+  &__item:not(:last-child) &__link {
+    border-bottom: 1px solid rgba(245, 161, 0, 0.15);
+    padding-bottom: 18px;
+  }
+
+  @media (max-width: 680px) {
+    &__list {
+      margin: -5px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin: 5px;
+      width: calc(50% - 10px);
+    }
+
+    &__link {
+      background: linear-gradient(180deg, rgba(245, 161, 0, 0.0495) 0%, rgba(245, 161, 0, 0.15) 100%), #FFFFFF;
+      box-shadow: 0px 0px 10px rgba(245, 161, 0, 0.25);
+      border-radius: 10px;
+      height: 80px;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 500;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__item:not(:first-child) &__link {
+      padding-top: 10px;
+    }
+
+    &__item:not(:last-child) &__link {
+      border-bottom: none;
+      padding-bottom: 10px;
+    }
+  }
+}
