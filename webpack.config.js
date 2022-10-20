@@ -30,6 +30,8 @@ const optimization = () => {
 const htmlPageNames = [
 	'login',
 	'profile',
+	'payment-feed',
+	'my-team',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
@@ -124,10 +126,6 @@ let conf = {
 			},
 		]
 	},
-	// performance: {
-	// 	maxEntrypointSize: 512000,
-	// 	maxAssetSize: 512000
-	// },
 };
 
 module.exports = (env, argv) => {

@@ -11,7 +11,7 @@
 
 <body class="body">
 	<header class="header">
-		<div class="container">
+		<div class="container header__container">
 			<div class="header__content">
 				<a class="logo header__logo" href="index.html">
 					<img class="logo__img" src="assets/img/logo-white.svg" alt="">
@@ -19,26 +19,26 @@
 				<div class="navbar header__navbar">
 					<ul class="navbar__list">
 						<li class="navbar__item navbar__item--active">
-							<a class="navbar__link" href="#">
-								<img class="navbar__icon" src="assets/img/avatar.png" alt="">
+							<a class="navbar__link" href="profile.html">
+								<img class="navbar__icon" src="assets/img/avatars/1.png" alt="">
 								<div class="navbar__text">Профиль</div>
 							</a>
 						</li>
 						<li class="navbar__item">
-							<a class="navbar__link" href="#">
-								<img class="navbar__icon" src="assets/img/icons/time-second.svg" alt="">
+							<a class="navbar__link" href="payment-feed.html">
+								<span class="icon icon-time navbar__icon"></span>
 								<div class="navbar__text">Моя лента</div>
 							</a>
 						</li>
 						<li class="navbar__item">
 							<a class="navbar__link" href="#">
-								<img class="navbar__icon" src="assets/img/icons/logo-second.svg" alt="">
+								<span class="icon icon-logo navbar__icon"></span>
 								<div class="navbar__text">Новости</div>
 							</a>
 						</li>
 						<li class="navbar__item">
 							<a class="navbar__link js-open-menu" href="#">
-								<img class="navbar__icon" src="assets/img/icons/menu-second.svg" alt="">
+								<span class="icon icon-menu navbar__icon"></span>
 								<div class="navbar__text">Меню</div>
 							</a>
 						</li>
@@ -49,15 +49,14 @@
 	</header>
 
 	<main class="main">
-		<div class="container">
-
-			<div class="profile profile--own">
+		<div class="profile profile--own">
+			<div class="container">
 				<div class="profile__header">
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="profile__header-main">
 								<div class="profile__user">
-									<img class="profile__avatar" src="assets/img/avatar.png" alt="">
+									<img class="profile__avatar" src="assets/img/avatars/1.png" alt="">
 									<div class="profile__user-info">
 										<div class="profile__user-name">Константин Александров</div>
 										<div class="profile__user-status">Жизнь такова какова и больше никакова никакова</div>
@@ -65,11 +64,11 @@
 								</div>
 								<div class="profile__awards-mobile"></div>
 								<div class="profile__header-btns">
-									<a href="#" class="btn profile__header-btn">
+									<a href="#" class="btn btn--darkened profile__header-btn">
 										Мой кошелек
 										<div class="btn__addition">3 520 AmCoin</div>
 									</a>
-									<a href="#" class="btn profile__header-btn">
+									<a href="#" class="btn btn--darkened profile__header-btn">
 										Мои признания
 										<div class="btn__addition">500 AmCoin</div>
 									</a>
@@ -80,22 +79,34 @@
 							<div class="profile-menu profile__menu">
 								<ul class="profile-menu__list">
 									<li class="profile-menu__item">
-										<a class="link profile-menu__link" href="#">Мои конкурсы</a>
+										<a class="link profile-menu__link" href="#">
+											<span class="profile-menu__text">Мои конкурсы</span>
+										</a>
 									</li>
 									<li class="profile-menu__item">
-										<a class="link profile-menu__link" href="#">Мои задания</a>
+										<a class="link profile-menu__link" href="#">
+											<span class="profile-menu__text">Мои задания</span>
+										</a>
 									</li>
 									<li class="profile-menu__item">
-										<a class="link profile-menu__link" href="#">Моя команда</a>
+										<a class="link profile-menu__link" href="#">
+											<span class="profile-menu__text">Моя команда</span>
+										</a>
 									</li>
 									<li class="profile-menu__item">
-										<a class="link profile-menu__link" href="#">Мои заказы</a>
+										<a class="link profile-menu__link" href="#">
+											<span class="profile-menu__text">Мои заказы</span>
+										</a>
 									</li>
 									<li class="profile-menu__item">
-										<a class="link profile-menu__link" href="#">Программы мотивации</a>
+										<a class="link profile-menu__link" href="#">
+											<span class="profile-menu__text">Программы мотивации</span>
+										</a>
 									</li>
 									<li class="profile-menu__item">
-										<a class="link profile-menu__link" href="#">Настройки</a>
+										<a class="link profile-menu__link" href="#">
+											<span class="profile-menu__text">Настройки</span>
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -210,7 +221,7 @@
 						</div>
 						<div class="pay-line pay-lines__item">
 							<div class="pay-line__author">
-								<img class="pay-line__avatar" src="assets/img/avatar.png" alt="">
+								<img class="pay-line__avatar" src="assets/img/avatars/1.png" alt="">
 								<div class="pay-line__info">
 									<div class="pay-line__value">+500 признание!</div>
 									<div class="pay-line__text">От: Анатолий Иванов</div>
@@ -274,59 +285,73 @@
 						<div class="col-sm-6 mx-auto">
 							<div class="menu__list">
 								<div class="menu__item">
-									<a class="link menu__link" href="#">
-										Профиль
-										<img class="menu__icon" src="assets/img/avatar.png" alt="">
+									<a class="link menu__link" href="profile.html">
+										<span class="menu__text">Профиль</span>
+										<img class="menu__icon" src="assets/img/avatars/1.png" alt="">
 									</a>
 								</div>
 								<div class="menu__item">
 									<a class="link menu__link" href="#">
-										Мой кошелек
+										<span class="menu__text">Мой кошелек</span>
 										<span class="menu__value">3 520 AmCoin</span>
 									</a>
 								</div>
 								<div class="menu__item">
 									<a class="link menu__link" href="#">
-										Признания
+										<span class="menu__text">Признания</span>
 										<span class="menu__value">600 AmCoin</span>
 									</a>
 								</div>
 								<div class="menu__item">
 									<a class="link menu__link" href="#">
-										AmShop
+										<span class="menu__text">AmShop</span>
 										<img class="menu__icon" src="assets/img/icons/logo-second.svg" alt="">
 									</a>
 								</div>
 								<div class="menu__item">
-									<a class="link menu__link" href="#">
-										Моя лента
+									<a class="link menu__link" href="payment-feed.html">
+										<span class="menu__text">Моя лента</span>
 										<img class="menu__icon" src="assets/img/icons/time-second.svg" alt="">
 									</a>
 								</div>
 								<div class="menu__item">
-									<a class="link menu__link" href="#">Программы мотивации</a>
+									<a class="link menu__link" href="#">
+										<span class="menu__text">Программы мотивации</span>
+									</a>
 								</div>
 								<div class="menu__item">
-									<a class="link menu__link" href="#">Новости</a>
+									<a class="link menu__link" href="#">
+										<span class="menu__text">Новости</span>
+									</a>
 								</div>
 								<div class="menu__items">
-									<div class="menu__item">
-										<a class="link menu__link" href="#">Задания</a>
+									<div class="menu__item menu__item--inner">
+										<a class="link menu__link" href="#">
+											<span class="menu__text">Задания</span>
+										</a>
 									</div>
-									<div class="menu__item">
-										<a class="link menu__link" href="#">Квесты</a>
+									<div class="menu__item menu__item--inner">
+										<a class="link menu__link" href="#">
+											<span class="menu__text">Квесты</span>
+										</a>
 									</div>
 								</div>
 								<div class="menu__items">
-									<div class="menu__item">
-										<a class="link menu__link" href="#">Конкурсы</a>
+									<div class="menu__item menu__item--inner">
+										<a class="link menu__link" href="#">
+											<span class="menu__text">Конкурсы</span>
+										</a>
 									</div>
-									<div class="menu__item">
-										<a class="link menu__link" href="#">Рейтинги</a>
+									<div class="menu__item menu__item--inner">
+										<a class="link menu__link" href="#">
+											<span class="menu__text">Рейтинги</span>
+										</a>
 									</div>
 								</div>
 								<div class="menu__item">
-									<a class="link link--danger menu__link" href="#">Сообщить о проблеме</a>
+									<a class="link link--danger menu__link" href="#">
+										<span class="menu__text">Сообщить о проблеме</span>
+									</a>
 								</div>
 							</div>
 							<button class="menu__close">

@@ -1,0 +1,30 @@
+.mobile-header {
+  padding: 10px 0;
+  background: $color-gradient-third;
+  box-shadow: 0px 0px 10px rgba($color-third, 0.25);
+  display: none;
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 5px;
+    flex: 1 1 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  &__btn {
+    font-size: 20px;
+    color: $color-primary;
+  }
+
+  @media (max-width: 680px) {
+    display: block;
+    width: 100%;
+  }
+}

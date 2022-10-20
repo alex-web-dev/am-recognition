@@ -1,4 +1,4 @@
-import { moveElement  } from "./helpers";
+import { moveElement } from "./helpers";
 
 const $profile = document.querySelector('.profile');
 if ($profile) {
@@ -6,12 +6,10 @@ if ($profile) {
   window.addEventListener('resize', moveAwards);
 
   const $awardsMore = document.querySelector('.profile__awards-more');
-  if ($awardsMore) {
-    $awardsMore.addEventListener('click', () => {
-      const $awards = $awardsMore.closest('.profile__awards');
-      $awards.classList.add('profile__awards--full');
-    });
-  }
+  $awardsMore?.addEventListener('click', () => {
+    const $awards = $awardsMore.closest('.profile__awards');
+    $awards.classList.add('profile__awards--full');
+  });
 }
 
 function moveAwards() {

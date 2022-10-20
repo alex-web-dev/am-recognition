@@ -15,11 +15,11 @@
     &-info {
       margin-left: 10px;
     }
-  
+
     &-name {
       line-height: 1.25;
     }
-  
+
     &-status {
       margin-top: 6px;
       font-size: 12px;
@@ -33,7 +33,7 @@
     &-btns {
       margin-top: 30px;
     }
-  
+
     &-btn {
       width: 100%;
       border-radius: 5px;
@@ -41,7 +41,7 @@
       padding-bottom: 19px;
       font-size: 18px;
       font-weight: 600;
-  
+
       &:not(:first-child) {
         margin-top: 10px;
       }
@@ -94,6 +94,8 @@
   }
 
   @media (max-width: 680px) {
+    padding-top: 30px;
+
     &__avatar {
       width: 60px;
       height: 60px;
@@ -110,7 +112,7 @@
       &-btns {
         margin-top: 22px;
       }
-  
+
       &-btn {
         border-radius: 10px;
       }
@@ -126,11 +128,11 @@
       &-mobile {
         display: block;
       }
-  
+
       &-desktop {
         display: none;
       }
-  
+
       &-list {
         margin: -4px;
         max-height: 80px;
@@ -145,7 +147,7 @@
         max-height: none;
         overflow: visible;
       }
-  
+
       &--full &-more {
         display: none;
       }

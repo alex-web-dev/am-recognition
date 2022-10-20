@@ -6,10 +6,13 @@
 
 @import "./global";
 
+@import "./components/iconsfont";
 @import "./components/btn";
+@import "./components/search";
 @import "./components/menu";
 @import "./components/breadcrumbs";
 @import "./components/header";
+@import "./components/mobile-header";
 @import "./components/navbar";
 @import "./components/main";
 @import "./components/login-form";
@@ -20,3 +23,5 @@
 @import "./components/pay-line";
 @import "./components/pay-lines";
 @import "./components/stories";
+@import "./components/team-item";
+@import "./components/team";

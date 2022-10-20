@@ -1,7 +1,8 @@
 .menu {
   position: fixed;
+  z-index: 20;
   left: 0;
-  top: 0;
+  top: $headerHeight;
   width: 100%;
   height: 100%;
   background-color: $color-bg;
@@ -25,9 +26,11 @@
     margin: 0 -10px;
   }
 
-  &__items > &__item {
-    flex: 1 1 50%;
-    margin: 0 10px;
+  &__item {
+    &--inner {
+      flex: 1 1 50%;
+      margin: 0 10px;
+    }
   }
 
   &__link {
@@ -37,11 +40,6 @@
     justify-content: space-between;
     height: 100%;
     border-bottom: 1px solid rgba($color-third, 0.15);
-    transition: color .3s;
-
-    &:not(.link--danger):hover {
-      color: #3955bd;
-    }
   }
 
   &__item:first-child &__link {
@@ -52,12 +50,20 @@
     border-bottom: none;
   }
 
-  &__items &__item:first-child &__link {
+  &__item--inner:first-child &__link {
     border-top: none;
   }
 
-  &__items &__item:last-child &__link {
+  &__item--inner:last-child &__link {
     border-bottom: 1px solid rgba($color-third, 0.15);
+  }
+
+  &__text {
+    transition: transform .4s;
+  }
+
+  &__link:hover &__text {
+    transform: translateX(10px);
   }
 
   &__icon {
@@ -95,6 +101,8 @@
   }
 
   @media (max-width: 680px) {
+    top: 0;
+    
     &__main {
       padding-top: 30px;
     }

@@ -20,10 +20,14 @@
       width: 1px;
       background-color: rgba(255, 255, 255, 0.08);
     }
+  }
 
-    &--active + & {
-      background: #000;
-    }
+  &__link:hover &__text {
+    transform: translateY(-3px);
+  }
+
+  &__item--active &__link:hover &__text {
+    transform: translateY(0);
   }
 
   &__item--active &__link {
@@ -34,7 +38,7 @@
     }
   }
 
-  &__item--active + &__item &__link {
+  &__item--active+&__item &__link {
     border-left: none;
   }
 
@@ -57,41 +61,53 @@
   }
 
   &__icon {
+    display: block;
     max-width: 20px;
     max-height: 20px;
+    color: $color-second;
+    font-size: 20px;
   }
 
   &__text {
-    margin-top: 4px;
+    margin-top: 8px;
     color: #fff;
+    transition: transform .3s;
   }
 
   @media (max-width: 991px) {
     &__link {
-      width: 110px;
+      width: 111px;
     }
   }
 
   @media (max-width: 680px) {
     &__item {
-      flex: 1 1 auto;
+      flex: 1 1 100%;
     }
 
     &__link {
-      text-align: center;
-      width: 100%;
       padding: 7px 7px 6px;
-    }
-  }
-
-  @media (max-width: 560px) {
-    &__link {
+      width: 100%;
+      text-align: center;
       font-size: 12px;
+      font-weight: 500;
     }
 
     &__item--active &__link {
       background: $color-second;
       border-left-color: $color-second;
+    }
+
+    &__icon {
+      margin: 0 auto;
+    }
+
+    &__item--active &__icon {
+      color: #fff;
+    }
+
+    &__text {
+      margin-top: 5px;
     }
   }
 }

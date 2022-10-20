@@ -1,0 +1,48 @@
+.team {
+  padding-bottom: 50px;
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__mobile-header {
+    margin-bottom: 20px;
+  }
+
+  &__search {
+    flex: 0 0 375px;
+    margin-left: 10px;
+  }
+
+  &__list {
+    margin-top: 44px;    
+  }
+
+  &__item {
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  @media (max-width: 680px) {
+    &__title {
+      display: none;
+    }
+
+    &__search {
+      flex-basis: 100%;
+      margin-left: 0;
+    }
+
+    &__list {
+      margin-top: 20px;
+    }
+  }
+}
