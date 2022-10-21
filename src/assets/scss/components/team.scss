@@ -11,13 +11,37 @@
     margin-bottom: 20px;
   }
 
+  &__title {
+    flex: 0 0 50%;
+    padding-right: 10px;
+  }
+
   &__search {
-    flex: 0 0 375px;
-    margin-left: 10px;
+    flex: 0 0 50%;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__filter {
+    margin-top: 28px;
+  }
+
+  &__select {
+    margin-top: 10px;
+
+    &--mobile {
+      display: none;
+    }
   }
 
   &__list {
-    margin-top: 44px;    
+    margin-top: 44px;
+    
+    &--ratings {
+      margin-top: 28px;
+    }
   }
 
   &__item {
@@ -39,10 +63,34 @@
     &__search {
       flex-basis: 100%;
       margin-left: 0;
+
+      &--desktop {
+        display: none;
+      }
+
+      &--mobile {
+        display: block;
+      }
+    }
+
+    &__filter {
+      &--desktop {
+        display: none;
+      }
+    }
+
+    &__select {
+      &--mobile {
+        display: block;
+      }
     }
 
     &__list {
       margin-top: 20px;
+
+      &--ratings {
+        margin-top: 24px;
+      }
     }
   }
 }

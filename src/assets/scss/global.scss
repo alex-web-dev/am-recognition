@@ -12,6 +12,16 @@
   &--danger {
     color: $color-danger;
   }
+
+  &--black {
+    color: #000;
+  }
+
+  &--line {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .input {
@@ -32,4 +42,22 @@
   font-size: 18px;
   line-height: 1;
   font-weight: 600;
+}
+
+.text {
+  &-success {
+    color: $color-success;
+  }
+
+  &-danger {
+    color: $color-danger;
+  }
+
+  &-gray {
+    color: $color-gray;
+  }
+
+  &-primary {
+    color: $color-primary;
+  }
 }

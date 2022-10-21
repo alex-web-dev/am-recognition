@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
-	<title>AmRecognition | Моя команда</title>
+	<title>AmRecognition | Рейтинги</title>
 </head>
 
 <body class="body">
@@ -56,10 +56,14 @@
 						<a href="profile.html" class="mobile-header__btn">
 							<span class="icon icon-back"></span>
 						</a>
-						<div class="mobile-header__title">Моя команда</div>
+						<div class="mobile-header__title">Рейтинги</div>
 						<button class="mobile-header__btn js-open-menu">
 							<span class="icon icon-menu"></span>
 						</button>
+					</div>
+					<div class="filter mobile-header__filter">
+						<button class="filter__btn filter__btn--active">По получению</button>
+						<button class="filter__btn">По отправлению</button>
 					</div>
 				</div>
 			</div>
@@ -67,8 +71,17 @@
 				<div class="row">
 					<div class="col-sm-10 mx-auto">
 						<div class="team__header">
-							<h1 class="title1 team__title">Моя команда</h1>
-							<form class="search search--desktop-line team__search" autocomplete="off">
+							<h1 class="title1 team__title">Рейтинги</h1>
+							<form class="search search--line team__search team__search--desktop" autocomplete="off">
+								<input class="search__input" type="text">
+								<button class="search__btn">
+									<span class="icon icon-search search__icon"></span>
+								</button>
+								<button type="button" class="search__btn search__btn--clear">
+									<span class="icon icon-close-bold search__icon"></span>
+								</button>
+							</form>
+							<form class="search team__search team__search--mobile" autocomplete="off">
 								<input class="search__input" type="text">
 								<button class="search__btn">
 									<span class="icon icon-search search__icon"></span>
@@ -78,14 +91,27 @@
 								</button>
 							</form>
 						</div>
-						<div class="team__list">
+						<div class="filter team__filter team__filter--desktop">
+							<button class="filter__btn filter__btn--active">За все время</button>
+							<button class="filter__btn">Последний месяц</button>
+							<button class="filter__btn">Последние 3 месяца</button>
+						</div>
+						<div class="select team__select team__select--mobile">
+							<select class="select__field">
+								<option value="1">За все время</option>
+								<option value="2">Последние 3 месяца</option>
+								<option value="3">Последний месяц</option>
+							</select>
+						</div>
+						<div class="team__list team__list--ratings">
 							<div class="team-item team__item">
 								<a href="#" class="team-item__avatar-link">
 									<img class="team-item__avatar" src="assets/img/avatars/2.png" alt="">
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 1250 (1 из 8000)</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
 										</a>
@@ -99,7 +125,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-danger team-item__rating">↓ 1250 (2 из 8000)</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
 										</a>
@@ -113,7 +140,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 1150</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
 										</a>
@@ -127,7 +155,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 1050</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
 										</a>
@@ -141,7 +170,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 950</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
 										</a>
@@ -155,7 +185,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-danger team-item__rating">↓ 1250 (2 из 8000)</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
 										</a>
@@ -169,7 +200,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 1150</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
 										</a>
@@ -183,7 +215,23 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 1050</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
+											<div class="team-item__firstname">Елена</div>
+											<div class="team-item__lastname">Иванова</div>
+										</a>
+									</div>
+									<div class="team-item__position">Должность <br> Подразделение</div>
+								</div>
+							</div>
+							<div class="team-item team__item">
+								<a href="#" class="team-item__avatar-link">
+									<img class="team-item__avatar" src="assets/img/avatars/3.png" alt="">
+								</a>
+								<div class="team-item__main">
+									<div class="team-item__info">
+										<div class="text-danger team-item__rating">↓ 1250 (2 из 8000)</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
 										</a>
@@ -197,7 +245,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 1150</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
 										</a>
@@ -211,7 +260,8 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<a class="team-item__name" href="#">
+										<div class="text-success team-item__rating">↑ 1050</div>
+										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
 										</a>

@@ -32,6 +32,8 @@ const htmlPageNames = [
 	'profile',
 	'payment-feed',
 	'my-team',
+	'ratings',
+	'other-profile',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

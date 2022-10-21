@@ -35,7 +35,7 @@ $gutters: (
 
 @media (max-width: 680px) {
   .container {
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: $container-xs-offset;
+    padding-right: $container-xs-offset;
   }
 }

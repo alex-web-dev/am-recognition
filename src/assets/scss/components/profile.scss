@@ -5,10 +5,26 @@
   }
 
   &__avatar {
-    width: 70px;
-    height: 70px;
+    flex: 0 0 auto;
+    position: relative;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    object-fit: cover;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &-award {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &__user {
@@ -52,6 +68,40 @@
     margin-top: 6px;
   }
 
+  &__info {
+    margin-top: 30px;
+    padding: 20px 30px;
+    display: flex;
+    background: rgba(245, 161, 0, 0.15);
+    border-radius: 10px;
+
+    &-column {
+      flex: 1 1 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 12px;
+      line-height: 1.67;
+    }
+  }
+
+  &__quote {
+    position: relative;
+    margin-top: 30px;
+    padding-left: 90px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-style: italic;
+    color: $color-gray;
+
+    &:before {
+      @include before-icon('../img/icons/quote.svg', 80px, 40px);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
   &__awards {
     margin-top: 40px;
 
@@ -66,7 +116,7 @@
     }
 
     &-more {
-      margin: 2px auto 0;
+      margin: 0 auto;
       display: none;
       font-size: 12px;
       font-weight: 500;
@@ -76,6 +126,35 @@
 
   &__award {
     margin: 10px;
+  }
+
+  &__talents {
+    margin-top: 50px;
+    padding-top: 40px;
+    max-width: 554px;
+    border-top: 1px solid rgba($color-third, 0.15);
+
+    &-title {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__talent {
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+
+    &-name {
+      flex: 1 1 100%;
+    }
+
+    &-doc {
+      flex: 1 1 100%;
+      text-align: right;
+      color: $color-gray;
+    }
   }
 
   &__pay-lines {
@@ -93,12 +172,35 @@
     }
   }
 
+  &--own &__avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: 991px) {
+    &__awards {
+      &-mobile {
+        display: block;
+      }
+
+      &-desktop {
+        display: none;
+      }
+    }
+  }
+
   @media (max-width: 680px) {
-    padding-top: 30px;
+    padding: 30px 0;
 
     &__avatar {
       width: 60px;
       height: 60px;
+      border: 2px solid $color-second;
+
+      &-award {
+        width: 26px;
+        height: 26px;
+      }
     }
 
     &__user {
@@ -122,16 +224,30 @@
       margin-top: 10px;
     }
 
-    &__awards {
-      margin-top: 30px;
+    &__info {
+      margin-top: 28px;
+      padding-left: $container-xs-offset;
+      padding-right: $container-xs-offset;
+      flex-direction: column;
 
-      &-mobile {
-        display: block;
+      &-column {
+        &:not(:first-child) {
+          margin-top: 14px;
+        }
       }
+    }
 
-      &-desktop {
+    &__quote {
+      margin-top: 20px;
+      padding-left: 0;
+
+      &:before {
         display: none;
       }
+    }
+
+    &__awards {
+      margin-top: 30px;
 
       &-list {
         margin: -4px;
@@ -149,7 +265,7 @@
       }
 
       &--full &-more {
-        display: none;
+        margin-top: 12px;
       }
     }
 
@@ -162,9 +278,28 @@
       margin-bottom: 20px;
     }
 
+    &__talents {
+      margin-top: 15px;
+      padding-top: 0;
+      border-top: none;
+
+      &-title {
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+    }
+
+    &__talent {
+      font-size: 12px;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
     &__pay-lines {
       margin-top: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
 
     &--own &__header {
@@ -174,6 +309,11 @@
       &-main {
         padding-left: 0;
       }
+    }
+
+    &--own &__avatar {
+      width: 60px;
+      height: 60px;
     }
   }
 }

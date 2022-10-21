@@ -4,3 +4,4 @@ import './menu.js';
 import './profile.js';
 import './stories.js';
 import './search.js';
+import './select.js';

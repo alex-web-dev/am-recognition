@@ -56,7 +56,9 @@
 						<div class="col-sm-6">
 							<div class="profile__header-main">
 								<div class="profile__user">
-									<img class="profile__avatar" src="assets/img/avatars/1.png" alt="">
+									<div class="profile__avatar">
+										<img class="profile__avatar-img" src="assets/img/avatars/1.png" alt="">
+									</div>
 									<div class="profile__user-info">
 										<div class="profile__user-name">Константин Александров</div>
 										<div class="profile__user-status">Жизнь такова какова и больше никакова никакова</div>
@@ -115,7 +117,7 @@
 				</div>
 
 				<div class="profile__awards-desktop">
-					<div class="profile__awards">
+					<div class="profile__awards profile__awards--own">
 						<div class="profile__awards-list">
 							<button class="profile-award profile__award js-open-stories">
 								<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
@@ -193,7 +195,7 @@
 								</span>
 							</button>
 						</div>
-						<button class="profile__awards-more">Все мои награды ↓</button>
+						<button class="profile__awards-more" data-toggle-text="Скрыть мои награды ↑">Все мои награды ↓</button>
 					</div>
 				</div>
 
@@ -343,7 +345,7 @@
 										</a>
 									</div>
 									<div class="menu__item menu__item--inner">
-										<a class="link menu__link" href="#">
+										<a class="link menu__link" href="ratings.html">
 											<span class="menu__text">Рейтинги</span>
 										</a>
 									</div>

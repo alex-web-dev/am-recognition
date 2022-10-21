@@ -23,6 +23,10 @@
     color: $color-primary;
   }
 
+  &__filter {
+    margin-top: 15px;
+  }
+
   @media (max-width: 680px) {
     display: block;
     width: 100%;

@@ -33,6 +33,14 @@
   &__name {
     display: inline-block;
     color: $color-primary;
+
+    &--nowrap {
+      display: flex;
+    }
+  }
+
+  &__name--nowrap &__lastname {
+    margin-left: 3px;
   }
 
   &__position {
