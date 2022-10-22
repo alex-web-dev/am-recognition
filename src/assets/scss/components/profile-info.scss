@@ -1,0 +1,45 @@
+.profile-info {
+  padding: 20px 25px;
+  display: flex;
+  background: rgba(245, 161, 0, 0.15);
+  border-radius: 10px;
+
+  &__column {
+    margin: 0 5px;
+    flex: 1 1 100%;
+    font-size: 12px;
+    line-height: 1.67;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__more {
+    margin-top: 7px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  &__status {
+    color: $color-gray;
+    font-size: 10px;
+  }
+
+  @media (max-width: 680px) {
+    padding-left: $container-xs-offset;
+    padding-right: $container-xs-offset;
+    flex-direction: column;
+
+    &__column {
+      margin: 0;
+      
+      &:not(:first-child) {
+        margin-top: 14px;
+      }
+    }
+  }
+}

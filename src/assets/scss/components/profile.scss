@@ -25,6 +25,28 @@
       width: 30px;
       height: 30px;
     }
+
+    &-edit {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%), $color-third;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 15px;
+      line-height: 30px;
+      color: #fff;
+    }
+  }
+
+  &__edit {
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
   }
 
   &__user {
@@ -70,19 +92,6 @@
 
   &__info {
     margin-top: 30px;
-    padding: 20px 30px;
-    display: flex;
-    background: rgba(245, 161, 0, 0.15);
-    border-radius: 10px;
-
-    &-column {
-      flex: 1 1 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      font-size: 12px;
-      line-height: 1.67;
-    }
   }
 
   &__quote {
@@ -137,23 +146,31 @@
     &-title {
       margin-bottom: 15px;
     }
+
+    &-edit {
+      margin-top: 15px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    &--settings {
+      margin-top: 20px;
+      padding-top: 0;
+      border-top: none;
+      max-width: none;
+    }
+
+    &--settings &-title {
+      margin-bottom: 25px;
+      font-size: 12px;
+      font-weight: 500;
+    }
   }
 
   &__talent {
-    display: flex;
-
     &:not(:first-child) {
-      margin-top: 15px;
-    }
-
-    &-name {
-      flex: 1 1 100%;
-    }
-
-    &-doc {
-      flex: 1 1 100%;
-      text-align: right;
-      color: $color-gray;
+      margin-top: 25px;
     }
   }
 
@@ -190,16 +207,23 @@
   }
 
   @media (max-width: 680px) {
-    padding: 30px 0;
+    padding-bottom: 30px;
 
     &__avatar {
-      width: 60px;
-      height: 60px;
-      border: 2px solid $color-second;
+      width: 53px;
+      height: 53px;
 
       &-award {
         width: 26px;
         height: 26px;
+      }
+
+      &-edit {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%), $color-primary;
+      }
+
+      &--award {
+        border: 2px solid $color-second;
       }
     }
 
@@ -207,10 +231,13 @@
       &-name {
         font-size: 12px;
         font-weight: 500;
+        display: none;
       }
     }
 
     &__header {
+      margin-top: 30px;
+
       &-btns {
         margin-top: 22px;
       }
@@ -226,15 +253,6 @@
 
     &__info {
       margin-top: 28px;
-      padding-left: $container-xs-offset;
-      padding-right: $container-xs-offset;
-      flex-direction: column;
-
-      &-column {
-        &:not(:first-child) {
-          margin-top: 14px;
-        }
-      }
     }
 
     &__quote {
@@ -289,14 +307,6 @@
       }
     }
 
-    &__talent {
-      font-size: 12px;
-
-      &:not(:first-child) {
-        margin-top: 10px;
-      }
-    }
-
     &__pay-lines {
       margin-top: 30px;
       margin-bottom: 0;
@@ -314,6 +324,17 @@
     &--own &__avatar {
       width: 60px;
       height: 60px;
+    }
+
+    &--own &__user {
+      &-name {
+        display: block;
+      }
+    }
+
+    &--settings &__avatar {
+      width: 80px;
+      height: 80px;
     }
   }
 }

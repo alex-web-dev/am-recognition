@@ -34,6 +34,7 @@ const htmlPageNames = [
 	'my-team',
 	'ratings',
 	'other-profile',
+	'settings',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
