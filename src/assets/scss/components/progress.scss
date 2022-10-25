@@ -1,0 +1,21 @@
+.progress {
+  position: relative;
+  height: 2px;
+  background-color: $color-gray;
+
+  &__done {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: $color-third;
+  }
+
+  &--success {
+    background-color: transparent;
+  }
+
+  &--success &__done {
+    background: $color-success;
+  }
+}

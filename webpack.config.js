@@ -35,6 +35,11 @@ const htmlPageNames = [
 	'ratings',
 	'other-profile',
 	'settings',
+	'settings-report',
+	'settings-about',
+	'settings-status',
+	'settings-talents',
+	'settings-contacts',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

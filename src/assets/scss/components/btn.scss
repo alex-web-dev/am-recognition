@@ -31,6 +31,14 @@
     box-shadow: 0px 0px 10px rgba($color-third, 0.25);
   }
 
+  &--danger {
+    background: $color-gradient-danger;
+  }
+
+  &--success {
+    background: $color-gradient-success;
+  }
+
   &--darkened {
     position: relative;
     z-index: 1;
@@ -68,5 +76,12 @@
         opacity: 1;
       }
     }
+  }
+
+  &--small {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    font-weight: 500;
   }
 }

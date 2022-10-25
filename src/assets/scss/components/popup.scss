@@ -1,0 +1,87 @@
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.75);
+  }
+
+  &__content {
+    position: relative;
+    margin: auto;
+    padding: 36px 10px 10px;
+    width: 286px;
+    background: linear-gradient(0deg, rgba($color-third, 0.15), rgba($color-third, 0.15)), #FFFFFF;
+    text-align: center;
+
+    &--success {
+      background: $color-gradient-success;
+      padding: 17px 0;
+      color: #fff;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  &__btns {
+    margin-top: 36px;
+    display: flex;
+  }
+
+  &__btn {
+    flex: 1 1 100%;
+    border-radius: 0;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 27px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &__progress {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: calc(100% - 4px);
+  }
+
+  &--message {
+    &:before {
+      background: rgba(254, 241, 217, 0.9);
+    }
+  }
+
+  &--message &__content {
+    width: 266px;
+  }
+
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

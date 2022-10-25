@@ -6,10 +6,13 @@ $color-bg:                   #fef1d9;
 $color-danger:               #b10933;
 $color-success:              #006237;
 
-$color-gradient-primary:     linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), #1C2F76;
-$color-gradient-second:      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), #0086CE;
-$color-gradient-third:       linear-gradient(180deg, rgba(245, 161, 0, 0.0495) 0%, rgba(245, 161, 0, 0.15) 100%), #FFFFFF;
+$color-gradient-primary:     linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), $color-primary;
+$color-gradient-second:      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), $color-second;
+$color-gradient-third:       linear-gradient(180deg, rgba($color-third, 0.0495) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
+$color-gradient-danger:      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%), $color-danger;
+$color-gradient-success:     linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%), $color-success;
 
-$headerHeight:               80px;
+$header-height:              80px;
+$header-xs-height:           50px;
 
 $container-xs-offset:        27px;

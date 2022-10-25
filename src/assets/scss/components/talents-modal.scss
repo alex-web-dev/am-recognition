@@ -1,0 +1,57 @@
+.talents-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-bg;
+  padding-top: $header-height;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s, visibility .4s;
+
+  &__content {
+    padding-top: 53px;
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+
+  &__item {
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    font-size: 20px;
+    color: $color-primary;
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (max-width: 680px) {
+    padding-top: 0;
+
+    &__content {
+      padding-top: 18px;
+    }
+
+    &__item {
+      font-size: 12px;
+    }
+
+    &__close {
+      top: 15px;
+    }
+  }
+}

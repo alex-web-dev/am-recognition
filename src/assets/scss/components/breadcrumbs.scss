@@ -1,14 +1,12 @@
 .breadcrumbs {
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 500;
+  line-height: 1.3;
 
   &__link {
     padding-right: 9px;
     position: relative;
 
     &:first-child {
-      padding-left: 15px;
+      padding-left: 19px;
 
       &:before {
         content: '←';
@@ -35,6 +33,24 @@
       &:after {
         color: $color-primary;
       }
+    }
+  }
+
+  &--small {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &--small &__link {
+    padding-left: 15px;
+  }
+
+  @media (max-width: 680px) {
+    font-size: 12px;
+    font-weight: 500;
+
+    &__link {
+      padding-left: 15px;
     }
   }
 

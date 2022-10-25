@@ -8,10 +8,10 @@
   text-align: center;
   font-variant: normal;
   text-transform: none;
-  line-height: 1em;
+  line-height: 1;
 }
 
-.icon-logo:before { content: '\e800'; } /* '' */
+.icon-wallet:before { content: '\e800'; } /* '' */
 .icon-close:before { content: '\e801'; } /* '' */
 .icon-search:before { content: '\e802'; } /* '' */
 .icon-time:before { content: '\e803'; } /* '' */
@@ -21,3 +21,5 @@
 .icon-close-bold:before { content: '\e807'; } /* '' */
 .icon-back:before { content: '\e808'; } /* '' */
 .icon-edit:before { content: '\e809'; } /* '' */
+.icon-close-extrabold:before { content: '\e80a'; } /* '' */
+.icon-logo:before { content: '\e80b'; } /* '' */

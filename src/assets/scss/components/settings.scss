@@ -1,0 +1,36 @@
+.settings {
+  padding-bottom: 33px;
+  
+  &__title,
+  &__breadcrumbs {
+    margin-bottom: 27px;
+  }
+
+  &__mobile-header {
+    margin-bottom: 40px;
+  }
+
+  &__contacts {
+    margin-top: 46px;
+  }
+
+  &__contact {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    &__title,
+    &__breadcrumbs {
+      display: none;
+    }
+
+    &__contact {
+      &:not(:first-child) {
+        padding-top: 20px;
+        border-top: 1px solid rgba($color-third, 0.15);
+      }
+    }
+  }
+}

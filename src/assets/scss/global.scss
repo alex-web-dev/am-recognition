@@ -22,6 +22,11 @@
       text-decoration: underline;
     }
   }
+
+  &--small {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 .input {
