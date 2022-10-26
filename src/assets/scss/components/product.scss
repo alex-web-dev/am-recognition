@@ -1,0 +1,86 @@
+.product {
+  padding-right: 30px;
+  background: linear-gradient(180deg, rgba(245, 161, 0, 0.0495) 0%, rgba(245, 161, 0, 0.15) 100%), #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(245, 161, 0, 0.33);
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 120px;
+    min-height: 120px;
+    flex: 0 0 auto;
+    object-fit: cover;
+  }
+
+  &__info {
+    padding: 20px;
+    flex: 1 1 auto;
+    line-height: 1.5;
+  }
+
+  &__name {
+    font-weight: 500;
+    color: $color-primary;
+  }
+
+  &__price {
+    margin-top: 3px;
+    font-weight: 500;
+  }
+
+  &__right {
+    flex: 0 0 240px;
+    line-height: 1.5;
+  }
+
+  &__status {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  &__edit {
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  &__text {
+    margin-top: 4px;
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &__btn {
+    display: block;
+    margin-left: auto;
+    padding: 6px 20px 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    border-radius: 20px;
+  }
+
+  &--done {
+    padding: 20px 30px 25px;
+  }
+
+  &--done &__content {
+    padding-bottom: 5px;
+    border-bottom: 3px solid $color-danger;
+  }
+
+  &--done &__info {
+    padding: 0 20px 0 0;
+  }
+
+  &--done &__right {
+    padding-top: 10px;
+    align-self: flex-start;
+  }
+}

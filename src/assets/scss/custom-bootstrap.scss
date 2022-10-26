@@ -28,8 +28,8 @@ $gutters: (
 
 @import '~bootstrap/scss/bootstrap-grid.scss';
 
-.container-admin {
-  max-width: 1220px;
+.admin-container {
+  max-width: 1440px;
   @include make-container();
 }
 

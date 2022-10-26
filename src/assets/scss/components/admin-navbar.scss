@@ -1,0 +1,15 @@
+.admin-navbar {
+  position: fixed;
+  padding-top: 20px;
+  width: 360px;
+  height: 100%;
+  min-height: 100vh;
+  background: #fff;
+
+  &__logo {
+    margin-left: 120px;
+    margin-bottom: 50px;
+    display: inline-block;
+    max-width: 137px;
+  }
+}

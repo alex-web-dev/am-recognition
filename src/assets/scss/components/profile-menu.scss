@@ -7,7 +7,9 @@
 
     &:after {
       margin-left: 5px;
-      @include before-icon('../img/icons/arrow-right.svg', 12px, 9px);
+      content: '\e805';
+      font-family: 'iconsfont';
+      font-size: 9px;
     }
   }
 

@@ -69,6 +69,8 @@
   &__icon {
     max-width: 20px;
     max-height: 20px;
+    font-size: 20px;
+    color: $color-second;
   }
 
   &__value {
@@ -82,14 +84,16 @@
     position: absolute;
     top: 20px;
     right: 90px;
-    text-align: left;
+    text-align: center;
 
-    &-img {
+    &-icon {
       display: block;
+      font-size: 20px;
+      color: $color-primary;
     }
 
     &-text {
-      margin-top: 8px;
+      margin-top: 6px;
       display: inline-block;
       color: $color-primary;
     }
@@ -120,12 +124,8 @@
       right: 22px;
       text-align: center;
 
-      &-img {
-        margin: 0 auto;
-      }
-
       &-text {
-        margin-top: 3px;
+        margin-top: 2px;
         font-size: 12px;
         font-weight: 500;
       }

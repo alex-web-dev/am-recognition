@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+
+  &__active,
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__active {
+    background: rgba($color-third, 0.15);
+  }
+
+  &__link {
+    background: linear-gradient(180deg, rgba(245, 161, 0, 0) 0%, rgba(245, 161, 0, 0.15) 100%), #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(245, 161, 0, 0.33);
+  }
+}

@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.admin-body {
+  min-width: 1440px;
+}
+
 .link {
   color: $color-primary;
 
@@ -85,6 +89,34 @@
 
   &--primary {
     color: $color-primary;
+  }
+}
+
+.swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(28, 47, 118, 0.33);
+
+  &:hover {
+    background: rgba(28, 47, 118, 0.66);
+  }
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  &-active {
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+    }
   }
 }
 
