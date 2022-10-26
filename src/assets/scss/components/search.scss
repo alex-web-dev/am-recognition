@@ -53,6 +53,10 @@
     }
   }
 
+  &--mobile {
+    display: none;
+  }
+
   @media (min-width: 681px) {
     &--desktop-line &__input {
       background-color: transparent;
@@ -63,6 +67,20 @@
 
     &--desktop-line &__btn {
       right: 0;
+    }
+  }
+
+  @media (max-width: 680px) {
+    &__input {
+      font-size: 12px;
+    }
+
+    &--mobile {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
     }
   }
 }

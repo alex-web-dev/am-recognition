@@ -96,4 +96,18 @@
       }
     }
   }
+
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: 680px) {
+    &--mobile {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
 }

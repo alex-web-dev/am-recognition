@@ -50,19 +50,51 @@
 }
 
 .text {
-  &-success {
+  &--success {
     color: $color-success;
   }
 
-  &-danger {
+  &--danger {
     color: $color-danger;
   }
 
-  &-gray {
+  &--gray {
     color: $color-gray;
   }
 
-  &-primary {
+  &--primary {
     color: $color-primary;
+  }
+
+  &--small {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.price {  
+  &:after {
+    content: '\e800';
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'iconsfont';
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  &--primary {
+    color: $color-primary;
+  }
+}
+
+@media (max-width: 680px) {
+  .price {
+    font-size: 12px;
+    font-weight: 500;
+
+    &:after {
+      line-height: 12px;
+    }
   }
 }

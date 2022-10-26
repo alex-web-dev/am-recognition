@@ -40,6 +40,9 @@ const htmlPageNames = [
 	'settings-status',
 	'settings-talents',
 	'settings-contacts',
+	'wallet',
+	'wallet-outsource',
+	'wallet-convert',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

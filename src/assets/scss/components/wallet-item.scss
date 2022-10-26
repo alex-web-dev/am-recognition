@@ -1,0 +1,85 @@
+.wallet-item {
+  display: flex;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba($color-third, 0.15);
+
+  &__icon {
+    margin-top: 5px;
+    margin-right: 20px;
+    padding: 3px;
+    width: 36px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(245, 161, 0, 0.0495) 0%, rgba(245, 161, 0, 0.15) 100%), #FFFFFF;
+    border: 2px dashed #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(245, 161, 0, 0.25);
+    border-radius: 4px;
+
+    &-img {
+      max-height: 9px;
+    }
+
+    &-value {
+      margin-left: 1px;
+      flex: 1 1 auto;
+      font-size: 7px;
+      font-weight: 500;
+      text-align: right;
+      color: $color-third;
+    }
+
+    &--circle {
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: none;
+    }
+
+    &--circle &-img {
+      max-height: 22px;
+    }
+
+    &--third {
+      background: linear-gradient(135deg, rgba(180, 1, 67, 0) 0%, rgba(180, 1, 66, 0.5) 100%), #F5A100;
+      border: 1px dashed #F5A100;
+    }
+
+    &--third &-value {
+      font-size: 8px;
+      color: rgba(180, 1, 66, 0.33);
+    }
+
+    &--third &-img {
+      max-height: 14px;
+      color: $color-third;
+      font-size: 14px;
+      text-shadow: 0 2px rgba(180, 1, 66, 0.33);
+    }
+  }
+
+  &__avatar {
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  @media (max-width: 680px) {
+    &__icon {
+      margin-right: 10px;
+    }
+
+    &__avatar {
+      margin-right: 10px;
+    }
+  }
+}

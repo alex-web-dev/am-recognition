@@ -1,0 +1,34 @@
+.section-header {
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__title {
+    flex: 0 0 50%;
+    padding-right: 10px;
+  }
+
+  &__search {
+    flex: 0 0 50%;
+  }
+
+  &__filter {
+    margin-top: 28px;
+  }
+
+  &__select {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 680px) {
+    &__title {
+      display: none;
+    }
+
+    &__search {
+      flex-basis: 100%;
+    }
+  }
+}

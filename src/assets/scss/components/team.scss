@@ -1,39 +1,8 @@
 .team {
   padding-bottom: 50px;
 
-  &__header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-
   &__mobile-header {
     margin-bottom: 20px;
-  }
-
-  &__title {
-    flex: 0 0 50%;
-    padding-right: 10px;
-  }
-
-  &__search {
-    flex: 0 0 50%;
-
-    &--mobile {
-      display: none;
-    }
-  }
-
-  &__filter {
-    margin-top: 28px;
-  }
-
-  &__select {
-    margin-top: 10px;
-
-    &--mobile {
-      display: none;
-    }
   }
 
   &__list {
@@ -56,35 +25,6 @@
   }
 
   @media (max-width: 680px) {
-    &__title {
-      display: none;
-    }
-
-    &__search {
-      flex-basis: 100%;
-      margin-left: 0;
-
-      &--desktop {
-        display: none;
-      }
-
-      &--mobile {
-        display: block;
-      }
-    }
-
-    &__filter {
-      &--desktop {
-        display: none;
-      }
-    }
-
-    &__select {
-      &--mobile {
-        display: block;
-      }
-    }
-
     &__list {
       margin-top: 20px;
 

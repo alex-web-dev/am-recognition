@@ -8,6 +8,14 @@
   resize: none;
   outline: none;
   overflow-y: hidden;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
 
   @media (max-width: 680px) {
     padding: 10px;

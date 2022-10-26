@@ -70,39 +70,42 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10 mx-auto">
-						<div class="team__header">
-							<h1 class="title1 team__title">Рейтинги</h1>
-							<form class="search search--line team__search team__search--desktop" autocomplete="off">
-								<input class="search__input" type="text">
-								<button class="search__btn">
-									<span class="icon icon-search search__icon"></span>
-								</button>
-								<button type="button" class="search__btn search__btn--clear">
-									<span class="icon icon-close-bold search__icon"></span>
-								</button>
-							</form>
-							<form class="search team__search team__search--mobile" autocomplete="off">
-								<input class="search__input" type="text">
-								<button class="search__btn">
-									<span class="icon icon-search search__icon"></span>
-								</button>
-								<button type="button" class="search__btn search__btn--clear">
-									<span class="icon icon-close-bold search__icon"></span>
-								</button>
-							</form>
+						<div class="section-header wallet__section-header">
+							<div class="section-header__top">
+								<h1 class="title1 section-header__title">Рейтинги</h1>
+								<form class="search search--line search--desktop section-header__search" autocomplete="off">
+									<input class="search__input" type="text">
+									<button class="search__btn">
+										<span class="icon icon-search search__icon"></span>
+									</button>
+									<button type="button" class="search__btn search__btn--clear">
+										<span class="icon icon-close-bold search__icon"></span>
+									</button>
+								</form>
+								<form class="search search--mobile section-header__search" autocomplete="off">
+									<input class="search__input" type="text" placeholder="Ресторан, город, дистрикт или регион">
+									<button class="search__btn">
+										<span class="icon icon-search search__icon"></span>
+									</button>
+									<button type="button" class="search__btn search__btn--clear">
+										<span class="icon icon-close-bold search__icon"></span>
+									</button>
+								</form>
+							</div>
+							<div class="filter filter--desktop section-header__filter">
+								<button class="filter__btn filter__btn--active">За все время</button>
+								<button class="filter__btn">Последний месяц</button>
+								<button class="filter__btn">Последние 3 месяца</button>
+							</div>
+							<div class="select select--mobile section-header__select">
+								<select class="select__field">
+									<option value="1">За все время</option>
+									<option value="2">Последние 3 месяца</option>
+									<option value="3">Последний месяц</option>
+								</select>
+							</div>
 						</div>
-						<div class="filter team__filter team__filter--desktop">
-							<button class="filter__btn filter__btn--active">За все время</button>
-							<button class="filter__btn">Последний месяц</button>
-							<button class="filter__btn">Последние 3 месяца</button>
-						</div>
-						<div class="select team__select team__select--mobile">
-							<select class="select__field">
-								<option value="1">За все время</option>
-								<option value="2">Последние 3 месяца</option>
-								<option value="3">Последний месяц</option>
-							</select>
-						</div>
+
 						<div class="team__list team__list--ratings">
 							<div class="team-item team__item">
 								<a href="#" class="team-item__avatar-link">
@@ -110,7 +113,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 1250 (1 из 8000)</div>
+										<div class="text text--success team-item__rating">↑ 1250 (1 из 8000)</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
@@ -125,7 +128,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-danger team-item__rating">↓ 1250 (2 из 8000)</div>
+										<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
@@ -140,7 +143,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 1150</div>
+										<div class="text text--success team-item__rating">↑ 1150</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
@@ -155,7 +158,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 1050</div>
+										<div class="text text--success team-item__rating">↑ 1050</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
@@ -170,7 +173,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 950</div>
+										<div class="text text--success team-item__rating">↑ 950</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
@@ -185,7 +188,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-danger team-item__rating">↓ 1250 (2 из 8000)</div>
+										<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
@@ -200,7 +203,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 1150</div>
+										<div class="text text--success team-item__rating">↑ 1150</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
@@ -215,7 +218,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 1050</div>
+										<div class="text text--success team-item__rating">↑ 1050</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
@@ -230,7 +233,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-danger team-item__rating">↓ 1250 (2 из 8000)</div>
+										<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
@@ -245,7 +248,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 1150</div>
+										<div class="text text--success team-item__rating">↑ 1150</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Мария</div>
 											<div class="team-item__lastname">Александровская</div>
@@ -260,7 +263,7 @@
 								</a>
 								<div class="team-item__main">
 									<div class="team-item__info">
-										<div class="text-success team-item__rating">↑ 1050</div>
+										<div class="text text--success team-item__rating">↑ 1050</div>
 										<a class="team-item__name team-item__name--nowrap" href="#">
 											<div class="team-item__firstname">Елена</div>
 											<div class="team-item__lastname">Иванова</div>
