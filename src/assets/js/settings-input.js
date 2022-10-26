@@ -8,11 +8,15 @@ $textareas.forEach($textarea => {
 function textareaSizeHandler($textarea) {
   $textarea.style.height = '0px';
   
-  const minHeight = getTextareaMinHeight();
+  const minHeight = getTextareaMinHeight($textarea);
   const height = Math.max(minHeight, $textarea.scrollHeight);
   $textarea.style.height = `${height}px`;
 }
 
-function getTextareaMinHeight() {
-  return window.innerWidth < 680 ? 55 : 90;
+function getTextareaMinHeight($textarea) {
+  if ($textarea.dataset.minHeight) {
+    return +$textarea.dataset.minHeight;
+  } else {
+    return window.innerWidth < 680 ? 55 : 90;
+  }
 }

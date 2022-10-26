@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
-	<title>AmRecognition | Конвертировать</title>
+	<title>AmRecognition | Признать</title>
 </head>
 
 <body class="body">
@@ -66,17 +66,38 @@
 				<div class="row">
 					<div class="col-sm-8 mx-auto">
 						<div class="breadcrumbs settings__breadcrumbs">
-							<a class="link breadcrumbs__link" href="index.html">Мой кошелек</a>
-							<span class="breadcrumbs__current">Конвертировать в ₽</span>
+							<a class="link breadcrumbs__link" href="recognition-employee.html">Признать сотрудника</a>
+							<span class="breadcrumbs__current">Елена Иванова</span>
 						</div>
-						<form class="convert-form wallet__convert-form" autocomplete="off">
-							<div class="convert-form__item">
-								<div class="convert-form__text convert-form__text--mobile">Конвертировать AmCoin в ₽</div>
-								<input class="settings-input convert-form__item-input" type="text" value="12 500">
-								<button class="convert-form__item-btn">Все 12 500</button>
+						<div class="team-item wallet__recognition-user">
+							<a href="#" class="team-item__avatar">
+								<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+							</a>
+							<div class="team-item__main">
+								<div class="team-item__info">
+									<a class="team-item__name" href="#">
+										<div class="team-item__firstname">Елена</div>
+										<div class="team-item__lastname">Иванова</div>
+									</a>
+								</div>
+								<div class="team-item__position">Должность <br> Подразделение</div>
 							</div>
-							<button class="btn btn--third btn--small convert-form__submit">Отправить заявку</button>
-							<div class="text text--small text--gray convert-form__comment">Пояснение о конвертации для тех, кто не знает, что это такое</div>
+						</div>
+						<form class="recognition-form wallet__recognition-form" autocomplete="off">
+							<div class="recognition-form__item">
+								<div class="recognition-form__label">
+									<span class="text text--small">Спасибо за:</span>
+								</div>
+								<textarea class="settings-input settings-input--area recognition-form__input" data-min-height="100"></textarea>
+							</div>
+							<div class="recognition-form__item">
+								<div class="recognition-form__label">
+									<span class="text text--small">Сумма в AmCoin</span>
+									<span class="text text--small text--gray">Баланс 1 250 ам</span>
+								</div>
+								<input class="settings-input recognition-form__input recognition-form__input--sum" type="text" value="12 500">
+							</div>
+							<button class="btn btn--third btn--small recognition-form__submit">Признать</button>
 						</form>
 					</div>
 				</div>

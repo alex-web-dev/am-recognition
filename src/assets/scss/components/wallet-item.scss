@@ -1,12 +1,16 @@
 .wallet-item {
-  display: flex;
   padding-bottom: 18px;
   border-bottom: 1px solid rgba($color-third, 0.15);
+
+  &__header {
+    display: flex;
+  }
 
   &__icon {
     margin-top: 5px;
     margin-right: 20px;
     padding: 3px;
+    flex: 0 0 auto;
     width: 36px;
     height: 24px;
     display: flex;
@@ -60,17 +64,37 @@
   }
 
   &__avatar {
-    margin-top: 5px;
     margin-right: 20px;
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+
+    &--story {
+      border: 2px solid $color-second;
+    }
   }
 
   &__text {
     font-size: 12px;
     line-height: 1.5;
     font-weight: 500;
+
+    a {
+      color: $color-primary;
+    }
+  }
+
+  &__message {
+    padding-left: 56px;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-style: italic;
+    color: $color-gray;
+  }
+
+  &--avatar &__message {
+    padding-left: 70px;
   }
 
   @media (max-width: 680px) {
@@ -80,6 +104,14 @@
 
     &__avatar {
       margin-right: 10px;
+    }
+
+    &__message {
+      padding-left: 0;
+    }
+
+    &--avatar &__message {
+      padding-left: 0;
     }
   }
 }

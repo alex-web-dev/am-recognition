@@ -43,6 +43,9 @@ const htmlPageNames = [
 	'wallet',
 	'wallet-outsource',
 	'wallet-convert',
+	'recognitions',
+	'recognition-employee',
+	'recognition',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

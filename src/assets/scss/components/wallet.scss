@@ -34,6 +34,15 @@
     margin-top: 85px;
   }
 
+  &__recognition-user {
+    padding: 0;
+    display: none;
+  }
+
+  &__recognition-form {
+    margin-top: 45px;
+  }
+
   @media (max-width: 1200px) {
     &__btns {
       width: 667px;
@@ -81,6 +90,16 @@
       &:not(:first-child) {
         margin-left: 0;
       }
+    }
+
+    &__recognition-form {
+      margin-top: 40px;
+    }
+
+    &__recognition-user {
+      margin-top: 30px;
+      display: flex;
+      border-bottom: none;
     }
   }
 }

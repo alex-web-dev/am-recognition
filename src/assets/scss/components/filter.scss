@@ -46,7 +46,8 @@
       }
     }
 
-    &--active {
+    &--active,
+    &.tabs-btn--active {
       background: rgba($color-third, 0.15);
       cursor: default;
       border-right: none;
