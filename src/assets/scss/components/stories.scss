@@ -1,6 +1,6 @@
 .stories {
   position: fixed;
-  z-index: 20;
+  z-index: 30;
   left: 0;
   top: $header-height;
   width: 100%;
@@ -59,6 +59,10 @@
   &--active {
     visibility: visible;
     opacity: 1;
+  }
+
+  &--admin {
+    top: 0;
   }
 
   @media (max-width: 991px) {

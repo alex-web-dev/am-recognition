@@ -1,8 +1,13 @@
 .pagination {
-  display: flex;
+  &__list {
+    margin: -5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__active,
   &__link {
+    margin: 5px;
     display: block;
     width: 40px;
     height: 40px;
@@ -10,10 +15,6 @@
     line-height: 40px;
     text-align: center;
     white-space: nowrap;
-
-    &:not(:first-child) {
-      margin-left: 10px;
-    }
   }
 
   &__active {

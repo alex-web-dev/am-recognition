@@ -27,7 +27,6 @@
     padding: 36px 10px 10px;
     width: 286px;
     background: linear-gradient(0deg, rgba($color-third, 0.15), rgba($color-third, 0.15)), #FFFFFF;
-    text-align: center;
 
     &--success {
       background: $color-gradient-success;
@@ -37,6 +36,7 @@
   }
 
   &__text {
+    text-align: center;
     font-size: 12px;
     font-weight: 500;
 
@@ -61,6 +61,10 @@
     right: 27px;
     font-size: 20px;
     color: #fff;
+
+    &--primary {
+      color: $color-primary;
+    }
   }
 
   &__progress {
@@ -78,6 +82,15 @@
 
   &--message &__content {
     width: 266px;
+  }
+
+  &--full &__content {
+    width: 100%;
+    height: 100%;
+  }
+
+  &--wallet &__content {
+    padding-top: 90px;
   }
 
   &--show {

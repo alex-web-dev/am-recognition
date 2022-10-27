@@ -9,8 +9,17 @@ $popups.forEach($popup => {
       $popup.classList.remove('popup--show');
     }
 
-    if (e.target.classList.contains('popup__close')) {
+    if (e.target.classList.contains('js-popup-close')) {
       $popup.classList.remove('popup--show');
     }
+  });
+});
+
+const $openBtns = document.querySelectorAll('.js-open-popup');
+$openBtns.forEach($btn => {
+  const name = $btn.dataset.popupName;
+  $btn.addEventListener('click', () => {
+    const $popup = document.querySelector(`.popup[data-popup-name="${name}"]`);
+    $popup?.classList.add('popup--show');
   });
 });

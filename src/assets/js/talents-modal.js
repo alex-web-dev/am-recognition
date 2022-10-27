@@ -9,12 +9,4 @@ if ($modal) {
   $openBtns.forEach($btn => {
     $btn.addEventListener('click', () => $modal.classList.toggle('talents-modal--active'));
   });
-
-  const $addTalentBtns = $modal.querySelectorAll('.talents-modal__add');
-  $addTalentBtns.forEach(($btn) => {
-    $btn.addEventListener('click', () => {
-      const $talentsAddPopup = document.querySelector('.popup[data-name="added-talent"]');
-      $talentsAddPopup.classList.add('popup--show');
-    });
-  });
 }

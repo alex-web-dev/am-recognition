@@ -33,6 +33,10 @@
     margin-top: 15px;
   }
 
+  &__price {
+    line-height: 10px;
+  }
+
   @media (max-width: 680px) {
     display: block;
     width: 100%;

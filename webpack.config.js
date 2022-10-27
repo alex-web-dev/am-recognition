@@ -46,7 +46,9 @@ const htmlPageNames = [
 	'recognitions',
 	'recognition-employee',
 	'recognition',
-	'admin-updates'
+	'admin-updates',
+	'admin-users',
+	'admin-user',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

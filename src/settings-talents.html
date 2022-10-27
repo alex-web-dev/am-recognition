@@ -75,7 +75,8 @@
 								<div class="settings-talent settings-form__talent">
 									<div class="settings-talent__left">
 										<div class="settings-talent__title">
-											<button class="icon icon-close-extrabold settings-talent__delete" type="button"></button>
+											<button class="icon icon-close-extrabold settings-talent__delete js-open-popup" type="button"
+												data-popup-name="talent-delete"></button>
 											Музыка
 										</div>
 										<div class="settings-talent__docs">
@@ -100,7 +101,8 @@
 								<div class="settings-talent settings-form__talent">
 									<div class="settings-talent__left">
 										<div class="settings-talent__title">
-											<button class="icon icon-close-extrabold settings-talent__delete" type="button"></button>
+											<button class="icon icon-close-extrabold settings-talent__delete js-open-popup" type="button"
+												data-popup-name="talent-delete"></button>
 											Кулинария
 										</div>
 										<div class="settings-talent__docs"></div>
@@ -115,7 +117,8 @@
 								</div>
 							</div>
 
-							<button class="btn btn--third settings-form__talents-add js-open-talents" type="button">Добавить талант</button>
+							<button class="btn btn--third settings-form__talents-add js-open-talents" type="button">Добавить
+								талант</button>
 
 							<div class="settings-form__btns">
 								<button type="button" class="btn settings-form__btn">Отмена</button>
@@ -216,7 +219,7 @@
 		</div>
 	</div>
 
-	<div class="popup" data-name="delete-talent">
+	<div class="popup" data-popup-name="talent-delete">
 		<div class="popup__content">
 			<div class="popup__text">Удалить талант Музыка?</div>
 			<div class="popup__btns">
@@ -226,14 +229,14 @@
 		</div>
 	</div>
 
-	<div class="popup popup--message" data-name="added-talent">
+	<div class="popup popup--message" data-popup-name="talent-added">
 		<div class="popup__content popup__content--success">
 			<div class="popup__text">Талант добавлен</div>
 		</div>
 		<div class="progress progress--success popup__progress">
 			<div class="progress__done" style="width: 70%"></div>
 		</div>
-		<button class="icon icon-close popup__close"></button>
+		<button class="icon icon-close popup__close js-popup-close"></button>
 	</div>
 
 	<div class="talents-modal">
@@ -257,27 +260,27 @@
 							</div>
 							<div class="talents-modal__item">
 								<span class="talents-modal__name">Музыка</span>
-								<button class="link link--line talents-modal__add">Добавить</button>
+								<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
 							</div>
 							<div class="talents-modal__item">
 								<span class="talents-modal__name">Видео</span>
-								<button class="link link--line talents-modal__add">Добавить</button>
+								<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
 							</div>
 							<div class="talents-modal__item">
 								<span class="talents-modal__name">Кулинария </span>
-								<button class="link link--line talents-modal__add">Добавить</button>
+								<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
 							</div>
 							<div class="talents-modal__item">
 								<span class="talents-modal__name">Музыка</span>
-								<button class="link link--line talents-modal__add">Добавить</button>
+								<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
 							</div>
 							<div class="talents-modal__item">
 								<span class="talents-modal__name">Видео</span>
-								<button class="link link--line talents-modal__add">Добавить</button>
+								<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
 							</div>
 							<div class="talents-modal__item">
 								<span class="talents-modal__name">Кулинария</span>
-								<button class="link link--line talents-modal__add">Добавить</button>
+								<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
 							</div>
 						</div>
 						<button class="icon icon-close talents-modal__close"></button>

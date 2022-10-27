@@ -1,5 +1,9 @@
-.body-lock {
+.body--lock {
   overflow: hidden;
+}
+
+.body--desktop {
+  min-width: 900px;
 }
 
 .admin-body {
@@ -84,7 +88,7 @@
     vertical-align: top;
     font-family: 'iconsfont';
     font-size: 9px;
-    line-height: 14px;
+    line-height: 16px;
   }
 
   &--primary {
@@ -124,9 +128,5 @@
   .price {
     font-size: 12px;
     font-weight: 500;
-
-    &:after {
-      line-height: 12px;
-    }
   }
 }
