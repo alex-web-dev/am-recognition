@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<title>AmRecognition | Админ - Редактировать бейдж</title>
+</head>
+
+<body class="admin-body">
+	<main class="admin-main">
+		<div class="admin-container">
+			<div class="row">
+				<div class="col-3">
+					<div class="admin-navbar">
+						<a class="logo admin-navbar__logo" href="admin-updates.html">
+							<img class="logo__img" src="assets/img/logo.svg" alt="">
+						</a>
+						<nav class="admin-menu">
+							<ul class="admin-menu__list">
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-updates.html">
+										<span>Обновления</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Программы мотивации</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-users.html">
+										<span>Пользователи</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Конкурсы</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Фриланс</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Признания и стипендия</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Магазин</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Заказы</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-badges.html">
+										<span>Бейджи</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-7 mx-auto">
+					<div class="badge-settings">
+						<div class="breadcrumbs wallet__breadcrumbs">
+							<a class="link breadcrumbs__link js-popup-close" href="admin-badges.html">Бейджи</a>
+							<span class="breadcrumbs__current">Конкурс талантов 2022 2 место</span>
+						</div>
+						<form class="badge-form badge-settings__form" autocomplete="off">
+							<div class="badge-form__item">
+								<div class="badge-form__type">Название</div>
+								<input class="settings-input settings-input--small badge-form__input" type="text" value="Конкурс талантов 2022 2 место">
+							</div>
+							<div class="badge-form__item">
+								<div class="badge-form__type">Картинка</div>
+								<div class="badge-form__value js-file-value" data-file-output="badge-image">2022_2.png</div>
+								<label class="file-field badge-form__file-field">
+									<input type="file" class="file-field__input js-file-input" data-file-output="badge-image">
+									<span class="btn btn--third badge-form__item-btn file-field__label">Обзор</span>
+								</label>
+							</div>
+							<div class="badge-form__item">
+								<div class="badge-form__type">Подарок</div>
+								<div class="badge-form__value">Футболка серая</div>
+								<button class="btn btn--third badge-form__item-btn">Выбрать</button>
+							</div>
+							<button class="btn badge-form__btn badge-form__btn--submit">Сохранить</button>
+							<div class="badge-form__btns">
+								<button type="button" class="btn btn--gray badge-form__btn">Отмена</button>
+								<button type="button" class="btn btn--danger badge-form__btn js-open-popup" data-popup-name="delete-badge">Удалить бейдж</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="popup" data-popup-name="delete-badge">
+		<div class="popup__content">
+			<div class="popup__text">Удалить бейдж?</div>
+			<div class="popup__btns">
+				<button class="btn btn--small popup__btn">Отмена</button>
+				<button class="btn btn--small btn--danger popup__btn">Удалить</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

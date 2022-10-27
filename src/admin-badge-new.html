@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<title>AmRecognition | Админ - Новый бейдж</title>
+</head>
+
+<body class="admin-body">
+	<main class="admin-main">
+		<div class="admin-container">
+			<div class="row">
+				<div class="col-3">
+					<div class="admin-navbar">
+						<a class="logo admin-navbar__logo" href="admin-updates.html">
+							<img class="logo__img" src="assets/img/logo.svg" alt="">
+						</a>
+						<nav class="admin-menu">
+							<ul class="admin-menu__list">
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-updates.html">
+										<span>Обновления</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Программы мотивации</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-users.html">
+										<span>Пользователи</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Конкурсы</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Фриланс</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Признания и стипендия</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Магазин</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Заказы</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-badges.html">
+										<span>Бейджи</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-7 mx-auto">
+					<div class="badge-settings">
+						<div class="badge-settings__title">Новый бейдж</div>
+						<div class="filter filter--desktop badge-settings__filter tabs-btns" data-tabs-name="badge-type">
+							<button class="filter__btn filter__btn--mini tabs-btn tabs-btn--active">Обычный</button>
+							<button class="filter__btn filter__btn--mini tabs-btn">С подарком</button>
+						</div>
+						<div class="tabs-list" data-tabs-name="badge-type">
+							<div class="tabs-item tabs-item--active">
+								<form class="badge-form badge-settings__form" autocomplete="off">
+									<div class="badge-form__item">
+										<div class="badge-form__type">Название</div>
+										<input class="settings-input settings-input--small badge-form__input" type="text" value="Конкурс талантов 2022 2 место">
+									</div>
+									<div class="badge-form__item">
+										<div class="badge-form__type">Картинка</div>
+										<div class="badge-form__value js-file-value" data-file-output="badge-image">2022_2.png</div>
+										<label class="file-field badge-form__file-field">
+											<input type="file" class="file-field__input js-file-input" data-file-output="badge-image">
+											<span class="btn btn--third badge-form__item-btn file-field__label">Обзор</span>
+										</label>
+									</div>
+									<button class="btn badge-form__submit">Создать бейдж</button>
+								</form>
+							</div>
+							<div class="tabs-item">
+								<form class="badge-form badge-settings__form" autocomplete="off">
+									<div class="badge-form__item">
+										<div class="badge-form__type">Название</div>
+										<input class="settings-input settings-input--small badge-form__input" type="text" value="Конкурс талантов 2022 2 место">
+									</div>
+									<div class="badge-form__item">
+										<div class="badge-form__type">Картинка</div>
+										<div class="badge-form__value js-file-value" data-file-output="badge-image">2022_2.png</div>
+										<label class="file-field badge-form__file-field">
+											<input type="file" class="file-field__input js-file-input" data-file-output="badge-image">
+											<span class="btn btn--third badge-form__item-btn file-field__label">Обзор</span>
+										</label>
+									</div>
+									<div class="badge-form__item">
+										<div class="badge-form__type">Подарок</div>
+										<div class="badge-form__value">Футболка серая</div>
+										<button class="btn btn--third badge-form__item-btn">Выбрать</button>
+									</div>
+									<button class="btn badge-form__submit">Создать бейдж</button>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+
+</html>

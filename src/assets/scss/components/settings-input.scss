@@ -17,6 +17,11 @@
     -webkit-appearance: none;
   }
 
+  &--small {
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+
   @media (max-width: 680px) {
     padding: 10px;
     font-size: 12px;

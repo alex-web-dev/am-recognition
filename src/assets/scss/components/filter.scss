@@ -50,7 +50,7 @@
     &.tabs-btn--active {
       background: rgba($color-third, 0.15);
       cursor: default;
-      border-right: none;
+      border-right-color: none;
       
       &:before {
         box-shadow: none;
@@ -61,6 +61,12 @@
           background-color: transparent;
         }
       }
+    }
+
+    &--mini {
+      flex: none;
+      padding: 12px 20px;
+      font-size: 14px;
     }
   }
 

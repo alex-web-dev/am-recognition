@@ -9,6 +9,7 @@
   border-radius: 10px;
   text-align: center;
   transition: transform .3s;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-5px);
@@ -37,6 +38,10 @@
 
   &--success {
     background: $color-gradient-success;
+  }
+
+  &--gray {
+    background: $color-gradient-gray;
   }
 
   &--darkened {

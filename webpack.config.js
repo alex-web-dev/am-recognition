@@ -49,6 +49,9 @@ const htmlPageNames = [
 	'admin-updates',
 	'admin-users',
 	'admin-user',
+	'admin-badges',
+	'admin-badge-new',
+	'admin-badge-edit',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
