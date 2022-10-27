@@ -65,6 +65,10 @@
     &--primary {
       color: $color-primary;
     }
+
+    &--danger {
+      color: $color-danger;
+    }
   }
 
   &__progress {
@@ -72,6 +76,12 @@
     left: 2px;
     top: 2px;
     width: calc(100% - 4px);
+  }
+
+  &__wallet-edit {
+    max-width: 480px;
+    padding: 90px 0 85px;
+    margin: 0 auto;
   }
 
   &--message {
@@ -91,6 +101,16 @@
 
   &--wallet &__content {
     padding-top: 90px;
+  }
+
+  &--window &__content {
+    width: 720px;
+    background: #fff;
+  }
+
+  &--window &__close {
+    top: 20px;
+    right: 20px;
   }
 
   &--show {

@@ -8,6 +8,18 @@
     }
   }
 
+  tr {
+    td {
+      padding-top: 24px;
+    }
+
+    &:first-child {
+      td {
+        padding-top: 30px;
+      }
+    }
+  }
+
   th,
   td {
     text-align: left;
@@ -33,12 +45,11 @@
   }
 
   td {
-    padding-top: 30px;
     line-height: 1.5;
   }
 
   &__user {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 
     &-avatar {

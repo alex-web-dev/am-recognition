@@ -1,0 +1,20 @@
+.user {
+  display: inline-flex;
+  align-items: center;
+
+  &__avatar {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    &--story {
+      border: 2px solid $color-second;
+    }
+  }
+
+  &__name {
+    color: $color-primary;
+    line-height: 1.3;
+  }
+}

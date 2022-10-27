@@ -195,7 +195,7 @@
 								</div>
 								<div class="profile-wallet__btns">
 									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="user-wallet">История</button>
-									<button class="btn profile-wallet__btn">Редактировать</button>
+									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="wallet-edit">Редактировать</button>
 								</div>
 							</div>
 							<div class="profile-wallet profile__wallet">
@@ -205,7 +205,7 @@
 								</div>
 								<div class="profile-wallet__btns">
 									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="user-wallet">История</button>
-									<button class="btn profile-wallet__btn">Редактировать</button>
+									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="wallet-edit">Редактировать</button>
 								</div>
 							</div>
 						</div>
@@ -369,6 +369,40 @@
 				</div>
 			</div>
 			<button class="icon icon-close popup__close popup__close--primary js-popup-close"></button>
+		</div>
+	</div>
+
+	<div class="popup popup--window" data-popup-name="wallet-edit">
+		<div class="popup__content">
+			<form class="wallet-edit popup__wallet-edit" autocomplete="off">
+				<div class="wallet-edit__header">
+					<div class="user wallet-edit__user">
+						<img class="user__avatar" src="assets/img/avatars/2.png" alt="">
+						<div class="user__name">Мария <br> Александровская</div>
+					</div>
+					<div class="wallet-edit__user-position">Менеджер <br> KFC Просвещения</div>
+				</div>
+				<div class="wallet-edit__title">Редактировать баланс</div>
+				<div class="wallet-edit__group">
+					<div class="wallet-edit__item">
+						<div class="wallet-edit__field">
+							<input class="settings-input settings-input--small wallet-edit__input" type="text" value="2500">
+							<div class="wallet-edit__label">Расходный кошелек</div>
+						</div>
+						<div class="text text--danger wallet-edit__value">-500</div>
+					</div>
+					<div class="wallet-edit__item">
+						<div class="wallet-edit__field">
+							<input class="settings-input settings-input--small wallet-edit__input" type="text" value="2000">
+							<div class="wallet-edit__label">Банк признания</div>
+						</div>
+						<div class="text text--success wallet-edit__value">+500</div>
+					</div>
+				</div>
+				<button class="btn btn--small wallet-edit__btn wallet-edit__btn--submit">Сохранить</button>
+				<button type="button" class="btn btn--transparent btn--color-danger wallet-edit__btn">Отмена</button>
+			</form>
+			<button class="icon icon-close-bold popup__close popup__close--danger js-popup-close"></button>
 		</div>
 	</div>
 </body>
