@@ -44,6 +44,11 @@
     background: $color-gradient-gray;
   }
 
+  &--transparent {
+    background: transparent;
+    color: $color-gray;
+  }
+
   &--darkened {
     position: relative;
     z-index: 1;

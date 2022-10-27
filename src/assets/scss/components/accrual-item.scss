@@ -1,0 +1,38 @@
+.accrual-item {
+  padding: 20px 30px;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  &__name {
+    padding-top: 12px;
+    padding-right: 10px;
+    flex: 0 0 210px;
+  }
+
+  &__elems {
+    flex: 1 1 auto;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &-name {
+      flex: 0 0 240px;
+      padding-right: 10px;
+    }
+
+    &-input {
+      width: 90px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+}

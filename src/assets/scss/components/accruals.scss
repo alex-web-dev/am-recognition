@@ -1,0 +1,23 @@
+.accruals {
+  padding: 100px 120px 25px 0;
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__btns {
+    margin-top: 50px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    border-radius: 40px;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+}

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
-	<title>AmRecognition | Админ - Редактировать бейдж</title>
+	<title>AmRecognition | Админ - Плановые начисления</title>
 </head>
 
 <body class="admin-body">
@@ -66,7 +66,7 @@
 									</a>
 								</li>
 								<li class="admin-menu__item">
-									<a class="admin-menu__link" href="admin-planned-accruals.html">
+									<a class="admin-menu__link admin-menu__link--active" href="admin-planned-accruals.html">
 										<span>Плановые начисления</span>
 									</a>
 								</li>
@@ -75,35 +75,55 @@
 					</div>
 				</div>
 				<div class="col-7 mx-auto">
-					<div class="badge-settings">
-						<div class="breadcrumbs wallet__breadcrumbs">
-							<a class="link breadcrumbs__link js-popup-close" href="admin-badges.html">Бейджи</a>
-							<span class="breadcrumbs__current">Конкурс талантов 2022 2 место</span>
+					<div class="accruals">
+						<div class="accruals__list">
+							<div class="accrual-item accruals__item">
+								<div class="accrual-item__name">Департамент 1</div>
+								<div class="accrual-item__elems">
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 1</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text" value="1 200">
+									</div>
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 2</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
+									</div>
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 3</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
+									</div>
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 3</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="accrual-item accruals__item">
+								<div class="accrual-item__name">Департамент 1</div>
+								<div class="accrual-item__elems">
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 1</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text" value="1 200">
+									</div>
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 2</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
+									</div>
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 3</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
+									</div>
+									<div class="accrual-item__elem">
+										<span class="accrual-item__elem-name">Должность 3</span>
+										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
+									</div>
+								</div>
+							</div>
 						</div>
-						<form class="badge-form badge-settings__form" autocomplete="off">
-							<div class="badge-form__item">
-								<div class="badge-form__type">Название</div>
-								<input class="settings-input settings-input--small badge-form__input" type="text" value="Конкурс талантов 2022 2 место">
-							</div>
-							<div class="badge-form__item">
-								<div class="badge-form__type">Картинка</div>
-								<div class="badge-form__value js-file-value" data-file-output="badge-image">2022_2.png</div>
-								<label class="file-field badge-form__file-field">
-									<input type="file" class="file-field__input js-file-input" data-file-output="badge-image">
-									<span class="btn btn--third badge-form__item-btn file-field__label">Обзор</span>
-								</label>
-							</div>
-							<div class="badge-form__item">
-								<div class="badge-form__type">Подарок</div>
-								<div class="badge-form__value">Футболка серая</div>
-								<button class="btn btn--third badge-form__item-btn">Выбрать</button>
-							</div>
-							<button class="btn badge-form__btn badge-form__btn--submit">Сохранить</button>
-							<div class="badge-form__btns">
-								<button type="button" class="btn btn--gray badge-form__btn">Отмена</button>
-								<button type="button" class="btn btn--danger badge-form__btn js-open-popup" data-popup-name="delete-badge">Удалить бейдж</button>
-							</div>
-						</form>
+						<div class="accruals__btns">
+							<button class="btn btn--small accruals__btn">Сохранить</button>
+							<button class="btn btn--small btn--transparent accruals__btn">Отмена</button>
+						</div>
 					</div>
 				</div>
 			</div>
