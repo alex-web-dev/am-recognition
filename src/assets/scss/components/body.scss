@@ -1,0 +1,9 @@
+.body {
+  &--admin {
+    min-width: 1440px;
+  }
+
+  &--desktop {
+    min-width: 900px;
+  }
+}

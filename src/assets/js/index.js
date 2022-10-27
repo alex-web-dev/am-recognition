@@ -8,6 +8,5 @@ import './select.js';
 import './settings-input.js';
 import './popup.js';
 import './pay-lines.js';
-import './talents-modal.js';
 import './tabs.js';
 import './file-field.js';

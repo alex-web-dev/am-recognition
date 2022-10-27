@@ -9,7 +9,7 @@
 	<title>AmRecognition | Админ - Редактировать бейдж</title>
 </head>
 
-<body class="admin-body">
+<body class="body body--admin">
 	<main class="admin-main">
 		<div class="admin-container">
 			<div class="row">
@@ -77,7 +77,7 @@
 				<div class="col-7 mx-auto">
 					<div class="badge-settings">
 						<div class="breadcrumbs wallet__breadcrumbs">
-							<a class="link breadcrumbs__link js-popup-close" href="admin-badges.html">Бейджи</a>
+							<a class="link breadcrumbs__link js-close-popup" href="admin-badges.html">Бейджи</a>
 							<span class="breadcrumbs__current">Конкурс талантов 2022 2 место</span>
 						</div>
 						<form class="badge-form badge-settings__form" autocomplete="off">
@@ -96,7 +96,7 @@
 							<div class="badge-form__item">
 								<div class="badge-form__type">Подарок</div>
 								<div class="badge-form__value">Футболка серая</div>
-								<button class="btn btn--third badge-form__item-btn">Выбрать</button>
+								<button type="button" class="btn btn--third badge-form__item-btn">Выбрать</button>
 							</div>
 							<button class="btn badge-form__btn badge-form__btn--submit">Сохранить</button>
 							<div class="badge-form__btns">
@@ -110,7 +110,7 @@
 		</div>
 	</main>
 
-	<div class="popup" data-popup-name="delete-badge">
+	<div class="popup popup--confirm" data-popup-name="delete-badge">
 		<div class="popup__content">
 			<div class="popup__text">Удалить бейдж?</div>
 			<div class="popup__btns">

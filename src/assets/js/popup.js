@@ -9,7 +9,7 @@ $popups.forEach($popup => {
       $popup.classList.remove('popup--show');
     }
 
-    if (e.target.classList.contains('js-popup-close')) {
+    if (e.target.classList.contains('js-close-popup')) {
       $popup.classList.remove('popup--show');
     }
   });

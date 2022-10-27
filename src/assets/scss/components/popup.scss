@@ -24,7 +24,6 @@
   &__content {
     position: relative;
     margin: auto;
-    padding: 36px 10px 10px;
     width: 286px;
     background: linear-gradient(0deg, rgba($color-third, 0.15), rgba($color-third, 0.15)), #FFFFFF;
 
@@ -60,7 +59,6 @@
     top: 15px;
     right: 27px;
     font-size: 20px;
-    color: #fff;
 
     &--primary {
       color: $color-primary;
@@ -68,6 +66,10 @@
 
     &--danger {
       color: $color-danger;
+    }
+
+    &--talents {
+      right: 0;
     }
   }
 
@@ -116,5 +118,19 @@
   &--show {
     opacity: 1;
     visibility: visible;
+  }
+
+  &--confirm &__content {
+    padding: 36px 10px 10px;
+  }
+
+  &--offset-top {
+    top: $header-height;
+  }
+
+  @media (max-width: 680px) {
+    &--offset-top {
+      top: $header-xs-height;
+    }
   }
 }
