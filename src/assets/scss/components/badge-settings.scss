@@ -8,4 +8,12 @@
   &__form {
     margin-top: 55px;
   }
+
+  @media (max-width: 1440px) {
+    padding-right: 80px;
+  }
+
+  @media (max-width: 1200px) {
+    padding-right: 0;
+  }
 }

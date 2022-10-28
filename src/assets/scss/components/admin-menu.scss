@@ -28,4 +28,16 @@
       }
     }
   }
+
+  @media (max-width: 1440px) {
+    &__link {
+      padding-left: 90px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__link {
+      padding-left: 50px;
+    }
+  }
 }

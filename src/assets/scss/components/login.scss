@@ -3,6 +3,7 @@
 
   &__start {
     margin-top: 70px;
+    max-width: calc(100vw - $container-xs-offset * 2);
 
     &-btn {
       width: 100%;
@@ -27,8 +28,13 @@
   @media (max-width: 575px) {
     padding-top: 30px;
 
+    &__logo {
+      text-align: center;
+    }
+
     &__start {
-      margin-top: 23px;
+      margin: 23px auto 0;
+      width: 300px;
 
       &-btn {
         width: 200px;

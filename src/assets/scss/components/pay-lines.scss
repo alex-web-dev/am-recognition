@@ -7,6 +7,7 @@
 
   &__slider {
     overflow: visible;
+    max-width: calc(100vw - $container-xs-offset * 2);
 
     .swiper-wrapper {
       display: block;
@@ -63,6 +64,12 @@
     }
   }
 
+  @media (max-width: 900px) {
+    .pay-lines__fixed-btn {
+      right: $container-xs-offset;
+    }
+  }
+
   @media (max-width: 680px) {
     &__mobile-header {
       margin-bottom: 10px;
@@ -71,11 +78,11 @@
 
     &__slider {
       overflow: hidden;
-  
+
       .swiper-wrapper {
         display: flex;
       }
-  
+
       .swiper-slide {
         height: auto;
 
@@ -83,12 +90,12 @@
           margin-top: 0;
         }
       }
-  
+
       &-pagination {
         display: flex;
       }
     }
-    
+
     &__fixed-btn {
       bottom: 64px;
       width: 60px;
