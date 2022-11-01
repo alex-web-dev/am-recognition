@@ -37,8 +37,10 @@
     margin-top: 20px;
     line-height: 1.5;
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .convert-form {
     &__text {
       font-size: 12px;
       font-weight: 500;

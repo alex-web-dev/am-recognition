@@ -1,4 +1,6 @@
 .profile {
+  padding-bottom: 45px;
+
   &__user {
     display: flex;
     align-items: center;
@@ -141,15 +143,15 @@
   &__talents {
     margin-top: 50px;
     padding-top: 40px;
-    max-width: 554px;
     border-top: 1px solid rgba($color-third, 0.15);
 
     &-title {
+      padding-top: 10px;
       margin-bottom: 15px;
     }
 
     &-edit {
-      margin-top: 15px;
+      margin-top: 25px;
       display: inline-block;
       font-size: 12px;
       font-weight: 500;
@@ -204,8 +206,10 @@
     width: 70px;
     height: 70px;
   }
+}
 
-  @media (max-width: 991px) {
+@include media_max_width(991px) {
+  .profile {
     &__awards {
       &-mobile {
         display: block;
@@ -216,9 +220,11 @@
       }
     }
   }
+}
 
-  @media (max-width: 680px) {
-    padding-bottom: 30px;
+@include media_max_width(680px) {
+  .profile {
+    padding-top: 80px;
 
     &__avatar {
       width: 53px;
@@ -247,8 +253,6 @@
     }
 
     &__header {
-      margin-top: 30px;
-
       &-btns {
         margin-top: 22px;
       }
@@ -296,10 +300,10 @@
       &--full &-more {
         margin-top: 12px;
       }
-    }
 
-    &__awards--full &__award {
-      margin-bottom: 4px;
+      &--full .profile__award {
+        margin-bottom: 4px;
+      }
     }
 
     &__award {
@@ -323,29 +327,35 @@
       margin-bottom: 0;
     }
 
-    &--own &__header {
-      background-color: transparent;
-      padding: 0;
+    &--own {
+      .profile__header {
+        background-color: transparent;
+        padding: 0;
 
-      &-main {
-        padding-left: 0;
+        &-main {
+          padding-left: 0;
+        }
+      }
+
+      .profile__avatar {
+        width: 60px;
+        height: 60px;
+      }
+
+      .profile__user {
+        &-name {
+          display: block;
+        }
       }
     }
 
-    &--own &__avatar {
-      width: 60px;
-      height: 60px;
-    }
+    &--settings {
+      padding-top: 100px;
 
-    &--own &__user {
-      &-name {
-        display: block;
+      .profile__avatar {
+        width: 80px;
+        height: 80px;
       }
-    }
-
-    &--settings &__avatar {
-      width: 80px;
-      height: 80px;
     }
   }
 }

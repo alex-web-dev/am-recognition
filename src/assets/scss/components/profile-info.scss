@@ -28,8 +28,10 @@
     color: $color-gray;
     font-size: 10px;
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .profile-info {
     padding-left: $container-xs-offset;
     padding-right: $container-xs-offset;
     flex-direction: column;

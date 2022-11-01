@@ -2,15 +2,15 @@ const $popups = document.querySelectorAll('.popup');
 $popups.forEach($popup => {
   $popup.addEventListener('click', e => {
     if (e.target === $popup) {
-      $popup.classList.remove('popup--show');
+      close($popup);
     }
 
     if (e.target.classList.contains('popup__btn')) {
-      $popup.classList.remove('popup--show');
+      close($popup);
     }
 
     if (e.target.classList.contains('js-close-popup')) {
-      $popup.classList.remove('popup--show');
+      close($popup);
     }
   });
 });
@@ -20,6 +20,16 @@ $openBtns.forEach($btn => {
   const name = $btn.dataset.popupName;
   $btn.addEventListener('click', () => {
     const $popup = document.querySelector(`.popup[data-popup-name="${name}"]`);
-    $popup?.classList.add('popup--show');
+    open($popup);
   });
 });
+
+function open($popup) {
+  $popup?.classList.add('popup--show');
+  document.body.classList.add('body--lock')
+}
+
+function close($popup) {
+  $popup?.classList.remove('popup--show');
+  document.body.classList.remove('body--lock')
+}

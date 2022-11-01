@@ -15,8 +15,6 @@
     }
 
     &:hover {
-      text-decoration: underline;
-      
       &:after {
         color: $color-primary;
       }
@@ -49,8 +47,10 @@
   &--small &__link {
     padding-left: 15px;
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .breadcrumbs {
     font-size: 12px;
     font-weight: 500;
 
@@ -58,8 +58,10 @@
       padding-left: 15px;
     }
   }
+}
 
-  @media (max-width: 575px) {
+@include media_max_width(575px) {
+  .breadcrumbs {
     line-height: 1.18;
   }
 }

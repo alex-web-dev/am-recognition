@@ -1,13 +1,9 @@
 .team {
   padding-bottom: 50px;
 
-  &__mobile-header {
-    margin-bottom: 20px;
-  }
-
   &__list {
     margin-top: 44px;
-    
+
     &--ratings {
       margin-top: 28px;
     }
@@ -23,8 +19,12 @@
       border-bottom: 0;
     }
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .team {
+    padding-top: 70px;
+
     &__list {
       margin-top: 20px;
 

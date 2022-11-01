@@ -10,7 +10,7 @@
 </head>
 
 <body class="body">
-	<header class="header">
+	<header class="header header--desktop">
 		<div class="container header__container">
 			<div class="header__content">
 				<a class="logo header__logo" href="index.html">
@@ -65,7 +65,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-10 mx-auto mt-2 mt-sm-0">
+					<div class="col-sm-10 mx-auto">
 						<div class="breadcrumbs settings__breadcrumbs">
 							<a class="link breadcrumbs__link" href="settings.html">Настройки</a>
 							<span class="breadcrumbs__current">Таланты</span>
@@ -82,14 +82,14 @@
 										<div class="settings-talent__docs">
 											<div class="settings-talent__doc">
 												<button class="icon icon-close-extrabold settings-talent__doc-delete" type="button"></button>
-												<a class="link link--small link--line" href="#">Документ (pdf)</a>
+												<a class="link link--small" href="#">Документ (pdf)</a>
 											</div>
 											<div class="settings-talent__doc">
 												<button class="icon icon-close-extrabold settings-talent__doc-delete" type="button"></button>
-												<a class="link link--small link--line" href="#">Документ (pdf)</a>
+												<a class="link link--small" href="#">Документ (pdf)</a>
 											</div>
 										</div>
-										<button class="link link--small link--line settings-talent__docs-add" type="button">Добавить
+										<button class="link link--small settings-talent__docs-add" type="button">Добавить
 											документ</button>
 									</div>
 									<div class="settings-talent__right">
@@ -106,7 +106,7 @@
 											Кулинария
 										</div>
 										<div class="settings-talent__docs"></div>
-										<button class="link link--small link--line settings-talent__docs-add" type="button">Добавить
+										<button class="link link--small settings-talent__docs-add" type="button">Добавить
 											документ</button>
 									</div>
 									<div class="settings-talent__right">
@@ -223,13 +223,13 @@
 		<div class="popup__content">
 			<div class="popup__text">Удалить талант Музыка?</div>
 			<div class="popup__btns">
-				<button class="btn btn--small popup__btn">Отмена</button>
-				<button class="btn btn--small btn--danger popup__btn">Удалить</button>
+				<button class="btn btn--small btn--not-up popup__btn">Отмена</button>
+				<button class="btn btn--small btn--not-up btn--danger popup__btn">Удалить</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="popup popup--offset-top popup--full" data-popup-name="add-talent">
+	<div class="popup popup--full" data-popup-name="add-talent">
 		<div class="popup__content">
 			<div class="container">
 				<div class="row">
@@ -251,27 +251,27 @@
 								</div>
 								<div class="talents-modal__item">
 									<span class="talents-modal__name">Музыка</span>
-									<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
+									<button class="link js-open-popup" data-popup-name="talent-added">Добавить</button>
 								</div>
 								<div class="talents-modal__item">
 									<span class="talents-modal__name">Видео</span>
-									<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
+									<button class="link js-open-popup" data-popup-name="talent-added">Добавить</button>
 								</div>
 								<div class="talents-modal__item">
 									<span class="talents-modal__name">Кулинария </span>
-									<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
+									<button class="link js-open-popup" data-popup-name="talent-added">Добавить</button>
 								</div>
 								<div class="talents-modal__item">
 									<span class="talents-modal__name">Музыка</span>
-									<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
+									<button class="link js-open-popup" data-popup-name="talent-added">Добавить</button>
 								</div>
 								<div class="talents-modal__item">
 									<span class="talents-modal__name">Видео</span>
-									<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
+									<button class="link js-open-popup" data-popup-name="talent-added">Добавить</button>
 								</div>
 								<div class="talents-modal__item">
 									<span class="talents-modal__name">Кулинария</span>
-									<button class="link link--line js-open-popup" data-popup-name="talent-added">Добавить</button>
+									<button class="link js-open-popup" data-popup-name="talent-added">Добавить</button>
 								</div>
 							</div>
 							<button class="icon icon-close icon--primary popup__close popup__close--talents js-close-popup"></button>
@@ -282,7 +282,7 @@
 		</div>
 	</div>
 
-	<div class="popup popup--message popup--offset-top" data-popup-name="talent-added">
+	<div class="popup popup--message" data-popup-name="talent-added">
 		<div class="popup__content popup__content--success">
 			<div class="popup__text">Талант добавлен</div>
 		</div>

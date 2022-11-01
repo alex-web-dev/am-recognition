@@ -43,6 +43,11 @@
 
   &--line &__btn {
     right: 0;
+    padding-bottom: 1px;
+  }
+
+  &--line &__icon {
+    vertical-align: top;
   }
 
   &--fill &__btn {
@@ -56,21 +61,10 @@
   &--mobile {
     display: none;
   }
+}
 
-  @media (min-width: 681px) {
-    &--desktop-line &__input {
-      background-color: transparent;
-      border-radius: 0;
-      border-bottom: 1px solid $color-gray;
-      padding: 0 20px 2px 0;
-    }
-
-    &--desktop-line &__btn {
-      right: 0;
-    }
-  }
-
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .search {
     &__input {
       font-size: 12px;
     }

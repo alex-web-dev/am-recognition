@@ -17,14 +17,22 @@
     &:not(:first-child) {
       padding-top: 15px;
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__btns-box {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
   }
 
   &__btns {
-    position: fixed;
-    left: 50%;
-    bottom: 20px;
-    z-index: 1;
-    transform: translateX(-50%);
+    margin: 0 auto;
     display: flex;
     width: 750px;
     max-width: 100%;
@@ -50,31 +58,43 @@
   &__recognition-form {
     margin-top: 45px;
   }
+}
 
-  @media (max-width: 1200px) {
+.body--desktop .wallet {
+  &__btns-box {
+    min-width: $body-desktop-width;
+    max-width: none;
+  }
+}
+
+@include media_max_width(1200px) {
+  .wallet {
     &__btns {
       width: 667px;
     }
   }
+}
 
-  @media (max-width: 992px) {
+@include media_max_width(991px) {
+  .wallet {
     &__btns {
       width: 633px;
     }
   }
+}
 
-  @media (max-width: 860px) {
+@include media_max_width(860px) {
+  .wallet {
     &__btns {
       width: 553px;
     }
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .wallet {
+    padding-top: 115px;
     padding-bottom: 60px;
-
-    &__mobile-header {
-      margin-bottom: 20px;
-    }
 
     &__list {
       margin-top: 15px;
@@ -84,8 +104,8 @@
       margin-top: 50px;
     }
 
-    &__btns {
-      bottom: $header-xs-height;
+    &__btns-box {
+      bottom: 0;
     }
 
     &__btn {
@@ -105,7 +125,6 @@
     }
 
     &__recognition-user {
-      margin-top: 30px;
       display: flex;
       border-bottom: none;
     }

@@ -1,13 +1,14 @@
 .settings {
-  padding-bottom: 33px;
+  padding-bottom: 53px;
   
   &__title,
   &__breadcrumbs {
     margin-bottom: 27px;
   }
 
-  &__mobile-header {
-    margin-bottom: 40px;
+  &__text {
+    display: none;
+    font-size: 12px;
   }
 
   &__contacts {
@@ -19,11 +20,23 @@
       margin-top: 20px;
     }
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .settings {
+    padding-top: 85px;
+
     &__title,
     &__breadcrumbs {
       display: none;
+    }
+
+    &__text {
+      display: block;
+    }
+
+    &__form {
+      margin-top: 15px;
     }
 
     &__contact {

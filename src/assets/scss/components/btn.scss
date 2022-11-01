@@ -100,4 +100,10 @@
     font-size: 12px;
     font-weight: 500;
   }
+
+  &--not-up {
+    &:hover {
+      transform: translateY(0);
+    }
+  }
 }

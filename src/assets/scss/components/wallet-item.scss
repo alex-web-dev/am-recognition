@@ -96,8 +96,10 @@
   &--avatar &__message {
     padding-left: 70px;
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .wallet-item {
     &__icon {
       margin-right: 10px;
     }
@@ -110,8 +112,10 @@
       padding-left: 0;
     }
 
-    &--avatar &__message {
-      padding-left: 0;
+    &--avatar {
+      .wallet-item__message {
+        padding-left: 0;
+      }
     }
   }
 }

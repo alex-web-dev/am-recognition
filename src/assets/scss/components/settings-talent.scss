@@ -35,7 +35,7 @@
   }
 
   &__docs {
-    margin-bottom: 16px;
+    margin-bottom: 5px;
   }
 
   &__doc {
@@ -61,8 +61,10 @@
     font-size: 12px;
     line-height: 18px;
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .settings-talent {
     flex-direction: column;
 
     &__title {
@@ -73,10 +75,6 @@
 
     &__doc {
       justify-content: space-between;
-    }
-
-    &__docs {
-      margin-bottom: 5px;
     }
 
     &__delete,

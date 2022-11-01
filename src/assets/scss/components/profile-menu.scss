@@ -29,8 +29,10 @@
   &__link:hover &__text {
     transform: translateX(10px);
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .profile-menu {
     &__list {
       margin: -5px;
       display: flex;

@@ -32,6 +32,7 @@
 
   &__item--active &__link {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    cursor: default;
 
     &:before {
       display: none;
@@ -73,18 +74,22 @@
     color: #fff;
     transition: transform .3s;
   }
+}
 
-  @media (max-width: 991px) {
+@include media_max_width(991px) {
+  .navbar {
     &__link {
       width: 111px;
     }
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .navbar {
     &__item {
       flex: 1 1 100%;
     }
-
+  
     &__link {
       padding: 7px 7px 6px;
       width: 100%;
@@ -92,20 +97,20 @@
       font-size: 12px;
       font-weight: 500;
     }
-
+  
     &__item--active &__link {
       background: $color-second;
       border-left-color: $color-second;
     }
-
+  
     &__icon {
       margin: 0 auto;
     }
-
+  
     &__item--active &__icon {
       color: #fff;
     }
-
+  
     &__text {
       margin-top: 5px;
     }

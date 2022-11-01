@@ -1,8 +1,8 @@
 .stories {
   position: fixed;
-  z-index: 30;
+  z-index: 60;
   left: 0;
-  top: $header-height;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: $color-bg;
@@ -64,8 +64,14 @@
   &--admin {
     top: 0;
   }
+}
 
-  @media (max-width: 991px) {
+.body--desktop .stories {
+  min-width: $body-desktop-width;
+}
+
+@include media_max_width(991px) {
+  .stories {
     &__img {
       max-width: 220px;
     }
@@ -74,14 +80,16 @@
       min-width: 222px;
     }
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .stories {
     top: 0;
-    
+
     &__item {
       padding-top: 120px;
     }
-    
+
     &__img {
       max-width: 163px;
     }

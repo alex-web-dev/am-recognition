@@ -20,12 +20,16 @@
       margin-top: 20px;
     }
   }
+}
 
-  @media (max-width: 1440px) {
+@include media_max_width(1440px) {
+  .accruals {
     padding: 90px 80px 25px 0;
   }
+}
 
-  @media (max-width: 1200px) {
+@include media_max_width(1200px) {
+  .accruals {
     padding: 70px 0 25px 0;
   }
 }

@@ -13,7 +13,7 @@ $color-gradient-gray:        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0
 $color-gradient-danger:      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%), $color-danger;
 $color-gradient-success:     linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%), $color-success;
 
-$header-height:              80px;
-$header-xs-height:           50px;
-
 $container-xs-offset:        27px;
+
+$body-admin-width:           980px;
+$body-desktop-width:         900px;

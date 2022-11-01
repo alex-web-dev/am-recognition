@@ -1,4 +1,8 @@
 export function moveElement(options) {
+  if (document.body.classList.contains('body--desktop')) {
+    return;
+  }
+  
   const {
     element,
     from,
@@ -25,4 +29,20 @@ export function moveElement(options) {
   });
 }
 
-export default { moveElement };
+export function showMessage({ text, className = '', delay = 3000 }) {
+  const $message = document.createElement('div');
+  $message.className = `message ${className}`;
+  $message.innerHTML = text;
+
+  document.body.appendChild($message);
+  setTimeout(() => $message.classList.add('message--show'), 10);
+  setTimeout(() => {
+    $message.classList.remove('message--show');
+    $message.addEventListener('transitionend', () => $message.remove(), { once: true });
+  }, delay);
+}
+
+export default {
+  moveElement,
+  showMessage
+};

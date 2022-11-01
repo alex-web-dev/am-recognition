@@ -13,12 +13,6 @@
     color: #000;
   }
 
-  &--line {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   &--small {
     font-size: 12px;
     font-weight: 500;
@@ -36,6 +30,14 @@
 
   &:focus {
     border-color: $color-primary;
+  }
+
+  &--error {
+    border-color: $color-danger;
+
+    &:focus {
+      border-color: $color-danger;
+    }
   }
 }
 
@@ -68,15 +70,16 @@
   }
 }
 
-.price {  
+.price {
+  display: inline-flex;
+  align-items: center;
+
+
   &:after {
     content: '\e800';
     margin-left: 4px;
-    display: inline-block;
-    vertical-align: top;
     font-family: 'iconsfont';
     font-size: 9px;
-    line-height: 16px;
   }
 
   &--primary {
@@ -112,7 +115,7 @@
   }
 }
 
-@media (max-width: 680px) {
+@include media_max_width(680px) {
   .price {
     font-size: 12px;
     font-weight: 500;

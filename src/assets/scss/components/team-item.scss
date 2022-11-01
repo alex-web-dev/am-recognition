@@ -31,7 +31,7 @@
   }
 
   &__info {
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 30px);
   }
 
   &__name {
@@ -48,11 +48,13 @@
   }
 
   &__position {
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 30px);
     color: $color-gray;
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .team-item {
     padding: 10px 0;
 
     &__main {

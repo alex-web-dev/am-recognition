@@ -69,6 +69,10 @@
     }
   }
 
+  &__price {
+    display: flex;
+  }
+
   &__inactive {
     opacity: 0.33;
   }
