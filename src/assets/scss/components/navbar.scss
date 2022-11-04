@@ -26,7 +26,8 @@
     transform: translateY(-3px);
   }
 
-  &__item--active &__link:hover &__text {
+  &__item--active &__link:hover &__text,
+  &__item--menu &__link:hover &__text {
     transform: translateY(0);
   }
 
@@ -88,6 +89,17 @@
   .navbar {
     &__item {
       flex: 1 1 100%;
+
+      &--active {
+        .navbar__link {
+          background: $color-second;
+          border-left-color: $color-second;
+        }
+
+        .navbar__icon {
+          color: #fff;
+        }
+      }
     }
   
     &__link {
@@ -98,17 +110,8 @@
       font-weight: 500;
     }
   
-    &__item--active &__link {
-      background: $color-second;
-      border-left-color: $color-second;
-    }
-  
     &__icon {
       margin: 0 auto;
-    }
-  
-    &__item--active &__icon {
-      color: #fff;
     }
   
     &__text {

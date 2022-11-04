@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="assets/img/favicon.png">
 	<title>AmRecognition | Лента</title>
 </head>
+
 <body class="body">
 	<header class="header">
 		<div class="container header__container">
@@ -35,8 +36,8 @@
 								<div class="navbar__text">Новости</div>
 							</a>
 						</li>
-						<li class="navbar__item">
-							<a class="navbar__link js-open-menu" href="#">
+												<li class="navbar__item navbar__item--menu">
+							<a class="navbar__link js-open-menu" href="#" data-menu-close-class="menu__close--mobile-bottom">
 								<span class="icon icon-menu navbar__icon"></span>
 								<div class="navbar__text">Меню</div>
 							</a>
@@ -70,98 +71,136 @@
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<div class="pay-line pay-lines__item">
-											<div class="pay-line__info">
-												<div class="pay-line__value">+500</div>
-												<div class="pay-line__text">Зачисление в кошелек</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="price pay-line__value pay-line__value--plus">+500</div>
+													<div class="pay-line__text">Зачисление в кошелек</div>
+												</div>
+												<div class="pay-line__date">13:30</div>
 											</div>
-											<div class="pay-line__date">13:30</div>
 										</div>
 										<div class="pay-line pay-lines__item">
-											<div class="pay-line__info">
-												<div class="pay-line__value pay-line__value--minus">-100</div>
-												<div class="pay-line__text">Перевод выполнен</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="price pay-line__value pay-line__value--minus">-100</div>
+													<div class="pay-line__text">Перевод выполнен</div>
+												</div>
+												<div class="pay-line__date">9:35</div>
 											</div>
-											<div class="pay-line__date">9:35</div>
 										</div>
 										<a class="pay-line pay-line--done pay-lines__item" href="#">
-											<div class="pay-line__info">
-												<div class="pay-line__text">Заказ отправлен →</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="pay-line__text">Заказ отправлен →</div>
+												</div>
+												<div class="pay-line__date">9:00</div>
 											</div>
-											<div class="pay-line__date">9:00</div>
 										</a>
 										<div class="pay-line pay-lines__item">
-											<div class="pay-line__author">
+											<div class="pay-line__author pay-line__author--liked">
 												<img class="pay-line__avatar" src="assets/img/avatars/1.png" alt="">
+												<img class="pay-line__author-like" src="assets/img/icons/like.png" alt="">
+											</div>
+											<div class="pay-line__main">
 												<div class="pay-line__info">
-													<div class="pay-line__value">+500 признание!</div>
+													<div class="pay-line__value pay-line__value--plus">+500 признание!</div>
 													<div class="pay-line__text">От: Анатолий Иванов</div>
 												</div>
+												<div class="pay-line__date">13:08</div>
 											</div>
-											<div class="pay-line__date">13:08</div>
 										</div>
 										<div class="pay-line pay-lines__item">
-											<div class="pay-line__info">
-												<div class="pay-line__value">+500</div>
-												<div class="pay-line__text">Зачисление в кошелек</div>
+											<div class="pay-line__author pay-line__author--liked">
+												<img class="pay-line__avatar" src="assets/img/avatars/1.png" alt="">
+												<img class="pay-line__author-like" src="assets/img/icons/like.png" alt="">
 											</div>
-											<div class="pay-line__date">13:30</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="price pay-line__value">+500</div>
+													<div class="pay-line__text">От: Анатолий Иванов</div>
+												</div>
+												<div class="pay-line__date">13:08</div>
+											</div>
+										</div>
+										<div class="pay-line pay-lines__item">
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="price pay-line__value pay-line__value--plus">+500</div>
+													<div class="pay-line__text">Зачисление в кошелек</div>
+												</div>
+												<div class="pay-line__date">13:30</div>
+											</div>
 										</div>
 									</div>
 									<div class="swiper-slide">
 										<div class="pay-line pay-lines__item">
-											<div class="pay-line__info">
-												<div class="pay-line__value pay-line__value--minus">-100</div>
-												<div class="pay-line__text">Перевод выполнен</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="price pay-line__value pay-line__value--minus">-100</div>
+													<div class="pay-line__text">Перевод выполнен</div>
+												</div>
+												<div class="pay-line__date">9:35</div>
 											</div>
-											<div class="pay-line__date">9:35</div>
 										</div>
 										<a class="pay-line pay-line--done pay-lines__item" href="#">
-											<div class="pay-line__info">
-												<div class="pay-line__text">Заказ отправлен →</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="pay-line__text">Заказ отправлен →</div>
+												</div>
+												<div class="pay-line__date">9:00</div>
 											</div>
-											<div class="pay-line__date">9:00</div>
 										</a>
 										<div class="pay-line pay-lines__item">
 											<div class="pay-line__author">
 												<img class="pay-line__avatar" src="assets/img/avatars/1.png" alt="">
+											</div>
+											<div class="pay-line__main">
 												<div class="pay-line__info">
-													<div class="pay-line__value">+500 признание!</div>
+													<div class="pay-line__value pay-line__value--plus">+500 признание!</div>
 													<div class="pay-line__text">От: Анатолий Иванов</div>
 												</div>
+												<div class="pay-line__date">13:08</div>
 											</div>
-											<div class="pay-line__date">13:08</div>
 										</div>
 										<div class="pay-line pay-lines__item">
-											<div class="pay-line__info">
-												<div class="pay-line__value">+500</div>
-												<div class="pay-line__text">Зачисление в кошелек</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="price pay-line__value pay-line__value--plus">+500</div>
+													<div class="pay-line__text">Зачисление в кошелек</div>
+												</div>
+												<div class="pay-line__date">13:30</div>
 											</div>
-											<div class="pay-line__date">13:30</div>
 										</div>
 										<div class="pay-line pay-lines__item">
-											<div class="pay-line__info">
-												<div class="pay-line__value pay-line__value--minus">-100</div>
-												<div class="pay-line__text">Перевод выполнен</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="price pay-line__value pay-line__value--minus">-100</div>
+													<div class="pay-line__text">Перевод выполнен</div>
+												</div>
+												<div class="pay-line__date">9:35</div>
 											</div>
-											<div class="pay-line__date">9:35</div>
 										</div>
 									</div>
 									<div class="swiper-slide">
 										<a class="pay-line pay-line--done pay-lines__item" href="#">
-											<div class="pay-line__info">
-												<div class="pay-line__text">Заказ отправлен →</div>
+											<div class="pay-line__main">
+												<div class="pay-line__info">
+													<div class="pay-line__text">Заказ отправлен →</div>
+												</div>
+												<div class="pay-line__date">9:00</div>
 											</div>
-											<div class="pay-line__date">9:00</div>
 										</a>
 										<div class="pay-line pay-lines__item">
 											<div class="pay-line__author">
 												<img class="pay-line__avatar" src="assets/img/avatars/1.png" alt="">
+											</div>
+											<div class="pay-line__main">
 												<div class="pay-line__info">
-													<div class="pay-line__value">+500 признание!</div>
+													<div class="pay-line__value pay-line__value--plus">+500 признание!</div>
 													<div class="pay-line__text">От: Анатолий Иванов</div>
 												</div>
+												<div class="pay-line__date">13:08</div>
 											</div>
-											<div class="pay-line__date">13:08</div>
 										</div>
 									</div>
 								</div>

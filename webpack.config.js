@@ -35,6 +35,7 @@ const htmlPageNames = [
 	'ratings',
 	'other-profile',
 	'settings',
+	'settings-body-desktop',
 	'settings-report',
 	'settings-about',
 	'settings-status',

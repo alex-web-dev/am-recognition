@@ -23,7 +23,7 @@
 
 @include media_max_width(680px) {
   .team {
-    padding-top: 70px;
+    padding: 70px 0 30px;
 
     &__list {
       margin-top: 20px;
@@ -31,6 +31,10 @@
       &--ratings {
         margin-top: 24px;
       }
+    }
+
+    &--recognition {
+      padding-top: 115px;
     }
   }
 }

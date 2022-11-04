@@ -25,9 +25,12 @@
   }
 
   &__btn {
-    width: 53px;
     font-size: 20px;
     color: $color-primary;
+
+    &--back {
+      width: 53px;
+    }
   }
 
   &__link {
@@ -37,10 +40,6 @@
 
   &__filter {
     margin-top: 15px;
-  }
-
-  &__price {
-    line-height: 10px;
   }
 }
 

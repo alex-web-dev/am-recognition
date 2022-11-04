@@ -79,7 +79,7 @@
 
 @include media_max_width(680px) {
   .pay-lines {
-    padding-top: 65px;
+    padding: 65px 0 60px;
 
     &__slider {
       overflow: hidden;

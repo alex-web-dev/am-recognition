@@ -1,6 +1,6 @@
 .body {
   &--lock {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   &--admin {
@@ -55,6 +55,10 @@
       .container-sm {
         padding-left: $container-xs-offset;
         padding-right: $container-xs-offset;
+      }
+
+      &.body--lock {
+        overflow: visible;
       }
     }
   }

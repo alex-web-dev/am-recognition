@@ -36,8 +36,8 @@
 								<div class="navbar__text">Новости</div>
 							</a>
 						</li>
-						<li class="navbar__item">
-							<a class="navbar__link js-open-menu" href="#">
+						<li class="navbar__item navbar__item--menu">
+							<a class="navbar__link js-open-menu" href="#" data-menu-close-class="menu__close--mobile-bottom">
 								<span class="icon icon-menu navbar__icon"></span>
 								<div class="navbar__text">Меню</div>
 							</a>
@@ -49,11 +49,11 @@
 	</header>
 
 	<main class="main">
-		<div class="team">
-			<div class="mobile-header team__mobile-header">
+		<div class="ratings">
+			<div class="mobile-header">
 				<div class="container">
 					<div class="mobile-header__top">
-						<a href="profile.html" class="mobile-header__btn">
+						<a href="profile.html" class="mobile-header__btn mobile-header__btn--back">
 							<span class="icon icon-back"></span>
 						</a>
 						<div class="mobile-header__title">Рейтинги признания</div>
@@ -67,209 +67,211 @@
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-10 mx-auto">
-						<div class="section-header wallet__section-header">
-							<div class="section-header__top">
-								<h1 class="title1 section-header__title">Рейтинги</h1>
-								<form class="search search--line search--desktop section-header__search" autocomplete="off">
-									<input class="search__input" type="text">
-									<button class="search__btn">
-										<span class="icon icon-search search__icon"></span>
-									</button>
-									<button type="button" class="search__btn search__btn--clear">
-										<span class="icon icon-close-bold search__icon"></span>
-									</button>
-								</form>
-								<form class="search search--mobile section-header__search" autocomplete="off">
-									<input class="search__input" type="text" placeholder="Ресторан, город, дистрикт или регион">
-									<button class="search__btn">
-										<span class="icon icon-search search__icon"></span>
-									</button>
-									<button type="button" class="search__btn search__btn--clear">
-										<span class="icon icon-close-bold search__icon"></span>
-									</button>
-								</form>
-							</div>
-							<div class="filter filter--desktop section-header__filter">
-								<button class="filter__btn filter__btn--active">За все время</button>
-								<button class="filter__btn">Последний месяц</button>
-								<button class="filter__btn">Последние 3 месяца</button>
-							</div>
-							<div class="select select--mobile section-header__select">
-								<select class="select__field">
-									<option value="1">За все время</option>
-									<option value="2">Последние 3 месяца</option>
-									<option value="3">Последний месяц</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="team__list team__list--ratings">
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 1250 (1 из 8000)</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Мария</div>
-											<div class="team-item__lastname">Александровская</div>
-										</a>
-									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
+			<div class="team ratings__team">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 mx-auto">
+							<div class="section-header wallet__section-header">
+								<div class="section-header__top">
+									<h1 class="title1 section-header__title">Рейтинги</h1>
+									<form class="search search--line search--desktop section-header__search" autocomplete="off">
+										<input class="search__input" type="text">
+										<button class="search__btn">
+											<span class="icon icon-search search__icon"></span>
+										</button>
+										<button type="button" class="search__btn search__btn--clear">
+											<span class="icon icon-close-bold search__icon"></span>
+										</button>
+									</form>
+									<form class="search search--mobile section-header__search" autocomplete="off">
+										<input class="search__input" type="text" placeholder="Ресторан, город, дистрикт или регион">
+										<button class="search__btn">
+											<span class="icon icon-search search__icon"></span>
+										</button>
+										<button type="button" class="search__btn search__btn--clear">
+											<span class="icon icon-close-bold search__icon"></span>
+										</button>
+									</form>
+								</div>
+								<div class="filter filter--desktop section-header__filter">
+									<button class="filter__btn filter__btn--active">За все время</button>
+									<button class="filter__btn">Последний месяц</button>
+									<button class="filter__btn">Последние 3 месяца</button>
+								</div>
+								<div class="select select--mobile section-header__select">
+									<select class="select__field">
+										<option value="1">За все время</option>
+										<option value="2">Последние 3 месяца</option>
+										<option value="3">Последний месяц</option>
+									</select>
 								</div>
 							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Елена</div>
-											<div class="team-item__lastname">Иванова</div>
-										</a>
+	
+							<div class="team__list team__list--ratings">
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 1250 (1 из 8000)</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Мария</div>
+												<div class="team-item__lastname">Александровская</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 1150</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Мария</div>
-											<div class="team-item__lastname">Александровская</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Елена</div>
+												<div class="team-item__lastname">Иванова</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 1050</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Елена</div>
-											<div class="team-item__lastname">Иванова</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 1150</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Мария</div>
+												<div class="team-item__lastname">Александровская</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 950</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Мария</div>
-											<div class="team-item__lastname">Александровская</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 1050</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Елена</div>
+												<div class="team-item__lastname">Иванова</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Елена</div>
-											<div class="team-item__lastname">Иванова</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 950</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Мария</div>
+												<div class="team-item__lastname">Александровская</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 1150</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Мария</div>
-											<div class="team-item__lastname">Александровская</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Елена</div>
+												<div class="team-item__lastname">Иванова</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 1050</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Елена</div>
-											<div class="team-item__lastname">Иванова</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 1150</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Мария</div>
+												<div class="team-item__lastname">Александровская</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Елена</div>
-											<div class="team-item__lastname">Иванова</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 1050</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Елена</div>
+												<div class="team-item__lastname">Иванова</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 1150</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Мария</div>
-											<div class="team-item__lastname">Александровская</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--danger team-item__rating">↓ 1250 (2 из 8000)</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Елена</div>
+												<div class="team-item__lastname">Иванова</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
 								</div>
-							</div>
-							<div class="team-item team__item">
-								<a href="#" class="team-item__avatar team-item__avatar--story">
-									<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
-								</a>
-								<div class="team-item__main">
-									<div class="team-item__info">
-										<div class="text text--success team-item__rating">↑ 1050</div>
-										<a class="team-item__name team-item__name--nowrap" href="#">
-											<div class="team-item__firstname">Елена</div>
-											<div class="team-item__lastname">Иванова</div>
-										</a>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/2.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 1150</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Мария</div>
+												<div class="team-item__lastname">Александровская</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
 									</div>
-									<div class="team-item__position">Должность <br> Подразделение</div>
+								</div>
+								<div class="team-item team__item">
+									<a href="#" class="team-item__avatar team-item__avatar--story">
+										<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+									</a>
+									<div class="team-item__main">
+										<div class="team-item__info">
+											<div class="text text--success team-item__rating">↑ 1050</div>
+											<a class="team-item__name team-item__name--nowrap" href="#">
+												<div class="team-item__firstname">Елена</div>
+												<div class="team-item__lastname">Иванова</div>
+											</a>
+										</div>
+										<div class="team-item__position">Должность <br> Подразделение</div>
+									</div>
 								</div>
 							</div>
 						</div>

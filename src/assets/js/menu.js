@@ -5,6 +5,12 @@ if ($menu) {
 
   const $openBtns = document.querySelectorAll('.js-open-menu');
   $openBtns.forEach($btn => {
+    if ($btn.dataset.menuCloseClass) {
+      $close.classList.add($btn.dataset.menuCloseClass);
+    } else {
+      $close.className = 'menu__close';
+    }
+    
     $btn.addEventListener('click', () => toggle($menu));
   });
 }

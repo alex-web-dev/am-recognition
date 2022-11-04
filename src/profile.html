@@ -36,8 +36,8 @@
 								<div class="navbar__text">Новости</div>
 							</a>
 						</li>
-						<li class="navbar__item">
-							<a class="navbar__link js-open-menu" href="#">
+						<li class="navbar__item navbar__item--menu">
+							<a class="navbar__link js-open-menu" href="#" data-menu-close-class="menu__close--mobile-bottom">
 								<span class="icon icon-menu navbar__icon"></span>
 								<div class="navbar__text">Меню</div>
 							</a>
@@ -162,37 +162,9 @@
 							<button class="profile-award profile__award js-open-stories">
 								<img class="profile-award__img" src="assets/img/awards/3.png" alt="">
 							</button>
-							<button class="profile-award profile-award--rect profile__award js-open-stories">
-								<span class="profile-award__content">
-									<img class="profile-award__icon" src="assets/img/icons/logo.svg" alt="">
-									<span class="profile-award__count">10</span>
-									<span class="profile-award__value">12</span>
-									<span class="profile-award__backdrop"></span>
-								</span>
-							</button>
-							<button class="profile-award profile-award--rect profile__award js-open-stories">
-								<span class="profile-award__content">
-									<img class="profile-award__icon" src="assets/img/icons/logo.svg" alt="">
-									<span class="profile-award__count">10</span>
-									<span class="profile-award__value">5</span>
-									<span class="profile-award__backdrop"></span>
-								</span>
-							</button>
-							<button class="profile-award profile-award--rect profile__award js-open-stories">
-								<span class="profile-award__content">
-									<img class="profile-award__icon" src="assets/img/icons/logo.svg" alt="">
-									<span class="profile-award__count">10</span>
-									<span class="profile-award__value">3</span>
-									<span class="profile-award__backdrop"></span>
-								</span>
-							</button>
-							<button class="profile-award profile-award--rect profile__award js-open-stories">
-								<span class="profile-award__content">
-									<img class="profile-award__icon" src="assets/img/icons/logo.svg" alt="">
-									<span class="profile-award__count">10</span>
-									<span class="profile-award__value">2</span>
-									<span class="profile-award__backdrop"></span>
-								</span>
+							<button class="profile-award profile-award--gift profile__award js-open-stories">
+								<img class="profile-award__img" src="assets/img/gift.png" alt="">
+								<span class="profile-award__value">205</span>
 							</button>
 						</div>
 						<button class="profile__awards-more" data-toggle-text="Скрыть мои награды ↑">Все мои награды ↓</button>
@@ -202,34 +174,42 @@
 				<div class="pay-lines profile__pay-lines">
 					<div class="pay-lines__list">
 						<div class="pay-line pay-lines__item">
-							<div class="pay-line__info">
-								<div class="pay-line__value">+500</div>
-								<div class="pay-line__text">Зачисление в кошелек</div>
+							<div class="pay-line__main">
+								<div class="pay-line__info">
+									<div class="price pay-line__value pay-line__value--plus">+500</div>
+									<div class="pay-line__text">Зачисление в кошелек</div>
+								</div>
+								<div class="pay-line__date">13:30</div>
 							</div>
-							<div class="pay-line__date">13:30</div>
 						</div>
 						<div class="pay-line pay-lines__item">
-							<div class="pay-line__info">
-								<div class="pay-line__value pay-line__value--minus">-100</div>
-								<div class="pay-line__text">Перевод выполнен</div>
+							<div class="pay-line__main">
+								<div class="pay-line__info">
+									<div class="price pay-line__value pay-line__value--minus">-100</div>
+									<div class="pay-line__text">Перевод выполнен</div>
+								</div>
+								<div class="pay-line__date">9:35</div>
 							</div>
-							<div class="pay-line__date">9:35</div>
 						</div>
 						<a class="pay-line pay-line--done pay-lines__item" href="#">
-							<div class="pay-line__info">
-								<div class="pay-line__text">Заказ отправлен →</div>
+							<div class="pay-line__main">
+								<div class="pay-line__info">
+									<div class="pay-line__text">Заказ отправлен →</div>
+								</div>
+								<div class="pay-line__date">13:30</div>
 							</div>
-							<div class="pay-line__date">13:30</div>
 						</a>
 						<div class="pay-line pay-lines__item">
 							<div class="pay-line__author">
 								<img class="pay-line__avatar" src="assets/img/avatars/1.png" alt="">
+							</div>
+							<div class="pay-line__main">
 								<div class="pay-line__info">
-									<div class="pay-line__value">+500 признание!</div>
+									<div class="pay-line__value pay-line__value--plus">+500 признание!</div>
 									<div class="pay-line__text">От: Анатолий Иванов</div>
 								</div>
+								<div class="pay-line__date">13:08</div>
 							</div>
-							<div class="pay-line__date">13:08</div>
 						</div>
 					</div>
 					<div class="pay-lines__footer">
