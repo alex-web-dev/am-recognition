@@ -19,9 +19,9 @@ $grid-gutter-width: 0 !default;
 $spacer: 1rem !default;
 $gutters: (
   0: 0,
-  1: $spacer * 1,
+  1: $spacer * 0.625,
   2: $spacer * 1.5,
-  3: $spacer * 2,
+  3: $spacer * 1.625,
   4: $spacer * 2.5,
   5: $spacer * 3,
 ) !default;

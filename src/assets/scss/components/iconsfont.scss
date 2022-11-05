@@ -11,17 +11,11 @@
   line-height: 1;
 }
 
-.icon--primary {
-  color: $color-primary;
-}
-
-.icon--white {
-  color: #fff;
-}
-
-.icon--danger {
-  color: $color-danger;
-}
+.icon--primary { color: $color-primary; }
+.icon--white { color: #fff; }
+.icon--danger { color: $color-danger; }
+.icon--success { color: $color-danger; }
+.icon--gray { color: $color-gray; }
 
 .icon-wallet:before { content: '\e800'; } /* '' */
 .icon-close:before { content: '\e801'; } /* '' */

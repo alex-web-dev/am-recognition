@@ -35,6 +35,26 @@
     user-select: none;
     line-height: 1.28;
   }
+
+  &_btn &__switch {
+    width: 100%;
+    height: auto;
+    padding: 8px 12px;
+    background: linear-gradient(180deg, rgba($color-third, 0) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
+    box-shadow: 0px 0px 10px rgba($color-third, 0.25);
+    border-radius: 20px;
+    color: $color-gray;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &_btn &__input:checked~&__switch {
+    background: rgba($color-third, 0.15);
+    box-shadow: none;
+    cursor: default;
+  }
 }
 
 @include media_max_width(680px) {

@@ -41,6 +41,11 @@
   &__filter {
     margin-top: 15px;
   }
+
+  &__search {
+    min-width: 53px;
+    text-align: right;
+  }
 }
 
 @include media_max_width(680px) {

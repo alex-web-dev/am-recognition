@@ -1,0 +1,19 @@
+.categories {
+  display: inline-block;
+  max-width: 100%;
+  
+  &__list {
+    display: flex;
+    overflow-x: auto;
+    margin: -10px;
+    padding: 10px;
+  }
+
+  &__item {
+    flex: 0 0 auto;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}

@@ -15,4 +15,10 @@ $forms.forEach($form => {
     $input.focus();
     $form.classList.remove('search--fill');
   });
+
+  const $open = $form.querySelector('.search__open');
+  $open?.addEventListener('click', () => $form.classList.toggle('search--active'));
+
+  const $close = $form.querySelector('.search__btn--close');
+  $close?.addEventListener('click', () => $form.classList.remove('search--active'));
 });
