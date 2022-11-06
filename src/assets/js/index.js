@@ -12,3 +12,4 @@ import './pay-lines.js';
 import './tabs.js';
 import './file-field.js';
 import './login-form.js';
+import './single-product.js';

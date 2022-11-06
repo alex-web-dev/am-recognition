@@ -12,8 +12,10 @@
   &__item {
     margin: 0 0.5px;
   }
+}
 
-  @media (max-width: 680px) {
+@include media_max_width(680px) {
+  .catalog {
     padding-top: 70px;
 
     &__section-header {

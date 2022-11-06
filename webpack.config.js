@@ -56,6 +56,7 @@ const htmlPageNames = [
 	'admin-planned-accruals',
 	'nav',
 	'catalog',
+	'product',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

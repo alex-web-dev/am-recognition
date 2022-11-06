@@ -12,8 +12,9 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    cursor: pointer;
     background: rgba($color-third, 0.15);
+    text-align: center;
+    cursor: pointer;
   }
 
   &__input:checked~&__switch {
@@ -36,7 +37,7 @@
     line-height: 1.28;
   }
 
-  &_btn &__switch {
+  &--btn &__switch {
     width: 100%;
     height: auto;
     padding: 8px 12px;
@@ -50,10 +51,15 @@
     }
   }
 
-  &_btn &__input:checked~&__switch {
+  &--btn &__input:checked~&__switch {
     background: rgba($color-third, 0.15);
     box-shadow: none;
     cursor: default;
+  }
+
+  &--small &__switch {
+    font-size: 12px;
+    padding: 8px 9px;
   }
 }
 
