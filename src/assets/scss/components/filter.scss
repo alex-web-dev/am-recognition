@@ -3,11 +3,12 @@
 
   &__btn {
     position: relative;
-    padding: 8px 0;
+    padding: 8px 20px;
     flex: 1 1 100%;
     font-size: 12px;
     background: $color-gradient-third;
     border-right: 1px solid rgba($color-third, 0.15);
+    white-space: nowrap;
 
     &:before {
       content: '';
@@ -52,6 +53,10 @@
       flex: none;
       padding: 12px 20px;
       font-size: 14px;
+    }
+
+    &--medium {
+      font-weight: 500;
     }
   }
 

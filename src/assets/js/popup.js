@@ -17,10 +17,12 @@ $popups.forEach($popup => {
 
 const $openBtns = document.querySelectorAll('.js-open-popup');
 $openBtns.forEach($btn => {
-  const name = $btn.dataset.popupName;
   $btn.addEventListener('click', () => {
+    const name = $btn.dataset.popupName;
     const $popup = document.querySelector(`.popup[data-popup-name="${name}"]`);
-    open($popup);
+    if ($popup) {
+      open($popup);
+    }
   });
 });
 

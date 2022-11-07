@@ -29,12 +29,6 @@
     background: #fff;
     max-height: 100%;
     overflow-y: auto;
-
-    &--success {
-      background: $color-gradient-success;
-      padding: 17px 0;
-      color: #fff;
-    }
   }
 
   &__text {
@@ -98,6 +92,24 @@
 
   &--message &__content {
     width: 266px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    background: $color-gradient-success;
+    color: #fff;
+  }
+
+  &--danger {
+    &:before {
+      background: rgba(128, 128, 128, 0.75);
+    }
+  }
+
+  &--danger &__content {
+    background: #b10933;
   }
 
   &--full &__content {

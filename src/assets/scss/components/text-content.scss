@@ -1,0 +1,10 @@
+.text-content {
+  font-size: 12px;
+  line-height: 1.5;
+
+  p {
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+  }
+}

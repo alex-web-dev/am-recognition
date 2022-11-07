@@ -10,9 +10,9 @@ $btnsLists.forEach($btnsList => {
       }
 
       const $selectedBtnLists = document.querySelectorAll(`.tabs-btns[data-tabs-name="${tabsName}`);
-      $selectedBtnLists.forEach($seletedBtns => {
-        const $oldBtn = $seletedBtns.querySelector('.tabs-btn--active');
-        const $newBtn = $seletedBtns.querySelectorAll('.tabs-btn')[index];
+      $selectedBtnLists.forEach($selectedBtns => {
+        const $oldBtn = $selectedBtns.querySelector('.tabs-btn--active');
+        const $newBtn = $selectedBtns.querySelectorAll('.tabs-btn')[index];
         $oldBtn.classList.remove('tabs-btn--active');
         $newBtn.classList.add('tabs-btn--active');
       });

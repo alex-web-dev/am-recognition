@@ -10,14 +10,18 @@
   display: none;
 
   &__top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0 5px;
-    flex: 1 1 auto;
+    width: 160px;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
@@ -27,10 +31,6 @@
   &__btn {
     font-size: 20px;
     color: $color-primary;
-
-    &--back {
-      width: 53px;
-    }
   }
 
   &__link {
@@ -43,7 +43,6 @@
   }
 
   &__search {
-    min-width: 53px;
     text-align: right;
   }
 }
