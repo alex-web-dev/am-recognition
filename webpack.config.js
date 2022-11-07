@@ -60,6 +60,7 @@ const htmlPageNames = [
 	'cart',
 	'rules',
 	'contests',
+	'contest',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

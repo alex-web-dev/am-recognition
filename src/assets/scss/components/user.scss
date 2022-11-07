@@ -4,17 +4,39 @@
 
   &__avatar {
     margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    
+
+    img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
     &--story {
-      border: 2px solid $color-second;
+      img {
+        border: 2px solid $color-second;
+      }
+    }
+
+    &--big {
+      img {
+        width: 53px;
+        height: 53px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    
+    &--small {
+      font-size: 12px;
+      line-height: 1.5;
     }
   }
 
   &__name {
     color: $color-primary;
-    line-height: 1.3;
   }
 }

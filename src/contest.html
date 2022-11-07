@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
-	<title>AmRecognition | Конвертировать</title>
+	<title>AmRecognition | Конкурс</title>
 </head>
 
 <body class="body">
-	<header class="header">
+	<header class="header header--desktop">
 		<div class="container header__container">
 			<div class="header__content">
 				<a class="logo header__logo" href="index.html">
@@ -49,11 +49,11 @@
 	</header>
 
 	<main class="main">
-		<div class="wallet">
-			<div class="mobile-header wallet__mobile-header">
+		<div class="contest">
+			<div class="mobile-header">
 				<div class="container">
 					<div class="mobile-header__top">
-						<a href="wallet.html" class="link mobile-header__link">← Мой кошелек</a>
+						<a href="contests.html" class="link mobile-header__link">← Конкурсы</a>
 						<button class="mobile-header__btn js-open-menu">
 							<span class="icon icon-menu"></span>
 						</button>
@@ -63,19 +63,48 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-8 mx-auto">
-						<div class="breadcrumbs settings__breadcrumbs">
-							<a class="link breadcrumbs__link" href="index.html">Мой кошелек</a>
-							<span class="breadcrumbs__current">Конвертировать в ₽</span>
+						<div class="breadcrumbs contest__breadcrumbs">
+							<a class="link breadcrumbs__link js-close-popup" href="contests.html">Конкурсы</a>
+							<span class="breadcrumbs__current">Новогодняя лотерея AmRest</span>
 						</div>
-						<form class="convert-form wallet__convert-form" autocomplete="off">
-							<div class="convert-form__item">
-								<div class="convert-form__text convert-form__text--mobile">Конвертировать AmCoin в ₽</div>
-								<input class="settings-input convert-form__item-input" type="text" value="12 500">
-								<button class="convert-form__item-btn">Все 12 500</button>
+						<h1 class="contest__name">Новогодняя лотерея AmRest</h1>
+						<div class="contest__date">Прием заявок 30.12</div>
+						<div class="text-content">
+							<p>Регистрация на кибертурнир KFC GAMES уже открыта для тебя или твоей команды!</p>
+							<p>Главный приз – полное обновление игрового сет-апа (компьютер, кресло, мышка, монитор, наушники, коврик,
+								клавиатура) + призовой фонд более одного миллиона рублей.</p>
+						</div>
+						<div class="contest__awards">
+							<div class="contest__award">
+								<div class="profile-award contest__award-img">
+									<img class="profile-award__img" src="assets/img/awards/2.png" alt="">
+								</div>
+								<div class="contest__award-info">
+									<div>1 приз:</div>
+									<div>Часы</div>
+								</div>
 							</div>
-							<button class="btn btn--third btn--small convert-form__submit">Отправить заявку</button>
-							<div class="text text--small text--gray convert-form__comment">Пояснение о конвертации для тех, кто не знает, что это такое</div>
-						</form>
+							<div class="contest__award">
+								<div class="profile-award contest__award-img">
+									<img class="profile-award__img" src="assets/img/awards/2.png" alt="">
+								</div>
+								<div class="contest__award-info">
+									<div>1 приз:</div>
+									<div>Часы</div>
+								</div>
+							</div>
+						</div>
+						<div class="user contest__user">
+							<a class="user__avatar user__avatar--big user__avatar--story" href="other-profile.html">
+								<img src="assets/img/avatars/1.png" alt="">
+							</a>
+							<div class="user__info user__info--small">
+								<div class="user__text">Ответственный менеджер:</div>
+								<a class="user__name" href="other-profile.html">Анатолий Константиновский</a>
+								<a class="link" href="mailto:akonstantinov@mail.ru">akonstantinov@mail.ru</a>
+							</div>
+						</div>
+						<button class="btn btn--third btn--small contest__btn">Участвую!</button>
 					</div>
 				</div>
 			</div>
@@ -166,6 +195,16 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup--confirm" data-popup-name="contest-refuse">
+		<div class="popup__content">
+			<div class="popup__text">Отказаться от участия в конкурсе?</div>
+			<div class="popup__btns">
+				<button class="btn btn--small btn--not-up popup__btn">Нет, я участвую</button>
+				<button class="btn btn--small btn--not-up btn--danger popup__btn">Отказаться</button>
 			</div>
 		</div>
 	</div>
