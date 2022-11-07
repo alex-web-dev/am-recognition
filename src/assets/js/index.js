@@ -14,3 +14,4 @@ import './file-field.js';
 import './login-form.js';
 import './single-product.js';
 import './accordion.js';
+import './news-about.js';

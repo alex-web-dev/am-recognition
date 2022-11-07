@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
-	<title>AmRecognition | Настройки</title>
+	<title>AmRecognition | Новость</title>
 </head>
 
 <body class="body">
@@ -49,14 +49,11 @@
 	</header>
 
 	<main class="main">
-		<div class="profile profile--settings">
-			<div class="mobile-header profile__mobile-header">
+		<div class="news-about">
+			<div class="mobile-header">
 				<div class="container">
 					<div class="mobile-header__top">
-						<a href="profile.html" class="mobile-header__btn mobile-header__btn--back">
-							<span class="icon icon-back"></span>
-						</a>
-						<div class="mobile-header__title">Константин Александров</div>
+						<a href="news.html" class="link mobile-header__link">← Новости</a>
 						<button class="mobile-header__btn js-open-menu">
 							<span class="icon icon-menu"></span>
 						</button>
@@ -65,84 +62,54 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-10 mx-auto">
-						<div class="profile__header">
-							<div class="profile__header-main">
-								<div class="profile__user">
-									<div class="profile__avatar">
-										<img class="profile__avatar-img" src="assets/img/avatars/1.png" alt="">
-										<button class="btn-circle btn-circle--third profile__avatar-edit">
-											<span class="icon icon-edit"></span>
-										</button>
-									</div>
-									<div class="profile__user-info">
-										<div class="profile__user-name">Константин Александров</div>
-										<div class="profile__user-status">Жизнь такова какова и больше никакова</div>
-										<a class="link profile__edit" href="settings-status.html">Редактировать статус →</a>
-									</div>
-								</div>
-								<div class="profile__awards-mobile"></div>
+					<div class="col-sm-8 mx-auto">
+						<div class="news-about__header">
+							<h1 class="title1 news-about__title">Объявлены победители конкурса sales pick hours: июль-август</h1>
+							<div class="news-about__date">13:30</div>
+							<div class="news-about__img">
+								<img src="assets/img/news/1.jpg" alt="">
+							</div>
+							<div class="text-content news-about__text-content">
+								<p>От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в
+									Европе и Азии.</p>
 							</div>
 						</div>
-
-						<div class="profile-info profile__info">
-							<div class="profile-info__column">
-								<div class="profile-info__item">AmRestees since 15.01.2020</div>
-								<div class="text text--gray profile-info__item">Должность</div>
-								<div class="text text--gray profile-info__item">Подразделение</div>
+					</div>
+					<div class="col-12">
+						<div class="news-about__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide news-about__slide">
+									<img src="assets/img/news/1.jpg" alt="">
+								</div>
+								<div class="swiper-slide news-about__slide">
+									<img src="assets/img/news/1.jpg" alt="">
+								</div>
+								<div class="swiper-slide news-about__slide">
+									<img src="assets/img/news/1.jpg" alt="">
+								</div>
+								<div class="swiper-slide news-about__slide">
+									<img src="assets/img/news/3.jpg" alt="">
+								</div>
+								<div class="swiper-slide news-about__slide">
+									<img src="assets/img/news/2.jpg" alt="">
+								</div>
 							</div>
-							<div class="profile-info__column">
-								<div class="profile-info__item">
-									<a class="link link--black" href="tel:89214525312">8 (921) 452-53-12</a>
-									<span class="profile-info__status">Видно коллегам</span>
-								</div>
-								<div class="profile-info__item">
-									<a class="link" href="mailto:mail@mail.ru">mail@mail.ru</a>
-									<span class="profile-info__status">Видно коллегам</span>
-								</div>
-								<div class="profile-info__item">
-									<a class="link" href="https://vk.com/123202" target="_blank">www.vk.com/123202</a>
-									<span class="profile-info__status">Видно всем</span>
-								</div>
-								<a class="link profile__edit" href="settings-contacts.html">Редактировать контакты →</a>
-							</div>
-						</div>
-
-						<div class="profile__quote">
-							<p>О себе. От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные
-								бренды в
-								Европе и Азии. О себе. От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие
-								ресторанные бренды в Европе и Азии.</p>
-							<a class="link profile__edit" href="settings-about.html">Редактировать текст о себе →</a>
-						</div>
-
-						<div class="profile-info profile__info">
-							<div class="profile-info__column">
-								<div class="profile-info__text">Моя должность:</div>
-								<div class="profile-info__text">Shift M c 1.08.2022, в подразделении: KFC Проспект Просвещения</div>
-								<a class="link profile-info__more" href="#">Моя история успеха ↓</a>
+							<div class="news-about__navigation">
+								<button class="icon icon-arrow-right news-about__slider-next"></button>
+								<button class="icon icon-arrow-right news-about__slider-prev"></button>
 							</div>
 						</div>
-
-						<div class="profile__talents profile__talents--settings">
-							<div class="profile__talents-title">Таланты:</div>
-							<div class="profile__talents-list">
-								<div class="profile-talent profile-talent--about profile__talent">
-									<span class="profile-talent__name">Работа с видео</span>
-									<div class="profile-talent__docs">
-										<a href="#" class="link">Документ 1 (pdf)</a>,
-										<a href="#" class="link">Документ 2 (pdf)</a>
-									</div>
-									<p class="profile-talent__text">От фастфуда до высокой кухни — более 20 лет AmRest Global
-										представляет лучшие ресторанные бренды в Европе и Азии.</p>
-								</div>
-								<div class="profile-talent profile-talent--about profile__talent">
-									<span class="profile-talent__name">Кулинария</span>
-									<p class="profile-talent__text">От фастфуда до высокой кухни — более 20 лет AmRest Global
-										представляет лучшие ресторанные бренды в Европе и Азии.</p>
-								</div>
-							</div>
-							<a class="link profile__talents-edit" href="settings-talents.html">Редактировать таланты →</a>
+					</div>
+					<div class="col-sm-8 mx-auto">
+						<div class="text-content news-about__text-content">
+							<p>От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в
+								Европе и Азии.</p>
+							<p>В России это бренды, с которых всё начиналось — KFC (200+ ресторанов по франшизе Yum! Brands) и Pizza
+								Hut (40+ ресторанов по собственной франшизе компании).</p>
+							<p>От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в
+								Европе и Азии.</p>
+							<p>В России это бренды, с которых всё начиналось — KFC (200+ ресторанов по франшизе Yum! Brands) и Pizza
+								Hut (40+ ресторанов по собственной франшизе компании).</p>
 						</div>
 					</div>
 				</div>

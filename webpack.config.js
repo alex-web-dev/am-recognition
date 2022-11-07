@@ -61,6 +61,8 @@ const htmlPageNames = [
 	'rules',
 	'contests',
 	'contest',
+	'news',
+	'news-item',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
