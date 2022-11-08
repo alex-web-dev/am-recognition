@@ -1,5 +1,5 @@
-const $bodyDesktop = document.querySelector('.body--desktop');
-if ($bodyDesktop) {
+const $body = document.body;
+if ($body.classList.contains('body--desktop') || $body.classList.contains('body--admin')) {
   window.addEventListener('scroll', () => {
     const x = -window.scrollX;
     const fixedSelectors = `

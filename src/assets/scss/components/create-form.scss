@@ -1,0 +1,19 @@
+.create-form {
+  &__group {
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__label {
+    margin-top: 10px;
+    flex: 0 0 240px;
+  }
+
+  &__area {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}

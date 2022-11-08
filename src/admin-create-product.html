@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<title>AmRecognition | Админ - Создать товар</title>
+</head>
+
+<body class="body body--admin">
+	<main class="admin-main">
+		<div class="admin-container">
+			<div class="row">
+				<div class="col-3">
+					<div class="admin-navbar">
+						<a class="logo admin-navbar__logo" href="admin-updates.html">
+							<img class="logo__img" src="assets/img/logo.svg" alt="">
+						</a>
+						<nav class="admin-menu">
+							<ul class="admin-menu__list">
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-updates.html">
+										<span>Обновления</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Программы мотивации</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-users.html">
+										<span>Пользователи</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Конкурсы</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Фриланс</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Признания и стипендия</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Магазин</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="#">
+										<span>Заказы</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-badges.html">
+										<span>Бейджи</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-planned-accruals.html">
+										<span>Плановые начисления</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-7 mx-auto">
+					<div class="create-product">
+						<div class="create-product__title">Новый товар в AmShop</div>
+						<form class="create-form create-product__form" autocomplete="off">
+							<div class="create-form__group">
+								<span class="create-form__label">Название товара</span>
+								<input class="settings-input settings-input--small" type="text" value="Футболка Зенит Арена">
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Категория</span>
+								<div class="filter filter--d-if" data-tabs-name="badge-type">
+									<label class="checkbox checkbox--filter filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category" checked>
+										<span class="checkbox__switch">Одежда</span>
+									</label>
+									<label class="checkbox checkbox--filter filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category">
+										<span class="checkbox__switch">Аксессуары</span>
+									</label>
+									<label class="checkbox checkbox--filter filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category">
+										<span class="checkbox__switch">Сертификаты</span>
+									</label>
+									<label class="checkbox checkbox--filter filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category">
+										<span class="checkbox__switch">Техника</span>
+									</label>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Описание</span>
+								<textarea class="settings-input settings-input--area create-form__area" data-min-height="160">Описание. Регистрация на кибертурнир KFC GAMES уже открыта для тебя или твоей команды! Главный приз – полное обновление игрового сет-апа (компьютер, кресло, мышка, монитор, наушники, коврик, клавиатура) + призовой фонд более одного миллиона рублей.</textarea>
+							</div>
+							<div class="create-form__group">
+								<label class="checkbox create-form__checkbox">
+									<input class="checkbox__input" type="checkbox" name="is-new" checked>
+									<span class="checkbox__switch checkbox__switch--big"></span>
+									<span class="checkbox__text">Новинка</span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

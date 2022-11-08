@@ -4,4 +4,10 @@
       margin-top: 20px;
     }
   }
+
+  &--m-10 &__item {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
 }

@@ -56,7 +56,8 @@
 @import "./components/admin-main";
 @import "./components/admin-navbar";
 @import "./components/admin-menu";
-@import "./components/updates";
+@import "./components/admin-updates";
+@import "./components/admin-catalog";
 @import "./components/products";
 @import "./components/product";
 @import "./components/pagination";
@@ -84,3 +85,5 @@
 @import "./components/news-item";
 @import "./components/news";
 @import "./components/news-about";
+@import "./components/create-form";
+@import "./components/create-product";
