@@ -65,6 +65,7 @@ const htmlPageNames = [
 	'news-item',
 	'admin-catalog',
 	'admin-create-product',
+	'admin-edit-product',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

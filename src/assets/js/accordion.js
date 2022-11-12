@@ -1,15 +1,15 @@
 const $accordions = document.querySelectorAll('.accordion');
 $accordions.forEach($accordion => {
-  const $button = $accordion.querySelector('.accordion__btn');
-  const $content = $accordion.querySelector('.accordion__content');
+  const $button = $accordion.querySelector('.accordion-btn');
+  const $content = $accordion.querySelector('.accordion-content');
 
   $button.addEventListener('click', () => {
     if (!$accordion.classList.contains('accordion--active')) {
-      $button.classList.add('accordion__btn--active');
+      $button.classList.add('accordion-btn--active');
       $accordion.classList.add('accordion--activating');
       $content.style.height = `${$content.scrollHeight}px`;
     } else {
-      $button.classList.remove('accordion__btn--active');
+      $button.classList.remove('accordion-btn--active');
       $content.style.height = `${$content.scrollHeight}px`;
       $accordion.classList.add('accordion--activating');
       setTimeout(() => $content.style.height = '0px');

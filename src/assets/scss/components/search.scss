@@ -17,6 +17,8 @@
     right: 10px;
     height: 100%;
     padding-left: 5px;
+    display: flex;
+    align-items: center;
 
     &--clear {
       display: none;
@@ -24,7 +26,6 @@
   }
 
   &__icon {
-    vertical-align: middle;
     font-size: 12px;
     color: $color-gray;
     transition: color .3s;

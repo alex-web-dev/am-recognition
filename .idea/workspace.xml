@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd50dcb6-ffa3-460a-aeb2-ab770a1ca07b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/admin-badge-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-badge-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-badge-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-badge-new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-badges.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-badges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-create-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-create-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-planned-accruals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-planned-accruals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-updates.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-updates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin-users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/settings-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/settings-input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/accordion.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/btn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/filter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/mobile-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/mobile-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/settings-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/settings-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/settings-talent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/settings-talent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/stories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/stories.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/wallet-edit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/wallet-edit.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/wallet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/wallet.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/contest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/contests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my-team.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/my-team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/news-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/other-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/payment-feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/payment-feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ratings.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/ratings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recognition-employee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/recognition-employee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recognition.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/recognition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recognitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/recognitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings-about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings-about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings-body-desktop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings-body-desktop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings-contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings-contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings-status.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings-status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings-talents.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings-talents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wallet-convert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/wallet-convert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wallet-outsource.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/wallet-outsource.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wallet.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/wallet.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2HOWLkryvHUngr3V2ktn8Su5UkY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd50dcb6-ffa3-460a-aeb2-ab770a1ca07b" name="Changes" comment="" />
+      <created>1668156560310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668156560310</updated>
+      <workItem from="1668156565440" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

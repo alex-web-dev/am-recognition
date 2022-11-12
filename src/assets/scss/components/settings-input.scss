@@ -1,8 +1,8 @@
 .settings-input {
   width: 100%;
-  padding: 20px 30px 25px;
+  padding: 10px 20px;
   background: rgba($color-third, 0.15);
-  border-radius: 10px;
+  border-radius: 30px;
   line-height: 20px;
   border: none;
   resize: none;
@@ -17,9 +17,9 @@
     -webkit-appearance: none;
   }
 
-  &--small {
-    padding: 10px 20px;
-    border-radius: 30px;
+  &--area {
+    padding: 20px 30px 25px;
+    border-radius: 10px;
   }
 }
 

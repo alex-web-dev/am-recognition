@@ -5,15 +5,121 @@
     &:not(:first-child) {
       margin-top: 20px;
     }
+
+    &--mt-40 {
+      &:not(:first-child) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__item {
+    margin-left: auto;
+    flex: 0 0 71.5%;
   }
 
   &__label {
     margin-top: 10px;
-    flex: 0 0 240px;
+    flex: 0 0 28.5%;
   }
 
   &__area {
     padding: 20px;
     border-radius: 20px;
+  }
+
+  &__checkbox {
+    display: flex;
+  }
+
+  &__fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__field {
+    margin-top: 10px;
+    padding-right: 10px;
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  &__field {
+    &-text {
+      margin-left: 10px;
+    }
+  }
+
+  &__input {
+    &-box {
+      position: relative;
+      width: 120px;
+    }
+
+    &-text {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      height: 100%;
+      padding-left: 5px;
+      display: flex;
+      align-items: center;
+      background-color: #FDE5B9;
+      color: $color-gray;
+    }
+  }
+
+  &__photos {
+    margin: -5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-btn {
+      margin: 5px;
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      order: 2;
+    }
+  }
+
+  &__photo {
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+
+  &__btns {
+    margin: -5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    margin: 5px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    width: calc(100% - 10px);
+    font-size: 14px;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &--submit {
+      font-size: 18px;
+    }
+
+    &--half {
+      width: calc(50% - 10px);
+    }
   }
 }

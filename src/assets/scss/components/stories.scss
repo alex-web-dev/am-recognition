@@ -26,6 +26,11 @@
   &__item {
     padding-top: 150px;
     text-align: center;
+    display: none;
+
+    &--active {
+      display: block;
+    }
   }
 
   &__img {
@@ -68,6 +73,10 @@
 
 .body--desktop .stories {
   min-width: $body-desktop-width;
+}
+
+.body--admin .stories {
+  min-width: $body-admin-width;
 }
 
 @include media_max_width(991px) {

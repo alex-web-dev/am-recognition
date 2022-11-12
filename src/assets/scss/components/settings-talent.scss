@@ -12,12 +12,25 @@
     align-items: center;
     margin-bottom: 16px;
   }
+  
+  &__docs {
+    margin-bottom: 5px;
 
-  &__doc {
-    display: flex;
-    align-items: center;
+    &--add {
+      line-height: 1.5;
+    }
   }
 
+  &__doc {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+
+    &:first-child {
+      margin-top: 16px;
+    }
+  }
   &__delete,
   &__doc-delete {
     font-size: 10px;
@@ -31,18 +44,6 @@
 
     &:hover {
       color: $color-primary;
-    }
-  }
-
-  &__docs {
-    margin-bottom: 3px;
-  }
-
-  &__doc {
-    margin-top: 5px;
-
-    &:first-child {
-      margin-top: 16px;
     }
   }
 

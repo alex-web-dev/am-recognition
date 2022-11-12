@@ -62,11 +62,6 @@
     cursor: default;
   }
 
-  &--small &__switch {
-    font-size: 12px;
-    padding: 8px 9px;
-  }
-
   &--filter &__switch {
     position: relative;
     padding: 8px 20px;
@@ -77,6 +72,15 @@
     font-size: 14px;
     background: linear-gradient(180deg, rgba(245, 161, 0, 0.0495) 0%, rgba(245, 161, 0, 0.15) 100%), #FFFFFF;
     border-radius: 0;
+  }
+
+  &--small &__switch {
+    font-size: 12px;
+    padding: 8px 9px;
+  }
+
+  &--text-small &__switch {
+    font-size: 12px;
   }
 }
 

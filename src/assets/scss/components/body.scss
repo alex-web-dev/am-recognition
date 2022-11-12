@@ -61,5 +61,11 @@
         overflow: visible;
       }
     }
+
+    &--admin {
+      &.body--lock {
+        overflow: visible;
+      }
+    }
   }
 }

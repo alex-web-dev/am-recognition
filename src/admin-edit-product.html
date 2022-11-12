@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="assets/img/favicon.png">
-	<title>AmRecognition | Админ - Создать товар</title>
+	<title>AmRecognition | Админ - Редактировать товар</title>
 </head>
 
 <body class="body body--admin">
@@ -76,33 +76,12 @@
 				</div>
 				<div class="col-7 mx-auto">
 					<div class="create-product">
-						<div class="create-product__title">Новый товар в AmShop</div>
+						<div class="create-product__title">Редактировать товар</div>
 						<form class="create-form create-product__form" autocomplete="off">
 							<div class="create-form__group">
 								<span class="create-form__label">Название товара</span>
 								<div class="create-form__item">
 									<input class="settings-input settings-input--small" type="text" value="Футболка Зенит Арена">
-								</div>
-							</div>
-							<div class="create-form__group">
-								<span class="create-form__label">Категория</span>
-								<div class="filter filter--i-flex" data-tabs-name="badge-type">
-									<label class="checkbox checkbox--filter filter__checkbox">
-										<input class="checkbox__input" type="radio" name="category" checked>
-										<span class="checkbox__switch">Одежда</span>
-									</label>
-									<label class="checkbox checkbox--filter filter__checkbox">
-										<input class="checkbox__input" type="radio" name="category">
-										<span class="checkbox__switch">Аксессуары</span>
-									</label>
-									<label class="checkbox checkbox--filter filter__checkbox">
-										<input class="checkbox__input" type="radio" name="category">
-										<span class="checkbox__switch">Сертификаты</span>
-									</label>
-									<label class="checkbox checkbox--filter filter__checkbox">
-										<input class="checkbox__input" type="radio" name="category">
-										<span class="checkbox__switch">Техника</span>
-									</label>
 								</div>
 							</div>
 							<div class="create-form__group">
@@ -261,7 +240,8 @@
 								<div class="create-form__item">
 									<div class="create-form__btns">
 										<button class="btn create-form__btn create-form__btn--submit">Сохранить</button>
-										<button class="btn btn--gray create-form__btn">Отмена</button>
+										<button class="btn btn--gray create-form__btn create-form__btn--half">Отмена</button>
+										<button class="btn btn--danger create-form__btn create-form__btn--half">Удалить товар</button>
 									</div>
 								</div>
 							</div>

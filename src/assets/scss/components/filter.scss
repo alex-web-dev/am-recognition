@@ -8,6 +8,7 @@
     font-size: 12px;
     background: $color-gradient-third;
     border-right: 1px solid rgba($color-third, 0.15);
+    color: #000;
     white-space: nowrap;
 
     &:before {
@@ -52,6 +53,14 @@
     &--big {
       padding: 12px 20px;
       font-size: 14px;
+    }
+
+    &--small {
+      padding: 7px 20px;
+    }
+
+    &--long {
+      min-width: 182px;
     }
 
     &--medium {
@@ -113,7 +122,7 @@
     display: none;
   }
 
-  &--d-if {
+  &--i-flex {
     display: inline-flex;
   }
 }
