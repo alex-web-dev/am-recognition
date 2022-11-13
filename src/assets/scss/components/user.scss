@@ -5,6 +5,11 @@
   &__avatar {
     margin-right: 10px;
 
+    &:last-child {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+
     img {
       display: block;
       width: 40px;
@@ -38,5 +43,9 @@
 
   &__name {
     color: $color-primary;
+
+    &--danger {
+      color: $color-danger;
+    }
   }
 }

@@ -40,7 +40,7 @@
       transition: transform .4s;
     }
 
-    &.accordion__btn--active {
+    &.accordion-btn--active {
       &:after {
         transform: rotate(-90deg);
       }
