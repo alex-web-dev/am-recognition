@@ -46,8 +46,8 @@
     }
 
     &--third {
-      background: linear-gradient(135deg, rgba(180, 1, 67, 0) 0%, rgba(180, 1, 66, 0.5) 100%), #F5A100;
-      border: 1px dashed #F5A100;
+      background: linear-gradient(135deg, rgba(180, 1, 67, 0) 0%, rgba(180, 1, 66, 0.5) 100%), $color-third;
+      border: 1px dashed $color-third;
     }
 
     &--third &-value {
