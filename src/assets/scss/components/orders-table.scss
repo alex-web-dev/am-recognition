@@ -36,7 +36,7 @@
     border-collapse: collapse;
     table-layout: fixed;
 
-    &:first-child {
+    &:first-child tr:first-child {
       td {
         padding-top: 0;
         border-top: none;
@@ -82,6 +82,7 @@
   }
 
   &__inactive {
+
     td:not(:first-child),
     .orders-table__product {
       opacity: 0.33;

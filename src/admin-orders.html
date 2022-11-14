@@ -79,22 +79,27 @@
 						<div class="admin-orders__header">
 							<div class="admin-orders__header-top">
 								<div class="filter filter--i-flex admin-orders__header-filter">
-									<a href="#" class="filter__btn filter__btn--active filter__btn--big">В обработке</a>
-									<a href="#" class="filter__btn filter__btn--big">Архив</a>
+									<a href="admin-orders.html" class="filter__btn filter__btn--active filter__btn--big">В обработке</a>
+									<a href="admin-orders-archive.html" class="filter__btn filter__btn--big">Архив</a>
 								</div>
 								<div class="admin-orders__dates">
 									<div>Дата ближайшей обработки 1.10.2022</div>
 									<div>Дата следующей обработки 15.10.2022</div>
-									<a class="link link--small" href="#">Редактировать даты</a>
+									<button class="link link--small js-open-popup" data-popup-name="process-date">Редактировать
+										даты</button>
 								</div>
 							</div>
-							<div class="filter filter--i-flex tabs-btns" data-tabs-name="table-type">
-								<button class="filter__btn filter__btn--text-small filter__btn--split filter__btn--big tabs-btn tabs-btn--active">Товары</button>
-								<button class="filter__btn filter__btn--text-small filter__btn--split filter__btn--big tabs-btn">Сертификаты</button>
+							<div class="admin-orders__header-bottom">
+								<div class="filter filter--i-flex tabs-btns admin-orders__tabs-btns" data-tabs-name="table-type">
+									<button
+										class="filter__btn filter__btn--text-small filter__btn--split filter__btn--big tabs-btn tabs-btn--active">Товары</button>
+									<button
+										class="filter__btn filter__btn--text-small filter__btn--split filter__btn--big tabs-btn">Сертификаты</button>
+								</div>
 							</div>
 						</div>
 						<div class="tabs-list" data-tabs-name="table-type">
-							<div class="tabs-item ">
+							<div class="tabs-item tabs-item--active">
 								<div class="orders-table admin-orders__table">
 									<div class="orders-table__header">
 										<label class="checkbox orders-table__checkbox">
@@ -103,8 +108,9 @@
 										</label>
 										<div class="orders-table__btns">
 											<button class="btn btn--success orders-table__btn">Отправлено</button>
-											<button class="btn orders-table__btn">Выгрузить данные</button>
-											<button class="btn orders-table__btn">Отправить уведомление</button>
+											<button class="btn orders-table__btn js-open-popup" data-popup-name="upload-data">Выгрузить
+												данные</button>
+											<button class="btn orders-table__btn js-open-popup" data-popup-name="send-notification">Отправить уведомление</button>
 											<button class="btn btn--danger orders-table__btn">Отменить заказы</button>
 										</div>
 									</div>
@@ -136,11 +142,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -177,7 +183,7 @@
 															<div class="text text--danger">Подразделение</div>
 															<div class="text text--danger">Неактивен с 1.09.2022</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -209,11 +215,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -245,11 +251,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -281,11 +287,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -317,11 +323,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -353,11 +359,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -389,11 +395,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -425,11 +431,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -461,11 +467,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -486,7 +492,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="tabs-item tabs-item--active">
+							<div class="tabs-item">
 								<div class="orders-table admin-orders__table">
 									<div class="orders-table__header">
 										<label class="checkbox orders-table__checkbox">
@@ -495,8 +501,9 @@
 										</label>
 										<div class="orders-table__btns">
 											<button class="btn btn--success orders-table__btn">Отправить</button>
-											<button class="btn orders-table__btn">Выгрузить данные</button>
-											<button class="btn orders-table__btn">Отправить уведомление</button>
+											<button class="btn orders-table__btn js-open-popup" data-popup-name="upload-data">Выгрузить
+												данные</button>
+											<button class="btn orders-table__btn js-open-popup" data-popup-name="send-notification">Отправить уведомление</button>
 										</div>
 									</div>
 									<table class="orders-table__main">
@@ -529,11 +536,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -570,7 +577,7 @@
 															<div class="text text--danger">Подразделение</div>
 															<div class="text text--danger">Неактивен с 1.09.2022</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -579,7 +586,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -602,11 +609,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -615,7 +622,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -638,11 +645,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -651,7 +658,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -674,11 +681,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -687,7 +694,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -710,11 +717,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -723,7 +730,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -746,11 +753,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -759,7 +766,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -782,11 +789,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -795,7 +802,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -818,11 +825,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -831,7 +838,7 @@
 											<tr>
 												<td>
 													<label class="checkbox orders-table__checkbox">
-														<input class="checkbox__input" type="checkbox" name="check">
+														<input class="checkbox__input" type="checkbox" name="check" checked>
 														<span class="checkbox__switch checkbox__switch--big"></span>
 													</label>
 													<div class="orders-table__product">
@@ -854,11 +861,11 @@
 												<td>
 													<div class="user orders-table__user">
 														<div class="user__info">
-															<a class="user__name" href="#">Мария Александровская</a>
+															<a class="user__name" href="admin-user.html">Мария Александровская</a>
 															<div class="text text--gray">Должность</div>
 															<div class="text text--gray">Подразделение</div>
 														</div>
-														<a class="user__avatar user__avatar--story" href="#">
+														<a class="user__avatar user__avatar--story" href="admin-user.html">
 															<img src="assets/img/avatars/2.png" alt="">
 														</a>
 													</div>
@@ -885,6 +892,52 @@
 			</div>
 		</div>
 	</main>
+
+	<div class="popup popup--color-bg" data-popup-name="process-date">
+		<div class="popup__content popup__content--w-480">
+			<form class="order-form popup__order-form" action="" autocomplete="off">
+				<div class="order-form__item">
+					<div class="text text--center order-form__text">Дата ближайшей обработки</div>
+					<input class="settings-input order-form__input" type="text" value="1.10.2022">
+				</div>
+				<div class="order-form__item">
+					<div class="text text--center order-form__text">Дата ближайшей обработки</div>
+					<input class="settings-input order-form__input" type="text" value="1.10.2022">
+				</div>
+				<button class="btn order-form__btn">Сохранить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="popup popup--color-bg" data-popup-name="upload-data">
+		<div class="popup__content popup__content--w-480">
+			<form class="order-form order-form--upload popup__order-form" action="" autocomplete="off">
+				<div class="order-form__item">
+					<div class="text text--center order-form__text">Выгрузка за период</div>
+					<div class="order-form__range">
+						<input class="settings-input order-form__input" type="text" value="1.10.2022">
+						<span class="order-form__range-separate">—</span>
+						<input class="settings-input order-form__input" type="text" value="1.10.2022">
+					</div>
+				</div>
+				<button class="btn order-form__btn">Выгрузить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="popup popup--color-bg" data-popup-name="send-notification">
+		<div class="popup__content">
+			<form class="order-form order-form--notification popup__order-form" autocomplete="off">
+				<div class="order-form__item">
+					<div class="order-form__text">Уведомление пользователю Мария Александровская по отправлению “Футболка” из
+						заказа 000023</div>
+					<textarea
+						class="settings-input settings-input--area order-form__area">Отправление будет доставлено на несколько дней позднее. Приносим свои извинения</textarea>
+				</div>
+				<button class="btn order-form__btn">Отправить</button>
+			</form>
+		</div>
+	</div>
 </body>
 
 </html>
