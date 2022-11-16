@@ -65,12 +65,17 @@
 
   &__avatar {
     margin-right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
 
     &--story {
-      border: 2px solid $color-second;
+      img {
+        border: 2px solid $color-second;
+      }
     }
   }
 

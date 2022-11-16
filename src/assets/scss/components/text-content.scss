@@ -2,9 +2,14 @@
   font-size: 12px;
   line-height: 1.5;
 
-  p {
+  p,
+  a {
     &:not(:first-child) {
       margin-top: 6px;
     }
+  }
+
+  a {
+    display: inline-block;
   }
 }

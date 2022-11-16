@@ -21,6 +21,8 @@ if ($loginForm) {
         className: 'message--error',
         delay: 4000
       });
+    } else if (!isError) {
+      location.href = 'profile.html';
     }
   });
 

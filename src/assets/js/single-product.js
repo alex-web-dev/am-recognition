@@ -17,9 +17,4 @@ new Swiper('.single-product__big-slider', {
   mousewheel: {
     sensitivity: 1.4,
   },
-  breakpoints: {
-    480: {
-      slidesPerView: 1,
-    }
-  }
 });

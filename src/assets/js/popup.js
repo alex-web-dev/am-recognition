@@ -34,18 +34,16 @@ function open($popup) {
   if (delay && $progressDone) {
     let progressPersent = 0;
     const tick = 1000 / 60;
-    if (delay) {
-      closeTimer = setInterval(() => {
-        progressPersent = Math.min(progressPersent + tick / delay * 100, 100);
-        $progressDone.style.width = `${progressPersent}%`;
-        if (progressPersent === 100) {
-          close($popup);
-          $popup.addEventListener('transitionend', () => {
-            $progressDone.setAttribute('style', '');
-          }, { once: true })
-        }
-      }, tick);
-    }
+    closeTimer = setInterval(() => {
+      progressPersent = Math.min(progressPersent + tick / delay * 100, 100);
+      $progressDone.style.width = `${progressPersent}%`;
+      if (progressPersent === 100) {
+        close($popup);
+        $popup.addEventListener('transitionend', () => {
+          $progressDone.setAttribute('style', '');
+        }, { once: true })
+      }
+    }, tick);
   } else if (delay) {
     setTimeout(() => close($popup), delay);
   }

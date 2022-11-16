@@ -136,6 +136,16 @@
       flex: 0 0 100%;
     }
 
+    &__big-slide {
+      width: 70%;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
     &__nav-slider {
       display: none;
     }
