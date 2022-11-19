@@ -1,6 +1,9 @@
 .wallet-item {
-  padding-bottom: 18px;
+  padding: 15px 0 18px;
   border-bottom: 1px solid rgba($color-third, 0.15);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
 
   &__header {
     display: flex;
@@ -63,63 +66,89 @@
     }
   }
 
-  &__avatar {
+  &__author {
+    position: relative;
+    align-self: flex-start;
     margin-right: 20px;
+    width: 40px;
+    height: 40px;
+
+    &-like {
+      position: absolute;
+      right: -10px;
+      bottom: 0;
+      width: 22px;
+    }
+
+    &--mr-16 {
+      margin-right: 16px;
+    }
+  }
+
+  &__avatar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
 
     img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      max-width: none;
+      object-fit: cover;
     }
 
     &--story {
-      img {
-        border: 2px solid $color-second;
-      }
+      border: 2px solid $color-second;
     }
   }
 
-  &__text {
-    font-size: 12px;
-    line-height: 1.5;
-    font-weight: 500;
-
-    a {
-      color: $color-primary;
-    }
+  &__date {
+    margin-left: auto;
   }
 
   &__message {
-    padding-left: 56px;
+    padding-left: 60px;
     margin-top: 5px;
-    font-size: 12px;
-    line-height: 1.5;
     font-style: italic;
     color: $color-gray;
   }
 
-  &--avatar &__message {
-    padding-left: 70px;
+  &--recognition {
+    padding: 20px 0 15px;
+  }
+
+  &--recognition &__header {
+    &:last-child {
+      padding-bottom: 14px;
+    }
   }
 }
 
 @include media_max_width(680px) {
   .wallet-item {
-    &__icon {
-      margin-right: 10px;
-    }
-
-    &__avatar {
-      margin-right: 10px;
-    }
-
     &__message {
+      margin-top: 10px;
       padding-left: 0;
     }
 
     &--avatar {
       .wallet-item__message {
         padding-left: 0;
+      }
+    }
+
+    &--recognition {
+      .wallet-item__header {
+        &:last-child {
+          padding-bottom: 5px;
+        }
       }
     }
   }

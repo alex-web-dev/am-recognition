@@ -66,6 +66,11 @@
 									</a>
 								</li>
 								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-departments.html">
+										<span>Департаменты RST</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
 									<a class="admin-menu__link" href="admin-planned-accruals.html">
 										<span>Плановые начисления</span>
 									</a>
@@ -78,21 +83,23 @@
 					<div class="users">
 						<div class="users__header">
 							<div class="users__selects">
-								<div class="select select--black users__select">
+								<div class="select select--text-black users__select" data-select-text="↓">
 									<select class="select__field">
-										<option value="1">Все должности ↓</option>
-										<option value="2">Должность</option>
+										<option value="1">Все должности</option>
+										<option value="2">Должность 1</option>
+										<option value="3">Должность 2</option>
 									</select>
 								</div>
-								<div class="select select--black users__select">
+								<div class="select select--text-black users__select" data-select-text="↓">
 									<select class="select__field">
-										<option value="1">Все регионы ↓</option>
-										<option value="2">Регион</option>
+										<option value="1">Все регионы</option>
+										<option value="2">Регион 1</option>
+										<option value="2">Регион 2</option>
 									</select>
 								</div>
-								<div class="select select--black users__select">
+								<div class="select select--text-black users__select" data-select-text="↓">
 									<select class="select__field">
-										<option value="1">Все таланты ↓</option>
+										<option value="1">Все таланты</option>
 										<option value="2">Кулинария</option>
 										<option value="3">Съемка фото и видео</option>
 										<option value="3">Обработка фотографий</option>
@@ -116,7 +123,7 @@
 									<th>Имя</th>
 									<th>Должность/ <br> подразделение</th>
 									<th>Расходный <br> кошелек</th>
-									<th>Банк <br> признания</th>
+									<th>Запас <br> признания</th>
 									<th>Дополнительно</th>
 								</tr>
 							</thead>
@@ -124,7 +131,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -142,7 +151,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -160,7 +171,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -178,7 +191,9 @@
 								<tr class="users-table__inactive">
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -198,7 +213,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -216,7 +233,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -234,7 +253,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -252,7 +273,9 @@
 								<tr class="users-table__inactive">
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -272,7 +295,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -290,7 +315,9 @@
 								<tr>
 									<td>
 										<a class="user" href="admin-user.html">
-											<img class="user__avatar user__avatar--story" src="assets/img/avatars/2.png" alt="">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
 											<span class="user__name">Мария <br> Александровская</span>
 										</a>
 									</td>
@@ -343,7 +370,7 @@
 			<form class="wallet-edit popup__wallet-edit" autocomplete="off">
 				<div class="wallet-edit__header">
 					<div class="user wallet-edit__user">
-						<a class="user__avatar" href="admin-user.html">
+						<a class="user__avatar user__avatar--story" href="admin-user.html">
 							<img src="assets/img/avatars/2.png" alt="">
 						</a>
 						<div class="user__info">
@@ -364,7 +391,7 @@
 					<div class="wallet-edit__item">
 						<div class="wallet-edit__field">
 							<input class="settings-input settings-input--small wallet-edit__input" type="text" value="2000">
-							<div class="wallet-edit__label">Банк признания</div>
+							<div class="wallet-edit__label">Запас признания</div>
 						</div>
 						<div class="text text--success wallet-edit__value">+500</div>
 					</div>

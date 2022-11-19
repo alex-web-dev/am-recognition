@@ -70,8 +70,10 @@
 							<div class="profile__header-main">
 								<div class="profile__user">
 									<div class="profile__avatar">
-										<img class="profile__avatar-img" src="assets/img/avatars/1.png" alt="">
-										<button class="btn-circle btn-circle--third profile__avatar-edit">
+										<div class="profile__avatar-img">
+											<img src="assets/img/avatars/1.png" alt="">
+										</div>
+										<button class="btn-circle profile__avatar-edit">
 											<span class="icon icon-edit"></span>
 										</button>
 									</div>
@@ -118,9 +120,19 @@
 
 						<div class="profile-info profile__info">
 							<div class="profile-info__column">
-								<div class="profile-info__text">Моя должность:</div>
-								<div class="profile-info__text">Shift M c 1.08.2022, в подразделении: KFC Проспект Просвещения</div>
-								<a class="link profile-info__more" href="#">Моя история успеха ↓</a>
+								<div class="text-content">
+									<p>Моя должность:</p>
+									<p>Shift M c 1.08.2022, в подразделении: KFC Проспект Просвещения</p>
+									<div class="accordion">
+										<div class="accordion-content">
+											<div class="text-content__more">
+												<p>Shift M c 1.08.2022, в подразделении: KFC Проспект Просвещения</p>
+												<p>Shift M c 1.08.2022, в подразделении: KFC Проспект Просвещения</p>
+											</div>
+										</div>
+										<button class="link profile-info__more accordion-btn">Моя история успеха</button>
+									</div>
+								</div>
 							</div>
 						</div>
 

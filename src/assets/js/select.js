@@ -13,4 +13,22 @@ $selects.forEach($select => {
     paste: true,
     position: 'select-one',
   });
+
+  $input.addEventListener('showDropdown', () => $select.classList.add('select--active'));
+  $input.addEventListener('hideDropdown', () => $select.classList.remove('select--active'));
+
+  const text = $select.dataset.selectText;
+  if (!text) {
+    return;
+  }
+
+  let $innerItem = $select.querySelector('.choices__inner .choices__item');
+  $innerItem.childNodes[0].textContent += ` ${text}`;
+
+  $input.addEventListener('addItem', (e) => {
+    if (e.detail.value) {
+      $innerItem = $select.querySelector('.choices__inner .choices__item');
+      $innerItem.childNodes[0].textContent = `${e.detail.label} ${text}`;
+    }
+  }, false);
 });

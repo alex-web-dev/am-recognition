@@ -30,8 +30,10 @@ const optimization = () => {
 const htmlPageNames = [
 	'login',
 	'profile',
+	'profile-banner',
 	'payment-feed',
 	'my-team',
+	'my-team-banner',
 	'ratings',
 	'other-profile',
 	'settings',
@@ -53,6 +55,7 @@ const htmlPageNames = [
 	'admin-badges',
 	'admin-badge-new',
 	'admin-badge-edit',
+	'admin-departments',
 	'admin-planned-accruals',
 	'nav',
 	'catalog',

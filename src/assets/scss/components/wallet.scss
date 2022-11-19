@@ -14,8 +14,8 @@
   }
 
   &__item {
-    &:not(:first-child) {
-      padding-top: 15px;
+    &:first-child {
+      padding-top: 0;
     }
 
     &:last-child {

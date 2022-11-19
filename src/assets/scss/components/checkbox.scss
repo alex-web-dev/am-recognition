@@ -44,6 +44,7 @@
 
   &--btn &__switch {
     width: 100%;
+    min-width: 40px;
     height: auto;
     padding: 8px 12px;
     background: linear-gradient(180deg, rgba($color-third, 0) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
@@ -81,6 +82,13 @@
 
   &--text-small &__switch {
     font-size: 12px;
+  }
+
+  &--rect &__switch {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px;
+    color: #000;
   }
 }
 

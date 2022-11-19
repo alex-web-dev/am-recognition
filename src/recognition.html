@@ -76,7 +76,7 @@
 						</div>
 						<div class="team-item wallet__recognition-user">
 							<a class="team-item__avatar" href="#">
-								<img class="team-item__avatar-img" src="assets/img/avatars/3.png" alt="">
+								<img src="assets/img/avatars/3.png" alt="">
 							</a>
 							<div class="team-item__main">
 								<div class="team-item__info">
@@ -97,12 +97,44 @@
 							</div>
 							<div class="recognition-form__item">
 								<div class="recognition-form__label">
-									<span class="text text--small text--medium">Сумма в AmCoin</span>
+									<span class="text text--small text--medium">Номинал карточки</span>
 									<span class="text text--small text--medium text--gray">Баланс 1 250 ам</span>
 								</div>
-								<input class="settings-input recognition-form__input recognition-form__input--sum" type="text" value="12 500">
+								<div class="recognition-form__checkboxes">
+									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+										<input class="checkbox__input" type="radio" name="nominal">
+										<span class="checkbox__switch">10</span>
+									</label>
+									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+										<input class="checkbox__input" type="radio" name="nominal">
+										<span class="checkbox__switch">20</span>
+									</label>
+									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+										<input class="checkbox__input" type="radio" name="nominal">
+										<span class="checkbox__switch">50</span>
+									</label>
+									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+										<input class="checkbox__input" type="radio" name="nominal">
+										<span class="checkbox__switch">100</span>
+									</label>
+									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+										<input class="checkbox__input" type="radio" name="nominal">
+										<span class="checkbox__switch">200</span>
+									</label>
+									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+										<input class="checkbox__input" type="radio" name="nominal">
+										<span class="checkbox__switch">500</span>
+									</label>
+									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+										<input class="checkbox__input" type="radio" name="nominal">
+										<span class="checkbox__switch">1000</span>
+									</label>
+								</div>
 							</div>
-							<button class="btn btn--third btn--small recognition-form__submit">Признать</button>
+							<button class="btn btn--flex recognition-form__submit">
+								<img class="btn__icon" src="assets/img/icons/like.png" alt="">
+								Отправить признание
+							</button>
 						</form>
 					</div>
 				</div>

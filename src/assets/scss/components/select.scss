@@ -1,4 +1,7 @@
 .select {
+  position: relative;
+  z-index: 1;
+
   &__field {
     display: none;
   }
@@ -8,6 +11,10 @@
 
     &:after {
       display: none;
+    }
+
+    &__placeholder {
+      opacity: 1;
     }
 
     &__inner {
@@ -40,10 +47,8 @@
         top: 50%;
         z-index: 4;
         transform: translateY(-50%) rotate(-90deg);
-        width: 12px;
-        height: 12px;
         font-family: 'iconsfont';
-        font-size: 12px;
+        font-size: 11px;
       }
     }
 
@@ -62,6 +67,10 @@
       background: linear-gradient(180deg, rgba(255, 252, 246, 0.15) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
       box-shadow: 0px 0px 10px rgba($color-third, 0.25);
       border-radius: 0 0 16px 16px;
+    }
+
+    &__list--dropdown .choices__placeholder {
+      display: none;
     }
 
     &__list--dropdown .choices__item--selectable.is-highlighted,
@@ -91,10 +100,6 @@
       &:before {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 251, 245, 0.15) 100%), #FFFFFF;
       }
-
-      &:after {
-        transform: translate(3%, -50%) rotate(90deg);
-      }
     }
   }
 
@@ -102,7 +107,7 @@
     display: none;
   }
 
-  &--black {
+  &--text-black {
 
     .choices__inner,
     .choices__list--dropdown .choices__item,
@@ -110,6 +115,59 @@
       color: #000;
       font-weight: 500;
     }
+  }
+
+  &--white .choices {
+    &__inner,
+    &[data-type*=select-one] .choices__inner {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      background: #fff;
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      color: #000;
+
+      &:before {
+        background: #fff;
+      }
+
+      &:after {
+        content: '\e805';
+        transform: translateY(-50%) rotate(90deg);
+        font-size: 9px;
+      }
+    }
+
+    &__list--dropdown {
+      background: #fff;
+      border-radius: 0;
+    }
+    
+    &__list--dropdown .choices__item,
+    &__list[aria-expanded] .choices__item {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      color: #000;
+      font-size: 14px;
+    }
+
+    &.is-open .choices__inner {
+      box-shadow: 0px 0px 10px rgba($color-third, 0.33);
+    }
+  }
+
+
+  &--arrow .choices {
+    &__inner {
+      &:after {
+        display: inline-block;
+      }
+    }
+  }
+
+  &--active {
+    z-index: 2;
   }
 }
 
