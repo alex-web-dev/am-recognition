@@ -5,7 +5,7 @@
   z-index: 30;
   width: 100%;
   padding: 13px 0;
-  background: $color-gradient-third;
+  background: $color-bg;
   box-shadow: 0px 0px 10px rgba($color-third, 0.25);
   display: none;
 
@@ -48,10 +48,6 @@
     &-full {
       width: 100%;
     }
-  }
-
-  &--bg-body {
-    background: #fef1d9;
   }
 }
 

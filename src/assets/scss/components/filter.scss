@@ -158,6 +158,10 @@
     &__btn {
       font-weight: 500;
       flex: 1 1 auto;
+
+      &--long {
+        min-width: 133px;
+      }
     }
 
     &--mobile {

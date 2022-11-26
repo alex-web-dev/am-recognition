@@ -35,6 +35,6 @@ function moveAwardrOther() {
     element: '.profile__awards--other',
     from: '.profile__awards-desktop',
     to: '.profile__awards-mobile',
-    width: 991,
+    width: 680,
   });
 }

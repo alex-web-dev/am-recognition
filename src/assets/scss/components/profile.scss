@@ -21,13 +21,8 @@
       border-radius: 50%;
 
       img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 120px;
-        height: 120px;
-        max-width: none;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }
@@ -214,23 +209,9 @@
     width: 70px;
     height: 70px;
   }
-  
+
   &--btns {
     padding-bottom: 175px;
-  }
-}
-
-@include media_max_width(991px) {
-  .profile {
-    &__awards {
-      &-mobile {
-        display: block;
-      }
-
-      &-desktop {
-        display: none;
-      }
-    }
   }
 }
 
@@ -300,6 +281,14 @@
 
       &-more {
         display: block;
+      }
+
+      &-mobile {
+        display: block;
+      }
+
+      &-desktop {
+        display: none;
       }
 
       &--full {

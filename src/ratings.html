@@ -50,7 +50,7 @@
 
 	<main class="main">
 		<div class="ratings">
-			<div class="mobile-header mobile-header--bg-body">
+			<div class="mobile-header">
 				<div class="container">
 					<div class="mobile-header__top">
 						<a class="mobile-header__btn mobile-header__btn--back" href="profile.html">
@@ -93,17 +93,20 @@
 										</button>
 									</form>
 								</div>
-								<div class="filter filter--desktop section-header__filter">
-									<button class="filter__btn filter__btn--active">За все время</button>
-									<button class="filter__btn">Последний месяц</button>
-									<button class="filter__btn">Последние 3 месяца</button>
-								</div>
-								<div class="select select--arrow select--mobile section-header__select">
-									<select class="select__field">
-										<option value="1">За все время</option>
-										<option value="2">Последние 3 месяца</option>
-										<option value="3">Последний месяц</option>
-									</select>
+								<div class="section-header__selects">
+									<div class="select select--arrow select--desktop section-header__select">
+										<select class="select__field">
+											<option value="1">По получению</option>
+											<option value="2">По отправлению</option>
+										</select>
+									</div>
+									<div class="select select--arrow section-header__select">
+										<select class="select__field">
+											<option value="1">За все время</option>
+											<option value="2">За последний месяц</option>
+											<option value="3">За последние 3 месяца</option>
+										</select>
+									</div>
 								</div>
 							</div>
 	
@@ -360,7 +363,6 @@
 							</div>
 							<button class="menu__close">
 								<span class="icon icon-close menu__close-icon"></span>
-								<span class="menu__close-text">Меню</span>
 							</button>
 						</div>
 					</div>

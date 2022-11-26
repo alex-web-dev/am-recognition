@@ -15,6 +15,10 @@
     display: flex;
 
     &-link {
+      &:first-child {
+        margin-top: 1px;
+      }
+      
       &:not(:first-child) {
         margin-left: 18px;
       }

@@ -18,8 +18,17 @@
     margin-top: 28px;
   }
 
+  &__selects {
+    margin-top: 25px;
+    display: flex;
+  }
+
   &__select {
-    margin-top: 10px;
+    flex: 1 1 100%;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -31,6 +40,21 @@
 
     &__search {
       flex-basis: 100%;
+    }
+
+    &__selects {
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    &__select {
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
   }
 }
