@@ -15,17 +15,21 @@
     margin-top: 35px;
 
     img {
+      display: block;
       max-height: 100%;
       object-fit: cover;
     }
   }
 
-  &__text-content {
+  &__content {
     margin-top: 30px;
     font-size: 14px;
     line-height: 1.29;
 
     p {
+      margin: 0 auto;
+      max-width: calc(100% / 12 * 8);
+
       &:not(:first-child) {
         margin-top: 7px;
       }
@@ -33,8 +37,15 @@
   }
 
   &__slider {
-    margin-top: 35px;
     height: 230px;
+
+    &:not(:first-child) {
+      margin-top: 35px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
 
     &-next,
     &-prev {
@@ -75,6 +86,51 @@
       object-fit: cover;
     }
   }
+
+  &__iframe {
+    margin: 0 auto;
+
+    max-width: calc(100% / 12 * 8);
+
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      display: block;
+      max-width: 100%;
+      border: none;
+
+      &:not([width]) {
+        width: 332px;
+      }
+
+      &:not([height]) {
+        height: 180px;
+      }
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    max-width: calc(100% / 12 * 8);
+
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    img {
+      display: block;
+    }
+  }
 }
 
 @include media_max_width(680px) {
@@ -111,8 +167,20 @@
       }
     }
 
-    &__text-content {
+    &__content {
       margin-top: 15px;
+
+      p {
+        max-width: 100%;
+      }
+    }
+
+    &__iframe {
+      max-width: 100%;
+    }
+
+    &__image {
+      max-width: 100%;
     }
   }
 }
@@ -132,16 +200,31 @@
     }
 
     &__slider {
-      margin: 25px -#{$container-xs-offset} 5px;
-      height: 90px;
+      margin-left: -#{$container-xs-offset};
+      margin-right: -#{$container-xs-offset};
+      height: 160px;
+
+      &:not(:first-child) {
+        margin-top: 25px;
+      }
     }
 
     &__slide {
-      width: 120px;
+      width: 214px;
     }
 
     &__navigation {
       display: none;
+    }
+
+    &__iframe {
+      iframe:not([width]) {
+        width: 266px;
+      }
+
+      iframe:not([height]) {
+        height: 140px;
+      }
     }
   }
 }

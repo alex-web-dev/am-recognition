@@ -5,10 +5,17 @@
   border-radius: 10px;
 
   &__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-left: 30px;
     padding-top: 12px;
     padding-right: 10px;
     flex: 0 0 calc(100% / 3);
+  }
+
+  &__edit {
+    margin-top: 6px;
   }
 
   &__elems {
@@ -43,6 +50,10 @@
       height: 15px;
       font-size: 7px;
       line-height: 7px;
+
+      &:first-child {
+        margin-right: 10px;
+      }
     }
 
     &-input {

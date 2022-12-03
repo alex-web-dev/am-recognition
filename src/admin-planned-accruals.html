@@ -124,14 +124,14 @@
 								</div>
 							</div>
 							<div class="accrual-item accruals__item">
-								<div class="accrual-item__name">OPS</div>
+								<div class="accrual-item__name">
+									OPS
+									<button class="link accrual-item__edit js-open-popup" data-popup-name="choose-position">Редактировать</button>
+								</div>
 								<div class="accrual-item__elems">
 									<div class="accrual-item__elem">
 										<span class="accrual-item__elem-value">
 											<span class="accrual-item__elem-name">Gm</span>
-											<button class="btn-circle accrual-item__elem-edit js-open-popup" data-popup-name="choose-position">
-												<span class="icon icon-edit"></span>
-											</button>
 										</span>
 										<input class="settings-input settings-input--small accrual-item__elem-input" type="text"
 											value="1 200">
@@ -139,27 +139,18 @@
 									<div class="accrual-item__elem">
 										<span class="accrual-item__elem-value">
 											<span class="accrual-item__elem-name">Assistants</span>
-											<button class="btn-circle accrual-item__elem-edit js-open-popup" data-popup-name="choose-position">
-												<span class="icon icon-edit"></span>
-											</button>
 										</span>
 										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
 									</div>
 									<div class="accrual-item__elem">
 										<span class="accrual-item__elem-value">
 											<span class="accrual-item__elem-name">Shift</span>
-											<button class="btn-circle accrual-item__elem-edit js-open-popup" data-popup-name="choose-position">
-												<span class="icon icon-edit"></span>
-											</button>
 										</span>
 										<input class="settings-input settings-input--small accrual-item__elem-input" type="text">
 									</div>
 									<div class="accrual-item__elem">
 										<span class="accrual-item__elem-value">
 											<span class="text text--danger accrual-item__elem-name">Не распределены (3)</span>
-											<button class="btn-circle accrual-item__elem-edit js-open-popup" data-popup-name="choose-position">
-												<span class="icon icon-edit"></span>
-											</button>
 										</span>
 									</div>
 								</div>
@@ -318,7 +309,7 @@
 								</div>
 							</div>
 							<div class="choose-position__btns">
-								<button class="btn btn--round btn--gray choose-position__btn">Отмена</button>
+								<button type="button" class="btn btn--round btn--gray choose-position__btn js-close-popup">Отмена</button>
 								<button class="btn btn--round choose-position__btn">Сохранить список</button>
 							</div>
 						</form>

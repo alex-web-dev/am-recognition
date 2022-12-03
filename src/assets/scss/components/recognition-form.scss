@@ -43,6 +43,12 @@
 
 @include media_max_width(680px) {
   .recognition-form {
+    &__item {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+
     &__submit {
       padding-top: 18px;
       padding-bottom: 18px;

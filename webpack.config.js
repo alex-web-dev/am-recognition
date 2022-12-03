@@ -49,6 +49,7 @@ const htmlPageNames = [
 	'recognitions',
 	'recognition-employee',
 	'recognition',
+	'recognition-without-nominal',
 	'admin-updates',
 	'admin-users',
 	'admin-user',

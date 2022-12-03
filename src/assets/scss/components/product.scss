@@ -46,7 +46,12 @@
 
   &__price {
     margin-top: 3px;
+    display: flex;
     font-weight: 500;
+
+    &:after {
+      font-size: 12px;
+    }
   }
 
   &__right {
