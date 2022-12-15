@@ -18,7 +18,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(128, 128, 128, 0.75);
+    background: rgba($color-gray, 0.75);
   }
 
   &__content {
@@ -113,7 +113,7 @@
 
   &--message {
     &:before {
-      background: rgba(254, 241, 217, 0.9);
+      background: rgba($color-bg, 0.9);
     }
   }
 
@@ -131,12 +131,12 @@
 
   &--danger {
     &:before {
-      background: rgba(128, 128, 128, 0.75);
+      background: rgba($color-gray, 0.75);
     }
   }
 
   &--danger &__content {
-    background: #b10933;
+    background: $color-danger;
   }
 
   &--full &__content {

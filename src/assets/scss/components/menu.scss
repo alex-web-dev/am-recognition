@@ -58,6 +58,10 @@
     border-bottom: 1px solid rgba($color-third, 0.15);
   }
 
+  &__items:last-child &__item--inner &__link {
+    border-bottom: none;
+  }
+
   &__text {
     transition: transform .4s;
   }
@@ -80,7 +84,7 @@
     width: 20px;
     height: 20px;
     font-size: 20px;
-    color: $color-second;
+    color: $color-primary;
 
     &--round {
       border-radius: 50%;
@@ -131,6 +135,12 @@
 
     &__main {
       padding-top: 45px;
+    }
+
+    &__item {
+      &--inner {
+        margin: 0 5px;
+      }
     }
 
     &__link,

@@ -6,9 +6,14 @@
 
   &__column {
     margin: 0 5px;
-    flex: 1 1 100%;
+    flex: 1 1 auto;
+    width: calc(50% - 10px);
     font-size: 12px;
     line-height: 1.67;
+
+    &--4 {
+      width: calc(100% / 12 * 4 - 10px);
+    }
   }
 
   &__item {

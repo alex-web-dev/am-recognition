@@ -94,11 +94,18 @@
     margin-left: 4px;
     font-family: 'iconsfont';
     font-weight: normal;
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 1;
   }
 
   &--primary {
     color: $color-primary;
+  }
+
+  &--12 {
+    &:after {
+      font-size: 12px;
+    }
   }
 
   &--14 {
@@ -117,10 +124,10 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: rgba(28, 47, 118, 0.33);
+  background: rgba($color-primary, 0.33);
 
   &:hover {
-    background: rgba(28, 47, 118, 0.66);
+    background: rgba($color-primary, 0.66);
   }
 
   &:not(:first-child) {

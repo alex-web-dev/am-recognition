@@ -22,7 +22,7 @@
   }
 
   &__link {
-    background: linear-gradient(180deg, rgba(245, 161, 0, 0) 0%, rgba(245, 161, 0, 0.15) 100%), #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(245, 161, 0, 0.33);
+    background: linear-gradient(180deg, rgba($color-third, 0) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
+    box-shadow: 0px 0px 10px rgba($color-third, 0.33);
   }
 }
