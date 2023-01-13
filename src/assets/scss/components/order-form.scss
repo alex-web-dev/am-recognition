@@ -40,6 +40,15 @@
     padding: 11px 20px;
   }
 
+  &__text-content {
+    font-size: 14px;
+    line-height: 1.29;
+    
+    &:not(:first-child) {
+      margin-top: 23px;
+    }
+  }
+
   &--upload {
     padding-bottom: 90px;
   }

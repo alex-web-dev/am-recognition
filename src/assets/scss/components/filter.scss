@@ -72,12 +72,7 @@
     }
 
     &--split {
-      border-radius: 30px;
-
-      &:not(:first-child) {
-        margin-left: 10px;
-      }
-
+      &,
       &:first-child,
       &:last-child {
         border-radius: 30px;
@@ -85,6 +80,10 @@
         &:before {
           border-radius: 30px
         }
+      }
+
+      &:not(:first-child) {
+        margin-left: 10px;
       }
     }
 

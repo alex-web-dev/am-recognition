@@ -26,6 +26,11 @@
 									</a>
 								</li>
 								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-appeals.html">
+										<span>Обращения</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
 									<a class="admin-menu__link" href="#">
 										<span>Программы мотивации</span>
 									</a>
@@ -81,6 +86,30 @@
 				</div>
 				<div class="col-7 mx-auto">
 					<div class="admin-updates">
+						<div class="categories admin-updates__categories">
+							<div class="categories__list">
+								<label class="checkbox checkbox--btn checkbox--text-small checkbox--dark categories__item">
+									<input class="checkbox__input" type="radio" name="contests" checked>
+									<span class="checkbox__switch">Все</span>
+								</label>
+								<label class="checkbox checkbox--btn checkbox--text-small checkbox--dark categories__item">
+									<input class="checkbox__input" type="radio" name="contests">
+									<span class="checkbox__switch">Обращения</span>
+								</label>
+								<label class="checkbox checkbox--btn checkbox--text-small checkbox--dark categories__item">
+									<input class="checkbox__input" type="radio" name="contests">
+									<span class="checkbox__switch">Заказы</span>
+								</label>
+								<label class="checkbox checkbox--btn checkbox--text-small checkbox--dark categories__item">
+									<input class="checkbox__input" type="radio" name="contests">
+									<span class="checkbox__switch">Наличие товаров</span>
+								</label>
+								<label class="checkbox checkbox--btn checkbox--text-small checkbox--dark categories__item">
+									<input class="checkbox__input" type="radio" name="contests">
+									<span class="checkbox__switch">Должности</span>
+								</label>
+							</div>
+						</div>
 						<form class="search admin-updates__search" autocomplete="off">
 							<input class="search__input" type="text" placeholder="Поиск по обновлениям">
 							<button class="search__btn search__btn--submit">
@@ -93,84 +122,117 @@
 						<div class="products admin-updates__products">
 							<div class="product products__item">
 								<div class="product__content">
-									<div class="product__img">
-										<img src="assets/img/products/1.png" alt="">
+									<div class="product__date product__date--danger">
+										09:00
+										<br>
+										15 декабря
 									</div>
-									<div class="product__info">
-										<div class="product__name">Футболка</div>
-										<div class="price product__price">2500</div>
-									</div>
-									<div class="product__right">
-										<div class="text text--danger product__status">Товар закончился</div>
-										<a class="link product__edit" href="admin-edit-product.html">Редактировать</a>
-									</div>
-								</div>
-							</div>
-							<div class="product product--teaser products__item">
-								<div class="product__content">
-									<div class="user product__user">
-										<a class="user__avatar" href="admin-user.html">
-											<img src="assets/img/avatars/2.png" alt="">
-										</a>
-										<div class="user__info user__info--small">
-											<a class="user__name" href="admin-user.html">Мария Александровская</a>
-											<a class="text text--danger" href="#">Сообщение о проблеме</a>
+									<div class="product__main">
+										<div class="product__data">
+											<img class="product__small-img" src="assets/img/products/1.png" alt="">
+											<div class="product__info">
+												<div class="product__name">Футболка</div>
+												<div class="price product__price">2500</div>
+											</div>
+										</div>
+										<div class="product__right">
+											<div class="text text--danger product__status">Заканчиваются размеры товара</div>
+											<a class="link product__edit" href="admin-edit-product.html">Редактировать</a>
 										</div>
 									</div>
-									<div class="text-content product__text-content">
-										<p>От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в Европе и Азии. В России это бренды, с которых всё начиналось — KFC (200+ ресторанов по франшизе Yum! Brands) и Pizza Hut (40+ ресторанов по собственной франшизе компании).</p>
-										<p>От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в Европе и Азии. В России это бренды, с которых всё начиналось — KFC (200+ ресторанов по франшизе Yum! Brands) и Pizza Hut (40+ ресторанов по собственной франшизе компании).</p>
+								</div>
+							</div>
+							<div class="product products__item">
+								<div class="product__content">
+									<div class="product__date">
+										09:00
+										<br>
+										15 декабря
+									</div>
+									<div class="product__main">
+										<div class="product__data">
+											<img class="product__small-img" src="assets/img/products/1.png" alt="">
+											<div class="product__info">
+												<div class="product__name">
+													Новый заказ
+													<br>
+													Футболка фиолетовая,
+													<div class="price product__price">2500</div>
+												</div>
+											</div>
+										</div>
+										<div class="product__right">
+											<div class="user product__user">
+												<a class="user__avatar" href="admin-user.html">
+													<img src="assets/img/avatars/2.png" alt="">
+												</a>
+												<div class="user__info user__info--small">
+													<a class="user__name" href="admin-user.html">Мария <br> Александровская</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="product products__item">
 								<div class="product__content">
-									<div class="product__img">
-										<img src="assets/img/products/1.png" alt="">
+									<div class="product__date product__date--danger">
+										09:00
+										<br>
+										15 декабря
 									</div>
-									<div class="product__info">
-										<div class="product__name">Футболка</div>
-										<div class="price product__price">2500</div>
-									</div>
-									<div class="product__right">
-										<div class="text text--danger product__status">Закончились размеры S, M, L</div>
-										<a class="link product__edit" href="admin-edit-product.html">Редактировать</a>
-									</div>
-								</div>
-							</div>
-							<div class="product product--done products__item">
-								<div class="product__content">
-									<div class="product__info">
-										<div class="product__name">Конкурс талантов</div>
-										<div class="text text--gray product__text">Все регионы, Кулинария</div>
-										<div class="text text--danger product__text">Прием работ закончен</div>
-									</div>
-								</div>
-							</div>
-							<div class="product product--done products__item">
-								<div class="product__content">
-									<div class="product__info">
-										<div class="product__name">ROCC STAR</div>
-										<div class="text text--gray product__text">1 этап (1 марта — 31 мая)</div>
-										<div class="text text--danger product__text">Этап завершен</div>
-									</div>
-									<div class="product__right">
-										<button class="btn product__btn">Опубликовать победителей</button>
+									<div class="product__main">
+										<div class="product__right">
+											<div class="text text--danger product__status">Новая должность: Младший сотрудник отдела логистики</div>
+											<a class="link product__edit" href="admin-edit-product.html">Распределить →</a>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="product products__item">
 								<div class="product__content">
-									<div class="product__img">
-										<img src="assets/img/products/1.png" alt="">
+									<div class="product__date">
+										09:00
+										<br>
+										15 декабря
 									</div>
-									<div class="product__info">
-										<div class="product__name">Футболка</div>
-										<div class="price product__price">2500</div>
+									<div class="product__main">
+										<div class="product__data">
+											<img class="product__small-img" src="assets/img/products/1.png" alt="">
+											<div class="product__info">
+												<div class="product__name">
+													Новый заказ
+													<br>
+													Футболка фиолетовая,
+													<div class="price product__price">2500</div>
+												</div>
+											</div>
+										</div>
+										<div class="product__right">
+											<div class="user product__user">
+												<a class="user__avatar" href="admin-user.html">
+													<img src="assets/img/avatars/2.png" alt="">
+												</a>
+												<div class="user__info user__info--small">
+													<a class="user__name" href="admin-user.html">Мария <br> Александровская</a>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="product__right">
-										<div class="text--danger product__status">Закончились размеры S, M, L</div>
-										<a class="link product__edit" href="admin-edit-product.html">Редактировать</a>
+								</div>
+							</div>
+							<div class="product products__item">
+								<div class="product__content">
+									<div class="product__date product__date--danger">
+										09:00
+										<br>
+										15 декабря
+									</div>
+									<div class="product__main">
+										<div class="product__right">
+											<div class="text text--danger product__status">Новая должность: Младший сотрудник отдела логистики</div>
+											<a class="link product__edit" href="admin-edit-product.html">Распределить →</a>
+										</div>
 									</div>
 								</div>
 							</div>

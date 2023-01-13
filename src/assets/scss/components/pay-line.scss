@@ -4,7 +4,7 @@
   justify-content: space-between;
   border-radius: 10px;
   background: linear-gradient(0deg, rgba($color-third, 0.15), rgba($color-third, 0.15)), rgba(255, 255, 255, 0.3);
-  line-height: 1.4;
+  line-height: 1.43;
 
   &__author {
     display: flex;
@@ -56,6 +56,8 @@
   }
 
   &__date {
+    flex: 0 0 90px;
+    text-align: right;
     color: $color-gray;
   }
 
@@ -83,6 +85,17 @@
 
     &__main {
       flex-direction: column;
+    }
+
+    &__date {
+      flex-basis: auto;
+      text-align: left;
+    }
+
+    &__text {
+      &--message {
+        font-weight: 400;
+      }
     }
   }
 }

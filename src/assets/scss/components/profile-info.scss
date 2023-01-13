@@ -1,6 +1,7 @@
 .profile-info {
   padding: 20px 25px;
   display: flex;
+  flex-wrap: wrap;
   background: rgba($color-third, 0.15);
   border-radius: 10px;
 
@@ -46,6 +47,12 @@
     color: $color-gray;
     font-size: 10px;
   }
+
+  &__message {
+    margin: 4px 5px 0;
+    font-size: 12px;
+    line-height: 1.67;
+  }
 }
 
 @include media_max_width(680px) {
@@ -56,10 +63,21 @@
 
     &__column {
       margin: 0;
+      width: 100%;
       
       &:not(:first-child) {
         margin-top: 14px;
       }
+
+      &--4 {
+        width: 100%;
+      }
+    }
+
+    &__message {
+      margin: 15px 0 0;
+      font-size: 12px;
+      line-height: 1.25;
     }
   }
 }

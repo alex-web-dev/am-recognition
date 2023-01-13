@@ -26,6 +26,11 @@
 									</a>
 								</li>
 								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-appeals.html">
+										<span>Обращения</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
 									<a class="admin-menu__link" href="#">
 										<span>Программы мотивации</span>
 									</a>
@@ -88,9 +93,11 @@
 										<div class="profile__avatar-img">
 											<img src="assets/img/avatars/1.png" alt="">
 										</div>
-										<button class="profile-award profile__avatar-award js-open-stories">
-											<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
-										</button>
+										<div class="js-open-stories-list">
+											<button class="profile-award profile__avatar-award js-open-stories">
+												<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
+											</button>
+										</div>
 									</div>
 									<div class="profile__user-info">
 										<div class="profile__user-name">Константин Александров</div>
@@ -128,7 +135,7 @@
 						</div>
 
 						<div class="profile__awards-desktop">
-							<div class="profile__awards profile__awards--other">
+							<div class="profile__awards profile__awards--other js-open-stories-list">
 								<div class="profile__awards-list">
 									<button class="profile-award profile__award js-open-stories">
 										<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
@@ -202,7 +209,8 @@
 								</div>
 								<div class="profile-wallet__btns">
 									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="user-wallet">История</button>
-									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="wallet-edit">Редактировать</button>
+									<button class="btn profile-wallet__btn js-open-popup"
+										data-popup-name="wallet-edit">Редактировать</button>
 								</div>
 							</div>
 							<div class="profile-wallet profile__wallet">
@@ -212,7 +220,8 @@
 								</div>
 								<div class="profile-wallet__btns">
 									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="user-wallet">История</button>
-									<button class="btn profile-wallet__btn js-open-popup" data-popup-name="wallet-edit">Редактировать</button>
+									<button class="btn profile-wallet__btn js-open-popup"
+										data-popup-name="wallet-edit">Редактировать</button>
 								</div>
 							</div>
 						</div>
@@ -224,6 +233,30 @@
 
 	<div class="stories stories--admin">
 		<div class="stories__progress-list">
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
+			<div class="progress stories__progress-item">
+				<div class="progress__done"></div>
+			</div>
 			<div class="progress stories__progress-item">
 				<div class="progress__done"></div>
 			</div>
@@ -259,8 +292,50 @@
 					<div class="stories__title">Название бейджа.</div>
 					<button class="btn btn--third stories__btn">Получить подарок</button>
 				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/awards/1.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/awards/2.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/awards/3.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/awards/2.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/awards/3.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/awards/4.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/awards/1.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/gift.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
 			</div>
 		</div>
+		<button class="icon icon-arrow-right stories__prev"></button>
+		<button class="icon icon-arrow-right stories__next"></button>
 		<button class="icon icon-close stories__close"></button>
 	</div>
 

@@ -43,6 +43,11 @@
     }
   }
 
+  &__message {
+    margin: -5px 0 25px;
+    line-height: 1.43;
+  }
+
   &--contacts {
     padding-top: 23px;
   }
@@ -86,6 +91,12 @@
 
     &__text {
       font-size: 12px;
+    }
+
+    &__message {
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 1.25;
     }
 
     &--contacts {

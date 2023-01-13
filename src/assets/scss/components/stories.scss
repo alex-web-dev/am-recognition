@@ -12,6 +12,8 @@
 
   &__progress {
     &-list {
+      position: relative;
+      z-index: 1;
       margin: 0 -4px;
       padding: 5px 5px 0;
       display: flex;
@@ -44,6 +46,8 @@
   }
 
   &__btn {
+    position: relative;
+    z-index: 2;
     margin-top: 35px;
     font-size: 12px;
     font-weight: 500;
@@ -53,12 +57,49 @@
     padding-bottom: 17px;
   }
 
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: $color-gray;
+
+    &:before {
+      transition: color .3s;
+    }
+
+    &:hover:before {
+      color: #000;
+    }
+  }
+
+  &__prev {
+    left: 30px;
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__next {
+    right: 30px;
+  }
+
   &__close {
     position: absolute;
     top: 27px;
     right: 20px;
     font-size: 20px;
     color: $color-gray;
+
+    &:before {
+      transition: color .3s;
+    }
+
+    &:hover:before {
+      color: #000;
+    }
   }
 
   &--active {
@@ -106,6 +147,26 @@
     &__btn {
       width: 100%;
       max-width: 300%;
+    }
+
+    &__prev,
+    &__next {
+      width: 25%;
+      height: 100%;
+      top: 0;
+      transform: translateY(0);
+
+      &:before {
+        display: none;
+      }
+    }
+  
+    &__prev {
+      left: 0;
+    }
+  
+    &__next {
+      right: 0;
     }
   }
 }
