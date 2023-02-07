@@ -106,6 +106,25 @@
     border-radius: 10px;
     color: #000;
   }
+
+  &--link &__switch {
+    color: $color-primary;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    flex: auto;
+    text-align: left;
+  }
+
+  &--link &__input:checked~&__switch {
+    color: $color-gray;
+    cursor: default;
+
+    &:before {
+      display: none;
+    }
+  }
+
 }
 
 @include media_max_width(680px) {
@@ -113,6 +132,29 @@
     &__text {
       font-size: 12px;
       font-weight: 500;
+    }
+
+    &--mobile-btn {
+      .checkbox__switch {
+        width: 100%;
+        min-width: 40px;
+        height: auto;
+        padding: 8px 12px;
+        background: linear-gradient(180deg, rgba($color-third, 0) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
+        box-shadow: 0px 0px 10px rgba($color-third, 0.25);
+        border-radius: 20px;
+        color: $color-gray;
+    
+        &:before {
+          display: none;
+        }
+      }
+
+      .checkbox__input:checked~.checkbox__switch {
+        background: rgba($color-third, 0.15);
+        box-shadow: none;
+        cursor: default;
+      }
     }
   }
 }

@@ -1,0 +1,19 @@
+.profile-banner {
+  padding: 15px 15px 17px;
+  display: block;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%), $color-success;
+  box-shadow: 0px 0px 10px rgba($color-third, 0.25);
+  border-radius: 10px;
+  text-align: center;
+
+  &__icon {
+    margin-bottom: 3px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+  }
+}

@@ -28,3 +28,11 @@
     }
   }
 }
+
+@mixin media_min_width($width) {
+  .body:not(.body--desktop) {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+}

@@ -229,7 +229,13 @@
       flex-direction: column;
     }
 
+    &__data {
+      flex: auto;
+    }
+
     &__right {
+      margin-left: 0;
+      
       &:not(:first-child) {
         margin-top: 15px;
       }

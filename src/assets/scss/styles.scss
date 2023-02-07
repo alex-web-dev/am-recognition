@@ -8,6 +8,7 @@
 
 @import "./components/iconsfont";
 @import "./components/btn";
+@import "./components/cart-btn";
 @import "./components/search";
 @import "./components/tabs";
 @import "./components/menu";
@@ -18,7 +19,6 @@
 @import "./components/checkbox";
 @import "./components/progress";
 @import "./components/user";
-@import "./components/popup";
 @import "./components/message";
 @import "./components/accordion";
 @import "./components/fixed-btns";
@@ -34,6 +34,7 @@
 @import "./components/login";
 @import "./components/pay-line";
 @import "./components/pay-lines";
+@import "./components/profile-banner";
 @import "./components/profile-menu";
 @import "./components/profile-award";
 @import "./components/profile-info";
@@ -54,6 +55,7 @@
 @import "./components/recognition-form";
 @import "./components/wallet-item";
 @import "./components/wallet-edit";
+@import "./components/special-edit";
 @import "./components/wallet";
 @import "./components/admin-main";
 @import "./components/admin-navbar";
@@ -70,6 +72,7 @@
 @import "./components/badge-form";
 @import "./components/badges";
 @import "./components/accrual-item";
+@import "./components/accrual-table";
 @import "./components/accruals";
 @import "./components/product-label";
 @import "./components/product-card";
@@ -99,3 +102,4 @@
 @import "./components/banner";
 @import "./components/departments";
 @import "./components/choose-department";
+@import "./components/popup";

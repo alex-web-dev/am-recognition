@@ -141,6 +141,14 @@
         box-shadow: none;
       }
     }
+
+    &--full {
+      flex: 1 1 100%;
+      
+      .checkbox__switch {
+        justify-content: center;
+      }
+    }
   }
 
   &--mobile {

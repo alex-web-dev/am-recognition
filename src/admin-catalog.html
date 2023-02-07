@@ -77,7 +77,7 @@
 								</li>
 								<li class="admin-menu__item">
 									<a class="admin-menu__link" href="admin-planned-accruals.html">
-										<span>Плановые начисления</span>
+										<span>Лимиты признания</span>
 									</a>
 								</li>
 							</ul>
@@ -86,26 +86,33 @@
 				</div>
 				<div class="col-7 mx-auto">
 					<div class="admin-catalog">
-						<div class="categories admin-catalog__categories">
-							<div class="categories__list">
-								<label class="checkbox checkbox--btn categories__item">
-									<input class="checkbox__input" type="radio" name="catalog" checked>
-									<span class="checkbox__switch">Все</span>
-								</label>
-								<label class="checkbox checkbox--btn categories__item">
-									<input class="checkbox__input" type="radio" name="catalog">
-									<span class="checkbox__switch">Одежда</span>
-								</label>
-								<label class="checkbox checkbox--btn categories__item">
-									<input class="checkbox__input" type="radio" name="catalog">
-									<span class="checkbox__switch">Аксессуары</span>
-								</label>
-								<label class="checkbox checkbox--btn categories__item">
-									<input class="checkbox__input" type="radio" name="catalog">
-									<span class="checkbox__switch">Сертификаты</span>
-								</label>
-								<a class="link link--small categories__item" href="admin-create-product.html">+ Добавить товар</a>
+						<div class="admin-catalog__header">
+							<div class="categories admin-catalog__categories">
+								<div class="categories__list">
+									<label class="checkbox checkbox--btn categories__item">
+										<input class="checkbox__input" type="radio" name="catalog" checked>
+										<span class="checkbox__switch">Все</span>
+									</label>
+									<label class="checkbox checkbox--btn categories__item">
+										<input class="checkbox__input" type="radio" name="catalog">
+										<span class="checkbox__switch">Одежда</span>
+									</label>
+									<label class="checkbox checkbox--btn categories__item">
+										<input class="checkbox__input" type="radio" name="catalog">
+										<span class="checkbox__switch">Аксессуары</span>
+									</label>
+									<label class="checkbox checkbox--btn categories__item">
+										<input class="checkbox__input" type="radio" name="catalog">
+										<span class="checkbox__switch">Сертификаты</span>
+									</label>
+									<a class="link link--small categories__item" href="admin-create-product.html">+ Добавить товар</a>
+								</div>
 							</div>
+							<label class="checkbox admin-catalog__header-checkbox">
+								<input class="checkbox__input" type="checkbox" name="active" checked>
+								<span class="checkbox__switch"></span>
+								<span class="checkbox__text">Только активные</span>
+							</label>
 						</div>
 						<div class="products products--m-10 admin-catalog__products">
 							<div class="product product--white product--danger products__item">

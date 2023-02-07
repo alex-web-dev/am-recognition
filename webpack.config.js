@@ -73,10 +73,13 @@ const htmlPageNames = [
 	'admin-catalog',
 	'admin-create-product',
 	'admin-edit-product',
+	'admin-create-product-cert',
+	'admin-edit-product-cert',
 	'admin-orders',
 	'admin-orders-archive',
 	'admin-contests',
 	'admin-contest',
+	'admin-create-news',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

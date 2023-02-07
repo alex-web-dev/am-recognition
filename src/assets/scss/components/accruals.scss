@@ -8,17 +8,16 @@
   }
 
   &__btns {
-    margin-top: 50px;
+    margin-top: 16px;
   }
 
   &__btn {
+    padding-right: 14px;
+    padding-bottom: 14px;
     display: block;
     width: 100%;
     border-radius: 40px;
-
-    &:not(:first-child) {
-      margin-top: 20px;
-    }
+    font-size: 14px;
   }
 }
 

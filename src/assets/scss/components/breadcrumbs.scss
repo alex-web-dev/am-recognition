@@ -19,6 +19,22 @@
         color: $color-primary;
       }
     }
+
+    &--text {
+      &:first-child {
+        padding-left: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      &:hover {
+        &:after {
+          color: #000;
+        }
+      }
+    }
   }
 
   &__link,

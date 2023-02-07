@@ -72,11 +72,56 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="section-header catalog__section-header">
-					<div class="section-header__top">
-						<h1 class="title1 section-header__title">AmShop</h1>
-						<form class="search search--line search--desktop section-header__search" autocomplete="off">
-							<input class="search__input" type="text">
+				<div class="row">
+					<div class="col-sm-3">
+						<aside class="catalog__sidebar">
+							<h1 class="title1 catalog__title">AmShop</h1>
+							<div class="select select--arrow-bold select--white catalog__sort">
+								<select class="select__field select__field--text-gray select__field--text-12">
+									<option value="1">По умолчанию</option>
+									<option value="2">По цене ↓</option>
+									<option value="3">По цене ↑</option>
+								</select>
+							</div>
+							<div class="catalog__nav">
+								<ul class="catalog__nav-list">
+									<li class="catalog__nav-item">
+										<label class="checkbox checkbox--link checkbox--mobile-btn catalog__nav-link">
+											<input class="checkbox__input" type="radio" name="catalog">
+											<span class="checkbox__switch">Всё</span>
+										</label>
+									</li>
+									<li class="catalog__nav-item">
+										<label class="checkbox checkbox--link checkbox--mobile-btn catalog__nav-link">
+											<input class="checkbox__input" type="radio" name="catalog" checked>
+											<span class="checkbox__switch">Одежда</span>
+										</label>
+									</li>
+									<li class="catalog__nav-item">
+										<label class="checkbox checkbox--link checkbox--mobile-btn catalog__nav-link">
+											<input class="checkbox__input" type="radio" name="catalog">
+											<span class="checkbox__switch">Аксессуары</span>
+										</label>
+									</li>
+									<li class="catalog__nav-item">
+										<label class="checkbox checkbox--link checkbox--mobile-btn catalog__nav-link">
+											<input class="checkbox__input" type="radio" name="catalog">
+											<span class="checkbox__switch">Техника</span>
+										</label>
+									</li>
+									<li class="catalog__nav-item">
+										<label class="checkbox checkbox--link checkbox--mobile-btn catalog__nav-link">
+											<input class="checkbox__input" type="radio" name="catalog">
+											<span class="checkbox__switch">Подарки</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+					<div class="col-sm-8 col-md-9 ms-auto">
+						<form class="search search--line search--desktop catalog__search" autocomplete="off">
+							<input class="search__input search__input--fz-14" type="text">
 							<button class="search__btn search__btn--submit">
 								<span class="icon icon-search search__icon"></span>
 							</button>
@@ -84,142 +129,118 @@
 								<span class="icon icon-close-bold search__icon"></span>
 							</button>
 						</form>
-					</div>
-				</div>
-				<div class="categories catalog__categories">
-					<div class="categories__list">
-						<label class="checkbox checkbox--btn categories__item">
-							<input class="checkbox__input" type="radio" name="catalog" checked>
-							<span class="checkbox__switch">Всё</span>
-						</label>
-						<label class="checkbox checkbox--btn categories__item">
-							<input class="checkbox__input" type="radio" name="catalog">
-							<span class="checkbox__switch">Одежда</span>
-						</label>
-						<label class="checkbox checkbox--btn categories__item">
-							<input class="checkbox__input" type="radio" name="catalog">
-							<span class="checkbox__switch">Аксессуары</span>
-						</label>
-						<label class="checkbox checkbox--btn categories__item">
-							<input class="checkbox__input" type="radio" name="catalog">
-							<span class="checkbox__switch">Техника</span>
-						</label>
-						<label class="checkbox checkbox--btn categories__item">
-							<input class="checkbox__input" type="radio" name="catalog">
-							<span class="checkbox__switch">Подарки</span>
-						</label>
-					</div>
-				</div>
-				<div class="catalog__list">
-					<div class="row gy-3 gx-1 gx-sm-0">
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product.html">
-									<img src="assets/img/products/1.png" alt="">
-								</a>
-								<div class="price product-card__price">
-									<span class="price__old">2500</span>
-									2000
+						<div class="catalog__list">
+							<div class="row gy-3 gx-1 gx-sm-0">
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product.html">
+											<img src="assets/img/products/1.png" alt="">
+										</a>
+										<div class="price product-card__price">
+											<span class="price__old">2500</span>
+											2000
+										</div>
+										<h2 class="product-card__name">
+											<a href="product.html">Футболка</a>
+										</h2>
+										<div class="product-card__types">xs, s, m, l</div>
+									</div>
 								</div>
-								<h2 class="product-card__name">
-									<a href="product.html">Футболка</a>
-								</h2>
-								<div class="product-card__types">xs, s, m, l</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product.html">
-									<img src="assets/img/products/1.png" alt="">
-								</a>
-								<div class="price product-card__price">2500</div>
-								<h2 class="product-card__name">
-									<a href="product.html">Футболка</a>
-								</h2>
-								<div class="product-card__types">xs, s, m, l</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product.html">
-									<img src="assets/img/products/2.png" alt="">
-								</a>
-								<div class="price product-card__price">От 1000</div>
-								<h2 class="product-card__name">
-									<a href="product.html">Сертификат Рив Гош</a>
-								</h2>
-								<div class="product-card__types">1000, 5000</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product.html">
-									<img src="assets/img/products/1.png" alt="">
-									<div class="product-label product-card__label">Новинка</div>
-								</a>
-								<div class="price product-card__price">2500</div>
-								<h2 class="product-card__name">
-									<a href="product.html">Футболка</a>
-								</h2>
-								<div class="product-card__types">xs, s, m, l</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product.html">
-									<img src="assets/img/products/2.png" alt="">
-								</a>
-								<div class="price product-card__price">От 1000</div>
-								<h2 class="product-card__name">
-									<a href="product.html">Сертификат Рив Гош</a>
-								</h2>
-								<div class="product-card__types">1000, 5000</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product.html">
-									<img src="assets/img/products/1.png" alt="">
-								</a>
-								<div class="price product-card__price">2500</div>
-								<h2 class="product-card__name">
-									<a href="product.html">Футболка</a>
-								</h2>
-								<div class="product-card__types">xs, s, m, l</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product-gift.html">
-									<img src="assets/img/products/1.png" alt="">
-								</a>
-								<h2 class="product-card__name">
-									<a href="product.html">Футболка</a>
-								</h2>
-								<div class="product-card__types">xs, s, m, l</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card product-card--inactive catalog__item">
-								<a class="product-card__img" href="product.html">
-									<img src="assets/img/products/1.png" alt="">
-								</a>
-								<div class="price product-card__price">2500</div>
-								<h2 class="product-card__name">
-									<a href="product.html">Футболка</a>
-								</h2>
-								<div class="product-card__types">Закончился</div>
-							</div>
-						</div>
-						<div class="col-6 col-sm-4">
-							<div class="product-card catalog__item">
-								<a class="product-card__img" href="product-gift.html">
-									<img src="assets/img/products/1.png" alt="">
-								</a>
-								<h2 class="product-card__name">
-									<a href="product.html">Футболка</a>
-								</h2>
-								<div class="product-card__types">xs, s, m, l</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product.html">
+											<img src="assets/img/products/1.png" alt="">
+										</a>
+										<div class="price product-card__price">2500</div>
+										<h2 class="product-card__name">
+											<a href="product.html">Футболка</a>
+										</h2>
+										<div class="product-card__types">xs, s, m, l</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product.html">
+											<img src="assets/img/products/2.png" alt="">
+										</a>
+										<div class="price product-card__price">От 1000</div>
+										<h2 class="product-card__name">
+											<a href="product.html">Сертификат Рив Гош</a>
+										</h2>
+										<div class="product-card__types">1000, 5000</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product.html">
+											<img src="assets/img/products/1.png" alt="">
+											<div class="product-label product-card__label">Новинка</div>
+										</a>
+										<div class="price product-card__price">2500</div>
+										<h2 class="product-card__name">
+											<a href="product.html">Футболка</a>
+										</h2>
+										<div class="product-card__types">xs, s, m, l</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product.html">
+											<img src="assets/img/products/2.png" alt="">
+										</a>
+										<div class="price product-card__price">От 1000</div>
+										<h2 class="product-card__name">
+											<a href="product.html">Сертификат Рив Гош</a>
+										</h2>
+										<div class="product-card__types">1000, 5000</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product.html">
+											<img src="assets/img/products/1.png" alt="">
+										</a>
+										<div class="price product-card__price">2500</div>
+										<h2 class="product-card__name">
+											<a href="product.html">Футболка</a>
+										</h2>
+										<div class="product-card__types">xs, s, m, l</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product-gift.html">
+											<img src="assets/img/products/1.png" alt="">
+										</a>
+										<h2 class="product-card__name">
+											<a href="product.html">Футболка</a>
+										</h2>
+										<div class="product-card__types">xs, s, m, l</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card product-card--inactive catalog__item">
+										<a class="product-card__img" href="product.html">
+											<img src="assets/img/products/1.png" alt="">
+										</a>
+										<div class="price product-card__price">2500</div>
+										<h2 class="product-card__name">
+											<a href="product.html">Футболка</a>
+										</h2>
+										<div class="product-card__types">Закончился</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="product-card catalog__item">
+										<a class="product-card__img" href="product-gift.html">
+											<img src="assets/img/products/1.png" alt="">
+										</a>
+										<h2 class="product-card__name">
+											<a href="product.html">Футболка</a>
+										</h2>
+										<div class="product-card__types">xs, s, m, l</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

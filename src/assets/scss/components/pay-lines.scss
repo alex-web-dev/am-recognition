@@ -38,43 +38,6 @@
     align-items: center;
     line-height: 1.43;
   }
-
-  &__fixed-btn {
-    position: fixed;
-    bottom: 20px;
-    width: 90px;
-    height: 90px;
-    align-self: flex-end;
-    background: $color-gradient-third;
-    box-shadow: 0px 0px 10px rgba($color-third, 0.25);
-    border-radius: 50%;
-    transition: transform .3s;
-
-    &:hover {
-      transform: translateY(-5px);
-    }
-
-    &-icon {
-      font-size: 45px;
-      color: $color-success;
-    }
-
-    &-value {
-      position: absolute;
-      left: 50%;
-      top: calc(50% + 7px);
-      transform: translate(-50%, -50%);
-      color: #fff;
-    }
-  }
-}
-
-@media (max-width: $body-desktop-width) {
-  .pay-lines {
-    &__fixed-btn {
-      right: $container-xs-offset;
-    }
-  }
 }
 
 @include media_max_width(680px) {
@@ -100,22 +63,6 @@
 
       &-pagination {
         display: flex;
-      }
-    }
-
-    &__fixed-btn {
-      bottom: 64px;
-      width: 60px;
-      height: 60px;
-
-      &-icon {
-        font-size: 30px;
-      }
-
-      &-value {
-        font-size: 10px;
-        font-weight: 500;
-        top: calc(50% + 5px);
       }
     }
   }

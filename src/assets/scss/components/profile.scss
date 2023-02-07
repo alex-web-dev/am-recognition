@@ -92,8 +92,16 @@
     margin-top: 6px;
   }
 
+  &__banner {
+    margin-top: 20px;
+  }
+
   &__info {
     margin-top: 30px;
+  }
+
+  &__banner ~ &__info {
+    margin-top: 20px;
   }
 
   &__quote {
