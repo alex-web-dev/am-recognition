@@ -84,54 +84,83 @@
 								<div class="team-item__position">Должность <br> Подразделение</div>
 							</div>
 						</div>
-						<form class="recognition-form wallet__recognition-form" autocomplete="off">
-							<div class="recognition-form__item">
-								<div class="recognition-form__label">
-									<span class="text text--small text--medium">Спасибо за:</span>
-									<span class="text text--small text--medium text--gray price">Баланс 1 250</span>
-								</div>
-								<textarea class="settings-input settings-input--area recognition-form__input" data-min-height="100"></textarea>
+						<div class="filter wallet__filter tabs-btns" data-tabs-name="wallet">
+							<button class="filter__btn filter__btn--regular tabs-btn tabs-btn--active">Стандартное</button>
+							<button class="filter__btn filter__btn--regular tabs-btn">Особое</button>
+							<button class="filter__btn filter__btn--regular tabs-btn">Квартал</button>
+						</div>
+						<div class="tabs-list" data-tabs-name="wallet">
+							<div class="tabs-item tabs-item--active">
+								<form class="recognition-form wallet__tab-form" autocomplete="off">
+									<div class="recognition-form__item">
+										<div class="recognition-form__label">
+											<span class="text text--small text--medium">Спасибо за:</span>
+											<span class="text text--small text--medium text--gray price">Баланс 100</span>
+										</div>
+										<textarea class="settings-input settings-input--area recognition-form__input" data-min-height="100"></textarea>
+									</div>
+									<button class="btn btn--flex recognition-form__submit recognition-form__submit--self-end">
+										<img class="btn__icon" src="assets/img/icons/like.png" alt="">
+										Отправить признание
+									</button>
+								</form>
 							</div>
-							<div class="recognition-form__item">
-								<div class="recognition-form__label">
-									<span class="text text--small text--medium">Особое признание</span>
-								</div>
-								<div class="recognition-form__checkboxes">
-									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
-										<input class="checkbox__input" type="radio" name="nominal" checked>
-										<span class="checkbox__switch">10</span>
-									</label>
-									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
-										<input class="checkbox__input" type="radio" name="nominal">
-										<span class="checkbox__switch">20</span>
-									</label>
-									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
-										<input class="checkbox__input" type="radio" name="nominal">
-										<span class="checkbox__switch">50</span>
-									</label>
-									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
-										<input class="checkbox__input" type="radio" name="nominal">
-										<span class="checkbox__switch">100</span>
-									</label>
-									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
-										<input class="checkbox__input" type="radio" name="nominal">
-										<span class="checkbox__switch">200</span>
-									</label>
-									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
-										<input class="checkbox__input" type="radio" name="nominal">
-										<span class="checkbox__switch">500</span>
-									</label>
-									<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
-										<input class="checkbox__input" type="radio" name="nominal">
-										<span class="checkbox__switch">1000</span>
-									</label>
-								</div>
+							<div class="tabs-item">
+								<form class="recognition-form wallet__tab-form wallet__tab-form--checkboxes" autocomplete="off">
+									<div class="recognition-form__item">
+										<div class="recognition-form__checkboxes">
+											<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+												<input class="checkbox__input" type="radio" name="nominal" checked>
+												<span class="checkbox__switch">10</span>
+											</label>
+											<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+												<input class="checkbox__input" type="radio" name="nominal">
+												<span class="checkbox__switch">20</span>
+											</label>
+											<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+												<input class="checkbox__input" type="radio" name="nominal">
+												<span class="checkbox__switch">50</span>
+											</label>
+											<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+												<input class="checkbox__input" type="radio" name="nominal">
+												<span class="checkbox__switch">100</span>
+											</label>
+											<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+												<input class="checkbox__input" type="radio" name="nominal">
+												<span class="checkbox__switch">200</span>
+											</label>
+											<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+												<input class="checkbox__input" type="radio" name="nominal">
+												<span class="checkbox__switch">500</span>
+											</label>
+											<label class="checkbox checkbox--btn checkbox--small checkbox--rect recognition-form__checkbox">
+												<input class="checkbox__input" type="radio" name="nominal">
+												<span class="checkbox__switch">1000</span>
+											</label>
+										</div>
+									</div>
+									<button class="btn btn--flex recognition-form__submit recognition-form__submit--self-end">
+										<img class="btn__icon" src="assets/img/icons/like.png" alt="">
+										Отправить признание
+									</button>
+								</form>
 							</div>
-							<button class="btn btn--flex recognition-form__submit">
-								<img class="btn__icon" src="assets/img/icons/like.png" alt="">
-								Отправить признание
-							</button>
-						</form>
+							<div class="tabs-item">
+								<form class="recognition-form wallet__tab-form" autocomplete="off">
+									<div class="recognition-form__item">
+										<div class="recognition-form__label">
+											<span class="text text--small text--medium">Спасибо за:</span>
+											<span class="text text--small text--medium text--gray price">Баланс 10000</span>
+										</div>
+										<textarea class="settings-input settings-input--area recognition-form__input" data-min-height="100"></textarea>
+									</div>
+									<button class="btn btn--flex recognition-form__submit recognition-form__submit--self-end">
+										<img class="btn__icon" src="assets/img/icons/like.png" alt="">
+										Отправить признание
+									</button>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

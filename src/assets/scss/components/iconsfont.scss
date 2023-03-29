@@ -1,4 +1,5 @@
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
   font-family: "iconsfont";
   font-style: normal;
   font-weight: normal;
@@ -11,11 +12,70 @@
   line-height: 1;
 }
 
-.icon--primary { color: $color-primary; }
-.icon--white { color: #fff; }
-.icon--danger { color: $color-danger; }
-.icon--success { color: $color-success; }
-.icon--gray { color: $color-gray; }
+.icon {
+  &--primary {
+    color: $color-primary;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--danger {
+    color: $color-danger;
+  }
+
+  &--success {
+    color: $color-success;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--rotate-45 {
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &--bg {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  
+    &:before {
+      font-size: 10px;
+    }
+  
+    &-primary {
+      background-color: $color-primary;
+    }
+  
+    &-white {
+      background-color: #fff;
+    }
+  
+    &-danger {
+      background-color: $color-danger;
+    }
+  
+    &-success {
+      background-color: $color-success;
+    }
+  
+    &-gray {
+      background-color: $color-gray;
+    }
+  }
+
+  &--flex-00-auto {
+    flex: 0 0 auto;
+  }
+}
 
 .icon-wallet:before { content: '\e800'; } /* '' */
 .icon-close:before { content: '\e801'; } /* '' */
@@ -29,3 +89,4 @@
 .icon-edit:before { content: '\e809'; } /* '' */
 .icon-close-extrabold:before { content: '\e80a'; } /* '' */
 .icon-news:before { content: '\e80b'; } /* '' */
+.icon-money:before { content: '\e80c'; } /* '' */

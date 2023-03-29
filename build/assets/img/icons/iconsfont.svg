@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
 <defs>
 <font id="iconsfont" horiz-adv-x="1000" >
 <font-face font-family="iconsfont" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -29,6 +29,8 @@
 <glyph glyph-name="close-extrabold" unicode="&#xe80a;" d="M1000 656l-194 194-306-306-306 306-194-194 306-306-306-306 194-194 306 306 306-306 194 194-306 306 306 306z" horiz-adv-x="1000" />
 
 <glyph glyph-name="news" unicode="&#xe80b;" d="M375 780c30 0 55-25 55-55v-250c0-30-25-55-55-55h-250c-30 0-55 25-55 55v250c0 30 25 55 55 55h250m0 70h-250c-70 0-125-55-125-125v-250c0-70 55-125 125-125h250c70 0 125 55 125 125v250c0 70-55 125-125 125l0 0z m550-1000h-850c-40 0-75 35-75 75v0c0 40 35 75 75 75h850c40 0 75-35 75-75v0c0-40-35-75-75-75z m0 250h-850c-40 0-75 35-75 75v0c0 40 35 75 75 75h850c40 0 75-35 75-75v0c0-40-35-75-75-75z m0 250h-250c-40 0-75 35-75 75v0c0 40 35 75 75 75h250c40 0 75-35 75-75v0c0-40-35-75-75-75z m0 250h-250c-40 0-75 35-75 75v0c0 40 35 75 75 75h250c40 0 75-35 75-75v0c0-40-35-75-75-75z" horiz-adv-x="1000" />
+
+<glyph glyph-name="money" unicode="&#xe80c;" d="M500 850c-276 0-500-224-500-500 0-276 224-500 500-500 276 0 500 224 500 500 0 276-224 500-500 500z m125-750h-125v125 250h-125v125h250v-375-125z" horiz-adv-x="1000" />
 </font>
 </defs>
 </svg>

@@ -8,6 +8,9 @@ if ($profile) {
   moveAwardrOther();
   window.addEventListener('resize', moveAwardrOther);
 
+  moveBanners();
+  window.addEventListener('resize', moveBanners);
+
   const $awardsMore = document.querySelector('.profile__awards-more');
   $awardsMore?.addEventListener('click', () => {
     const $awards = $awardsMore.closest('.profile__awards');
@@ -35,6 +38,15 @@ function moveAwardrOther() {
     element: '.profile__awards--other',
     from: '.profile__awards-desktop',
     to: '.profile__awards-mobile',
+    width: 680,
+  });
+}
+
+function moveBanners() {
+  moveElement({
+    element: '.profile__banner--movement',
+    from: '.profile__banners-desktop',
+    to: '.profile__banners-mobile',
     width: 680,
   });
 }

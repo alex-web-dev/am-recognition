@@ -68,17 +68,20 @@
 								</div>
 								<div class="profile__awards-mobile"></div>
 								<div class="profile__header-btns">
-									<a class="btn btn--darkened profile__header-btn" href="wallet.html">
-										Мой кошелек: <span class="price price--12">1 250</span>
+									<a class="btn btn--darkened btn--weight-600 profile__header-btn" href="wallet.html">
+										Мой кошелек: <span class="price price--12 btn__value btn__value--weight-600">1 250</span>
 										<div class="btn__addition">История начислений →</div>
 									</a>
 									<a class="btn btn--darkened profile__header-btn" href="recognitions.html">
-										Запас признания: <span class="price price--12">1 050</span>
+										Запас признания: <span class="price price--12 btn__value">1 050</span>
 										<div class="btn__addition">Признать сотрудника →</div>
 									</a>
 								</div>
 							</div>
 						</div>
+
+						<div class="col-12 d-sm-none profile__banners-mobile"></div>
+
 						<div class="col-sm-4 mx-auto">
 							<div class="profile-menu profile__menu">
 								<ul class="profile-menu__list">
@@ -118,6 +121,18 @@
 					</div>
 				</div>
 
+				<div class="profile__banners-desktop">
+					<a class="profile-banner profile-banner--transparent profile__banner profile__banner--movement" href="#">
+						<div class="profile-banner__title profile-banner__title--danger">С Днем Рождения! Скидка <span>22%</span> до <span>24.02</span></div>
+						<img class="profile-banner__bg" src="assets/img/banners/birthday.jpg" alt="">
+					</a>
+	
+					<a class="profile-banner profile-banner--third profile__banner profile__banner--movement" href="#">
+						<img class="profile-banner__icon" src="assets/img/icons/counter-heart.svg" alt="">
+						<div class="profile-banner__title profile-banner__title--pink">Заполнить барометр</div>
+					</a>
+				</div>
+
 				<a class="profile-banner profile__banner" href="#">
 					<img class="profile-banner__icon" src="assets/img/icons/counter.svg" alt="">
 					<div class="profile-banner__title">Заполнить барометр</div>
@@ -150,6 +165,14 @@
 				<div class="profile__awards-desktop">
 					<div class="profile__awards profile__awards--own">
 						<div class="profile__awards-list js-open-stories-list">
+							<button class="profile-award profile-award--gift profile__award js-open-stories">
+								<img class="profile-award__img" src="assets/img/gift.png" alt="">
+								<span class="profile-award__value">1205</span>
+							</button>
+							<button class="profile-award profile-award--gift profile__award js-open-stories">
+								<img class="profile-award__img" src="assets/img/gift.png" alt="">
+								<span class="profile-award__value profile-award__value--fire">107</span>
+							</button>
 							<button class="profile-award profile__award js-open-stories">
 								<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
 							</button>
@@ -192,10 +215,6 @@
 							</button>
 							<button class="profile-award profile__award js-open-stories">
 								<img class="profile-award__img" src="assets/img/awards/3.png" alt="">
-							</button>
-							<button class="profile-award profile-award--gift profile__award js-open-stories">
-								<img class="profile-award__img" src="assets/img/gift.png" alt="">
-								<span class="profile-award__value">205</span>
 							</button>
 						</div>
 						<button class="profile__awards-more" data-toggle-text="Скрыть мои награды ↑">Все мои награды ↓</button>
@@ -308,6 +327,16 @@
 		<div class="container">
 			<div class="stories__list">
 				<div class="stories__item">
+					<img class="stories__img" src="assets/img/gift.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
+					<img class="stories__img" src="assets/img/gift.png" alt="">
+					<div class="stories__title">Название бейджа.</div>
+					<button class="btn btn--third stories__btn">Получить подарок</button>
+				</div>
+				<div class="stories__item">
 					<img class="stories__img" src="assets/img/awards/1.png" alt="">
 					<div class="stories__title">Название бейджа. 3 года в команде AmRest!</div>
 					<button class="btn btn--third stories__btn">Получить подарок</button>
@@ -374,11 +403,6 @@
 				</div>
 				<div class="stories__item">
 					<img class="stories__img" src="assets/img/awards/3.png" alt="">
-					<div class="stories__title">Название бейджа.</div>
-					<button class="btn btn--third stories__btn">Получить подарок</button>
-				</div>
-				<div class="stories__item">
-					<img class="stories__img" src="assets/img/gift.png" alt="">
 					<div class="stories__title">Название бейджа.</div>
 					<button class="btn btn--third stories__btn">Получить подарок</button>
 				</div>

@@ -5,6 +5,13 @@
     margin-bottom: 27px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      padding-right: 15px;
+    }
   }
 
   &__filter {
@@ -32,6 +39,8 @@
     padding: 124px 0 100px;
 
     &__header {
+      flex-direction: column;
+      align-items: flex-start;
       margin-bottom: 15px;
 
       &--desktop {

@@ -35,6 +35,18 @@
   &__recognition-form {
     margin-top: 45px;
   }
+
+  &__tab-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 268px;
+
+    &--checkboxes {
+      margin-top: 50px;
+      min-height: 248px;
+    }
+  }
 }
 
 .body--desktop .wallet {
@@ -59,6 +71,14 @@
 
     &__recognition-form {
       margin-top: 30px;
+    }
+
+    &__tab-form {
+      margin-top: 20px;
+
+      &--checkboxes {
+        margin-top: 40px;
+      }
     }
 
     &__recognition-user {

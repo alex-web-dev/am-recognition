@@ -125,6 +125,7 @@
 
   &--gift &__img {
     max-height: 100%;
+    z-index: -2;
   }
 
   &--gift &__value {
@@ -138,5 +139,19 @@
     border-radius: 50%;
     font-size: 9px;
     color: #000;
+
+    &--fire {
+      color: #fff;
+      background: linear-gradient(180deg, rgba($color-third, 0.0495) 0%, rgba($color-third, 0.15) 100%), $color-danger;
+
+      &:before {
+        content: '';
+        @include before-icon('../img/icons/fire.png', 30px, 30px);
+        position: absolute;
+        left: 0;
+        top: -23px;
+        z-index: -1;
+      }
+    }
   }
 }

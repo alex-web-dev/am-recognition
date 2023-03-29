@@ -3,6 +3,10 @@
     &:not(:first-child) {
       margin-top: 40px;
     }
+
+    &:nth-last-child(2) {
+      margin-bottom: auto;
+    }
   }
 
   &__label {
@@ -37,6 +41,10 @@
   &__submit {
     margin-top: 30px;
     width: 100%;
+
+    &--self-end {
+      align-self: flex-end;
+    }
   }
 }
 

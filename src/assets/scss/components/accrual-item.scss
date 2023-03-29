@@ -68,5 +68,22 @@
   &__limit {
     padding-left: 30px;
     padding-bottom: 15px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &-name {
+      flex: 0 0 330px;
+    }
+
+    &-input {
+      flex: 0 0 80px;
+    }
   }
 }

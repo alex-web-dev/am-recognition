@@ -74,6 +74,12 @@
   }
 
   &__inactive {
-    opacity: 0.33;
+    td {
+      opacity: 0.33;
+
+      &.users-table__activate {
+        opacity: 1;
+      }
+    }
   }
 }

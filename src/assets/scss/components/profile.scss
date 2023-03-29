@@ -80,7 +80,6 @@
       padding-top: 19px;
       padding-bottom: 19px;
       font-size: 18px;
-      font-weight: 600;
 
       &:not(:first-child) {
         margin-top: 10px;
@@ -257,7 +256,14 @@
       }
 
       &-btn {
+        display: block;
         border-radius: 10px;
+      }
+    }
+
+    &__banners-mobile .profile__banner {
+      &:last-child {
+        margin-bottom: 10px;
       }
     }
 

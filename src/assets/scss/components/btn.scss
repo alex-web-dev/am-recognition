@@ -15,11 +15,31 @@
     transform: translateY(-5px);
   }
 
+  &__item {
+    &:not(:first-child) {
+      margin-top: 3px;
+    }
+  }
+
+  &__value {
+    &--small {
+      font-size: 14px;
+    }
+
+    &--fw-600 {
+      font-weight: 600;
+    }
+  }
+
   &__addition {
     margin-top: 5px;
     font-size: 12px;
     line-height: 1.25;
     font-weight: 500;
+
+    &--mt-10 {
+      margin-top: 10px;
+    }
   }
 
   &__icon {
@@ -131,6 +151,10 @@
     }
   }
 
+  &--weight-600 {
+    font-weight: 600;
+  }
+
   &-circle {
     width: 30px;
     height: 30px;
@@ -145,12 +169,34 @@
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%), $color-third;
     }
   }
+
+  &--py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &--full {
+    width: 100%;
+  }
 }
 
 @include media_max_width(680px) {
   .btn {
+    &__value {
+      font-weight: 700;
+      font-size: 18px;
+
+      &--small {
+        font-size: 14px;
+      }
+
+      &--weight-600 {
+        font-weight: 600;
+      }
+    }
+
     &__icon {
       width: 11px;
-    }   
+    }
   }
 }

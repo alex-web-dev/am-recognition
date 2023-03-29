@@ -156,5 +156,11 @@
         cursor: default;
       }
     }
+
+    &__switch {
+      &--text-xs-12 {
+        font-size: 12px;
+      }
+    }
   }
 }

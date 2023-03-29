@@ -37,7 +37,8 @@
 							</a>
 						</li>
 						<li class="navbar__item navbar__item--menu">
-							<a class="navbar__link js-open-menu" href="#" data-menu-close-class="menu__close--mobile-bottom">
+							<a class="navbar__link js-open-menu" href="#"
+								data-menu-close-class="menu__close--mobile-bottom">
 								<span class="icon icon-menu navbar__icon"></span>
 								<div class="navbar__text">Меню</div>
 							</a>
@@ -67,15 +68,23 @@
 				<div class="row">
 					<div class="col-sm-10 mx-auto">
 						<h1 class="title1 settings__title">Сообщить о проблеме</h1>
-						<div class="filter filter--i-flex settings__filter tabs-btns" data-tabs-name="problem-type">
-							<button class="filter__btn filter__btn--small filter__btn--long tabs-btn tabs-btn--active">У меня
+						<div class="filter filter--wrap settings__filter tabs-btns" data-tabs-name="problem-type">
+							<button
+								class="filter__btn filter__btn--short filter__btn--text-medium filter__btn--short filter__btn--wrap tabs-btn tabs-btn--active">У
+								меня
 								вопрос</button>
-							<button class="filter__btn filter__btn--small filter__btn--long tabs-btn">У меня поломка</button>
+							<button
+								class="filter__btn filter__btn--short filter__btn--text-medium filter__btn--short filter__btn--wrap tabs-btn">У
+								меня поломка</button>
+							<button
+								class="filter__btn filter__btn--short filter__btn--text-medium filter__btn--short filter__btn--wrap tabs-btn">Магазин
+								и заказы</button>
 						</div>
 						<div class="tabs-list" data-tabs-name="problem-type">
 							<div class="tabs-item tabs-item--active">
 								<form class="settings-form settings__form" autocomplete="off">
-									<div class="text text--danger settings-form__message">Чтобы отредактировать почту или телефон, пожалуйста, обратись к своему менеджеру!</div>
+									<div class="text text--danger settings-form__message">Чтобы отредактировать почту
+										или телефон, пожалуйста, обратись к своему менеджеру!</div>
 									<textarea class="settings-input settings-input--area settings-form__input"
 										maxlength="500">От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в Европе и Азии.
 В России это бренды, с которых всё начиналось — KFC (200+ ресторанов по франшизе Yum! Brands) и Pizza Hut (40+ ресторанов по собственной франшизе компании).
@@ -90,7 +99,68 @@
 							</div>
 							<div class="tabs-item">
 								<form class="settings-form settings__form" autocomplete="off">
-									<textarea class="settings-input settings-input--area settings-form__input" maxlength="500"></textarea>
+									<textarea class="settings-input settings-input--area settings-form__input"
+										maxlength="500"></textarea>
+									<div class="text text--gray settings-form__text">Максимум 500 знаков</div>
+									<div class="settings-form__btns">
+										<button type="button" class="btn settings-form__btn">Отмена</button>
+										<button class="btn btn--second settings-form__btn">Отправить</button>
+									</div>
+								</form>
+							</div>
+							<div class="tabs-item">
+								<div class="faq settings__faq">
+									<div class="faq__item accordion">
+										<button class="faq__btn accordion-btn">
+											<span>Что такое амкоин?</span>
+										</button>
+										<div class="accordion-content">
+											<div class="text-content faq__main">
+												<p>Ответ. От фастфуда до высокой кухни — более 20 лет AmRest Global
+													представляет лучшие ресторанные
+													бренды в Европе и Азии.</p>
+												<p>В России это бренды, с которых всё начиналось — KFC (200+ ресторанов
+													по франшизе Yum! Brands) и
+													Pizza Hut (40+ ресторанов по собственной франшизе компании).</p>
+											</div>
+										</div>
+									</div>
+									<div class="faq__item accordion">
+										<button class="faq__btn accordion-btn">
+											<span>Могут ли мои амкоины сгореть?</span>
+										</button>
+										<div class="accordion-content">
+											<div class="text-content faq__main">
+												<p>Ответ. От фастфуда до высокой кухни — более 20 лет AmRest Global
+													представляет лучшие ресторанные
+													бренды в Европе и Азии.</p>
+												<p>В России это бренды, с которых всё начиналось — KFC (200+ ресторанов
+													по франшизе Yum! Brands) и
+													Pizza Hut (40+ ресторанов по собственной франшизе компании).</p>
+											</div>
+										</div>
+									</div>
+									<div class="faq__item accordion">
+										<button class="faq__btn accordion-btn">
+											<span>Как будет доставлен мой заказ?</span>
+										</button>
+										<div class="accordion-content">
+											<div class="text-content faq__main">
+												<p>Ответ. От фастфуда до высокой кухни — более 20 лет AmRest Global
+													представляет лучшие ресторанные
+													бренды в Европе и Азии.</p>
+												<p>В России это бренды, с которых всё начиналось — KFC (200+ ресторанов
+													по франшизе Yum! Brands) и
+													Pizza Hut (40+ ресторанов по собственной франшизе компании).</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<form class="settings-form settings__form" autocomplete="off">
+									<textarea class="settings-input settings-input--area settings-form__input"
+										maxlength="500">От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в Европе и Азии.
+В России это бренды, с которых всё начиналось — KFC (200+ ресторанов по франшизе Yum! Brands) и Pizza Hut (40+ ресторанов по собственной франшизе компании).
+От фастфуда до высокой кухни — более 20 лет AmRest Global представляет лучшие ресторанные бренды в Европе и Азии.</textarea>
 									<div class="text text--gray settings-form__text">Максимум 500 знаков</div>
 									<div class="settings-form__btns">
 										<button type="button" class="btn settings-form__btn">Отмена</button>

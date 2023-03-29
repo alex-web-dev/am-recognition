@@ -3,6 +3,7 @@
 
   &__input {
     width: 100%;
+    height: 100%;
     background: rgba($color-third, 0.15);
     border-radius: 30px;
     border: none;
@@ -10,12 +11,25 @@
     outline: none;
     color: $color-gray;
     font-size: 12px;
-    
+
     &--medium {
       font-weight: 500;
     }
 
     &--fz-14 {
+      font-size: 14px;
+    }
+
+    &--pr-30 {
+      padding-right: 30px;
+    }
+
+    &--black {
+      color: #000;
+    }
+
+    &--middle {
+      padding: 13px 30px 13px 20px;
       font-size: 14px;
     }
   }
@@ -31,6 +45,14 @@
 
     &--clear {
       display: none;
+    }
+
+    &--r-12 {
+      right: 12px;
+    }
+
+    &--r-20 {
+      right: 20px;
     }
   }
 
@@ -56,9 +78,25 @@
     padding: 0 20px 2px 0;
   }
 
+  &--line &__input--bd-third {
+    border-bottom-color: rgba($color-third, 0.15);
+  }
+
+  &--line &__input--pr-30 {
+    padding-right: 30px;
+  }
+
   &--line &__btn {
     right: 0;
     padding-bottom: 1px;
+  }
+
+  &--line &__btn--r-12 {
+    right: 12px;
+  }
+
+  &--line &__btn--r-20 {
+    right: 20px;
   }
 
   &--line &__icon {

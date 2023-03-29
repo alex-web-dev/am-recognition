@@ -28,6 +28,12 @@
       margin-top: 20px;
     }
   }
+
+  &__faq {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 @include media_max_width(680px) {
@@ -40,7 +46,7 @@
     }
 
     &__filter {
-      margin-bottom: 5px;
+      margin-bottom: 15px;
     }
 
     &__text {
@@ -56,6 +62,10 @@
         padding-top: 20px;
         border-top: 1px solid rgba($color-third, 0.15);
       }
+    }
+
+    &__faq {
+      margin-top: 20px;
     }
   }
 }

@@ -93,6 +93,10 @@
     font-weight: 500;
   }
 
+  &--bold {
+    font-weight: 700;
+  }
+
   &--center {
     text-align: center;
   }
@@ -100,18 +104,22 @@
   &--left {
     text-align: left;
   }
+
+  &--inactive {
+    opacity: 0.33;
+  }
 }
 
 .italic {
   font-style: italic;
 }
 
-.price {
+.price,
+.money {
   display: inline-flex;
   align-items: center;
 
   &:after {
-    content: '\e800';
     margin-left: 4px;
     font-family: 'iconsfont';
     font-weight: normal;
@@ -145,6 +153,34 @@
   }
 }
 
+.price {
+  &:after {
+    content: '\e800';
+  }
+
+  &--fire {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      right: -1px;
+      bottom: 10px;
+      @include before-icon('../img/icons/fire.png', 14px, 14px);
+    }
+
+    &:after {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.money {
+  &:after {
+    content: '\e80c';
+  }
+}
+
 .swiper-pagination-bullets {
   display: flex;
   justify-content: center;
@@ -174,7 +210,8 @@
 }
 
 @include media_max_width(680px) {
-  .price {
+  .price,
+  .money {
     font-size: 12px;
     font-weight: 500;
   }

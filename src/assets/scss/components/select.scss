@@ -28,13 +28,29 @@
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
-
+    
     &--text-gray {
       color: $color-gray;
     }
 
     &--text-12 {
       font-size: 12px;
+    }
+
+    &--pr-75 {
+      padding-right: 75px;
+    }
+
+    &--pl-20 {
+      padding-left: 20px;
+    }
+    
+    &--fw-400 {
+      font-weight: 400;
+    }
+
+    &--radius-30 {
+      border-radius: 30px;
     }
   }
 
@@ -92,6 +108,12 @@
     }
   }
 
+  &--arrow-r-20 {
+    &:after {
+      right: 20px;
+    }
+  }
+
   &--btn &__field {
     padding: 12px;
     line-height: 1.2;
@@ -115,6 +137,17 @@
     font-size: 14px;
     font-weight: 400;
     color: $color-gray;
+  }
+
+  &--wrap {
+    &:after {
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
+  &--wrap &__field {
+    white-space: pre-wrap;
   }
 }
 
